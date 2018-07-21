@@ -1,7 +1,9 @@
 .btn {
-    display: block;
+    display: inline-block;
+    text-align: center;
 
     p {
+        font-size: 16px;
         font-family: Header;
         letter-spacing: 1.5px;
         display: inline-block;
@@ -18,7 +20,6 @@
             height: 100%;
             width: 100%;
             transform: translate(-15%, -12%);
-            z-index: -1;
         }
     }
 }

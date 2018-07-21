@@ -4,3 +4,29 @@ h1 {
   font-size: 48px;
   color: white;
 }
+
+
+.section-description {
+	padding: 0 30%;
+	font-family: Body;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-align: center;
+	color: $pink-color;
+	padding-top: 5em;
+}
+
+
+.tag {
+	font-family: HeaderLight;
+	font-size: 10px;
+	text-align: center;
+	color: #ffffff;
+	background-color: $pink-color;
+	max-width: 15em;
+	display: inline-block;
+	padding: 0.4em 1.5em;
+    margin: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}

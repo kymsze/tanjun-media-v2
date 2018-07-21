@@ -1,0 +1,33 @@
+.work {
+	position: relative;
+	img {
+		width: 100%;
+		margin: 3em 0;
+	}
+	.work-details {
+		position: absolute;
+		padding: 0 25%;
+		top: 30%;
+		text-align: center;
+	}
+	h2 {
+		font-family: Header;
+		font-size: 36px;
+		text-align: center;
+		color: white;
+	}
+
+	p {
+	  font-family: BodyMedium;
+	  font-size: 14px;
+	  text-align: center;
+	  color: white;
+	  letter-spacing: 0.1em;
+	  line-height: 1.5em;
+	}
+
+	.tags {
+		margin-bottom: 1em;
+	}
+}
+

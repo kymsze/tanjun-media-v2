@@ -17,11 +17,18 @@
   font-style: normal;
  }
 
-@font-face {
+ @font-face {
   font-family: 'BodyBold';
-  src: url('fonts/FuturaHeavy.eot');
-  src: url('fonts/FuturaHeavy.eot?#iefix') format('embedded-opentype'), url('fonts/FuturaHeavy.woff') format('woff'), url('fonts/FuturaHeavy.ttf') format('truetype');
-  font-weight: 300;
+  src: url('fonts/FuturaLight.eot');
+  src: url('fonts/FuturaLight.eot?#iefix') format('embedded-opentype'), url('fonts/FuturaLight.woff') format('woff'), url('fonts/FuturaLight.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+ }
+
+@font-face {
+  font-family: 'BodyMedium';
+  src: url('fonts/FuturaExtended.eot');
+  src: url('fonts/FuturaExtended.eot?#iefix') format('embedded-opentype'), url('fonts/FuturaExtended.woff') format('woff'), url('fonts/FuturaExtended.ttf') format('truetype');
   font-style: normal;
 }
 
@@ -90,5 +97,6 @@ $on-laptop:        1440px;
         "layout",
         "syntax-highlighting",
         "buttons",
-        "fonts"
+        "fonts",
+        "work"
 ;

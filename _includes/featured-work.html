@@ -1,4 +1,4 @@
-<div class="section-header">
+<div class="section-header" id="border-top-trigger">
 	
 	<h1 class="page-heading">featured work</h1>
 
@@ -6,22 +6,44 @@
 
 <div class="section">
 
+	<p class="section-description">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
+	</p>
+
+
 	{% for work in site.work %}
 
 	  {% if work.featured == true %}
 
-	    <img src="{{work.logo}}">
+			<div class="work work-feature"> 
+				<a class="post-link" href="{{ work.url | prepend: site.baseurl }}">
+			    <img src="{{work.logo}}">
 
-	    <h2>
-	     	<a class="post-link" href="{{ work.url | prepend: site.baseurl }}">{{ work.title }}</a>
-	    </h2>
 
-	    {% for service in work.services %}
-	      <p>{{ service }}</p>
-	    {% endfor %}
+			    <div class="work-details">
+
+				    <div class="tags">
+					    {% for service in work.services %}
+					      <div class="tag">{{ service }}</div>
+					    {% endfor %}
+				    </div>
+
+				    <h2>
+				     	{{ work.title }}
+				    </h2>
+
+				    <p>{{ work.description }}</p>
+			    </div>
+
+		    </a>
+			</div>
 
 	  {% endif %}
 
 	{% endfor %}
+
+	<a class="btn btn_white" href="http://www.google.com">
+		<p>see more</p>
+	</a>
 
 </div>	
