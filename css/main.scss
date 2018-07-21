@@ -3,30 +3,69 @@
 
 @charset "utf-8";
 
+@font-face {
+  font-family: 'Feature';
+  src: url('fonts/SNNeoNoire-Regular.eot');
+  src: url('fonts/SNNeoNoire-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/SNNeoNoire-Regular.woff'), url('fonts/SNNeoNoire-Regular.ttf');
+}
 
+@font-face {
+  font-family: 'Body';
+  src: url('fonts/FuturaLight.eot');
+  src: url('fonts/FuturaLight.eot?#iefix') format('embedded-opentype'), url('fonts/FuturaLight.woff') format('woff'), url('fonts/FuturaLight.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+ }
+
+@font-face {
+  font-family: 'BodyBold';
+  src: url('fonts/FuturaHeavy.eot');
+  src: url('fonts/FuturaHeavy.eot?#iefix') format('embedded-opentype'), url('fonts/FuturaHeavy.woff') format('woff'), url('fonts/FuturaHeavy.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Header';
+  src: url('fonts/SerifGothicBQ-Heavy.eot');
+  src: url('fonts/SerifGothicBQ-Heavy.eot?#iefix') format('embedded-opentype'), url('fonts/SerifGothicBQ-Heavy.woff') format('woff'), url('fonts/SerifGothicBQ-Heavy.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HeaderLight';
+  src: url('fonts/SerifGothicBold.eot');
+  src: url('fonts/SerifGothicBold.eot?#iefix') format('embedded-opentype'), url('fonts/SerifGothicBold.woff') format('woff'), url('fonts/SerifGothicBold.ttf') format('truetype');
+  font-style: normal;
+}
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
+$base-font-family: "Body", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   14px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+$base-font-weight: 400;
+
+$pink-color: #FF52BB;
+$blue-color: #256EFF;
+$darkblue-color: #003CB3;
+$grey-color: #4A4A4A;
+$purple-color: #BF00FF;
+
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
 
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$background-color: white;
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1400px;
 
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        1400px;
 
 
 
@@ -49,5 +88,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "buttons"
 ;

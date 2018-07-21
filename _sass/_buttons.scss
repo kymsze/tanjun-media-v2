@@ -1,0 +1,52 @@
+.btn {
+    display: block;
+
+    p {
+        font-family: Header;
+        letter-spacing: 1.5px;
+        display: inline-block;
+        padding: 0.5em 1.5em;
+        text-shadow: none;
+        text-transform: uppercase;
+        font-weight: 900;
+        position: relative;
+        line-height: 1;
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transform: translate(-15%, -12%);
+            z-index: -1;
+        }
+    }
+}
+
+.btn_white {
+
+	p {
+        background-color: white;
+        border: solid 1px $pink-color;
+        color: $pink-color;
+
+        &:before {
+            border: 1px solid $pink-color;
+            background-color: white;
+        }
+    }
+    
+}
+
+.btn_invert {
+	p {
+        background-color: $pink-color;
+        border: solid 1px white;
+        color: white;
+
+        &:before {
+            border: 1px solid white;
+            background-color: $pink-color;
+        }
+    }
+}
