@@ -4,24 +4,12 @@ layout: default
 
 <div class="home">
 
-  <div class="full-wrapper">
+  <div class="full-screen-wrapper">
     {% include hero.html %}
   </div>
 
-  <div class="wrapper">
-    <h1 class="page-heading">Posts</h1>
-
-    <ul class="post-list">
-      {% for work in site.work %}
-        <li>
-          <!-- <span class="post-meta">{{ work.title }}</span> -->
-
-          <h2>
-            <a class="post-link" href="{{ work.url | prepend: site.baseurl }}">{{ work.title }}</a>
-          </h2>
-        </li>
-      {% endfor %}
-    </ul>   
+  <div class="wrapper wrapper-wide">
+    {% include featured-work.html %}
   </div>
 
 

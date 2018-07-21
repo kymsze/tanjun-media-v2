@@ -62,10 +62,10 @@ $text-color:       #111;
 $background-color: white;
 
 // Width of the content area
-$content-width:    1400px;
+$content-width:    1440px;
 
 $on-palm:          600px;
-$on-laptop:        1400px;
+$on-laptop:        1440px;
 
 
 
@@ -89,5 +89,6 @@ $on-laptop:        1400px;
         "base",
         "layout",
         "syntax-highlighting",
-        "buttons"
+        "buttons",
+        "fonts"
 ;

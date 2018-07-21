@@ -37,6 +37,48 @@
  * ---------------------------------------   Grid  --------------------------------------*
  */
 
+.wrapper {
+    position: relative;
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+.wrapper-wide {
+    position: relative;
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} / 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} / 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+.full-screen-wrapper {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    z-index: 95;
+}
 
 col-wrapper {
     @extend %clearfix;
@@ -110,7 +152,7 @@ col-wrapper {
 
 #left, #right {
     top: 0; bottom: 0;
-    width: 15px;
+    width: calc(#{$spacing-unit} / 2);
 }
 
 #left { 
@@ -123,7 +165,7 @@ col-wrapper {
         
 #top, #bottom {
     left: 0; right: 0;
-    height: 15px;
+    height: calc(#{$spacing-unit} / 2);
 }
 
 #top { 
@@ -144,13 +186,26 @@ col-wrapper {
  * ---------------------------------------   Other  --------------------------------------*
  */
 
-.full-wrapper {
-    width: 100%;
-    position: relative;
-    height: 100vh;
-    z-index: 95;
+.section {
+    width: 100%
 }
 
+.section-header {
+    width: 100%;
+    background-color: $pink-color;
+    height: 12em;
+    position: relative;
+    h1 {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 79%;
+        vertical-align: baseline;
+    }
+}
 
 .full-media {
     height: 100vh;
@@ -163,14 +218,15 @@ col-wrapper {
     #vid {
         -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
         filter: grayscale(20%);
-        width: 100%;
+        min-width: 100%;
     }
 }
 
 .hero-content {
-    z-index: 100;
     position: absolute;
-    top: 30vh;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
     width: 100%;
     text-align: center;
 
@@ -200,6 +256,3 @@ col-wrapper {
 
 
 
-.wrapper {
-    position: relative;
-}

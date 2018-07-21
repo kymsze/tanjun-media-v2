@@ -1,0 +1,27 @@
+<div class="section-header">
+	
+	<h1 class="page-heading">featured work</h1>
+
+</div>
+
+<div class="section">
+
+	{% for work in site.work %}
+
+	  {% if work.featured == true %}
+
+	    <img src="{{work.logo}}">
+
+	    <h2>
+	     	<a class="post-link" href="{{ work.url | prepend: site.baseurl }}">{{ work.title }}</a>
+	    </h2>
+
+	    {% for service in work.services %}
+	      <p>{{ service }}</p>
+	    {% endfor %}
+
+	  {% endif %}
+
+	{% endfor %}
+
+</div>	
