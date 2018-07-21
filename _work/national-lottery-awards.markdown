@@ -6,7 +6,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laor
   accumsan tempus. Nullam magna justo, porttitor vitae mi maximus, pellentesque tristique
   ex. Vivamus aliquet ipsum.
 client: team gb
-featured: false
+featured: true
 services:
 - digital campaigns
 - CONCEPTS & CREATIVES
