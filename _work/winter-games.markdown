@@ -14,5 +14,6 @@ service:
 - VFX
 - COLOUR GRADE
 - EQUIPMENT HIRE
+featured: true
 ---
 
