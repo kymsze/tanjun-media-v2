@@ -22,5 +22,18 @@ $( document ).ready(function() {
 			}
 		});
 	})
+// VID HOVER
+	$(function() {
+		var figure = $(".video-wrapper").hover( hoverVideo, hideVideo );
 
+		function hoverVideo(e) {  
+		    $('video', this).get(0).play(); 
+		    $('video', this).removeClass('video-filter');
+		}
+
+		function hideVideo(e) {
+		    $('video', this).get(0).pause(); 
+		    $('video', this).addClass('video-filter');
+		}
+	});
 });
