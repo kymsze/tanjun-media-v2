@@ -27,5 +27,5 @@ url: http://www.tanjunmedia.com
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
-gems:
+plugins:
   - github-pages
