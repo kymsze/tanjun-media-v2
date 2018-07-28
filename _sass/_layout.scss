@@ -209,9 +209,10 @@ col-wrapper {
         min-height: 100%;
         min-width: 100%;
         width: auto;
-        height: auto;
-        overflow: hidden;
-        align: center;
+        height: 102vh;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
 

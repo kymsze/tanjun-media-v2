@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="page-content" id="barba-wrapper">
+      <div class="barba-container">
+
+	    {% include border.html %}
+
+	    {% include header.html %}
+
+		<video id="vid" poster="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/winter-games/hero.jpg" preload="none" loop="" muted="" playsinline="" autoplay="autoplay">
+			<source id="mp4" src="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/winter-games/reel.mp4" type="video/mp4">
+			<source id="webm" src="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/winter-games/reel.webm" type="video/webm">
+			<source src="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/winter-games/reel.ogv" type="video/ogg"></source>
+		</video>
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

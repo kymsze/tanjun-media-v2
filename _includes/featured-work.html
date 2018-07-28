@@ -16,7 +16,7 @@
 	  {% if work.featured == true %}
 
 			<div class="work work-feature"> 
-				<a class="post-link" href="{{ work.url | prepend: site.baseurl }}">
+				<a href="{{ work.url | prepend: site.baseurl }}">
 					
 					<div class="video-wrapper">
 						<video class="video-filter" poster="{{work.video}}hero.jpg" preload="none" loop="" muted="" playsinline="" >
@@ -52,6 +52,7 @@
 
 					    <p>{{ work.description }}</p>
 				    </div>
+
 					</div>
 
 		    </a>
@@ -61,7 +62,7 @@
 
 	{% endfor %}
 
-	<a class="btn btn_white" href="http://www.google.com">
+	<a class="btn btn_white" href="/about">
 		<p>see more</p>
 	</a>
 
