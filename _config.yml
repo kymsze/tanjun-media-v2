@@ -28,4 +28,4 @@ twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
 plugins:
-  - github-pages
+- github-pages
