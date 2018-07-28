@@ -57,6 +57,7 @@
     @extend %clearfix;
     border-right: calc(#{$spacing-unit} / 2) solid $pink-color;
     border-left: calc(#{$spacing-unit} / 2) solid $pink-color;
+    background-color: $pink-color;
 
     @include media-query($on-laptop) {
         padding-right: 0;
