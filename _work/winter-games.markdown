@@ -15,6 +15,5 @@ service:
 - EDITING
 - VFX
 - COLOUR GRADE
-featured: true
 ---
 
