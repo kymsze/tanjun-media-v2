@@ -1,0 +1,27 @@
+.blue {
+	.section-header {
+		background-color: $blue-color;
+	}
+
+	#left, #right, #top, #bottom {
+		background: $blue-color;
+	}
+
+	.wrapper-wide {
+		border-right: calc(30px / 2) solid $blue-color;
+	    border-left: calc(30px / 2) solid $blue-color;
+    }
+
+    .section-description {
+		color: $blue-color;
+    }
+
+    .tag {
+    	background-color: $blue-color;
+    }
+
+	.video-filter{
+	    -webkit-filter: url(#bluefill); /* Safari 6.0 - 9.0 */
+		filter: url(#bluefill);
+	}
+}

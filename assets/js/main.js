@@ -4,6 +4,7 @@ $( document ).ready(function() {
 // BORDER
 	function borders() {
 		var sectionTop = $('#border-top-trigger').offset().top;
+
 		$('#top').hide();
 		$('#bottom').hide();
 		$(window).scroll(function() {
@@ -71,8 +72,8 @@ $( document ).ready(function() {
     Barba.Pjax.start();
 
     Barba.Dispatcher.on('newPageReady', function() {
-		videoHover();
 		borders();
+		videoHover();
 	});
 
 });
