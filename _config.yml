@@ -11,7 +11,7 @@ collections:
   work:
     title: Work
     output: true
-    permalink: "/work/:path/"
+    permalink: "/tanjun-media-v2/work/:path/"
   clients:
     title: clients
     output: false
