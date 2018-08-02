@@ -42,7 +42,9 @@
 
 					    <div class="tags">
 						    {% for service in work.service %}
-						      <div class="tag">{{ service }}</div>
+							    <div class="tag-wrapper" >
+							      <div class="tag"><p>{{ service }}</p></div>
+							  </div>
 						    {% endfor %}
 					    </div>
 
@@ -50,7 +52,7 @@
 					     	{{ work.title }}
 					    </h2>
 
-					    <p>{{ work.description }}</p>
+					    <p class="work-description">{{ work.description }}</p>
 				    </div>
 
 					</div>

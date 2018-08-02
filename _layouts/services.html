@@ -1,5 +1,4 @@
 ---
-permalink: "/work/index.html"
 layout: default-blue
 ---
 
@@ -14,8 +13,8 @@ layout: default-blue
 
 		{% include filters.html %}
 
-		{% for work in site.work %}
-
+		{% assign works = site.work | where: 'service', page.title %}
+		{% for work in works %}
 
 				<div class="work work-feature"> 
 					<a href="{{ work.url | prepend: site.baseurl }}">
@@ -44,9 +43,7 @@ layout: default-blue
 
 						    <div class="tags">
 							    {% for service in work.service %}
-							    <div class="tag-wrapper" >
-							    	<div class="tag"><p>{{ service }}</p></div>
-								</div>
+							      <div class="tag">{{ service }}</div>
 							    {% endfor %}
 						    </div>
 
@@ -54,7 +51,7 @@ layout: default-blue
 						     	{{ work.title }}
 						    </h2>
 
-						    <p class="work-description">{{ work.description }}</p>
+						    <p>{{ work.description }}</p>
 					    </div>
 
 						</div>

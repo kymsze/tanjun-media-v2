@@ -102,9 +102,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 * <![endif]-->
 */
 /** ---------------------------------------   Other  --------------------------------------* */
-.section { width: 100%; background-color: white; text-align: center; max-width: -webkit-calc(1440px - (30px * 2)); max-width: calc(1440px - (30px * 2)); margin-right: auto; margin-left: auto; }
+.section { width: 100%; background-color: white; text-align: center; max-width: -webkit-calc(1440px - (30px)); max-width: calc(1440px - (30px)); margin-right: auto; margin-left: auto; }
 
-.section-header { width: 100%; background-color: #FF52BB; height: 10em; position: relative; max-width: -webkit-calc(1440px - (30px * 2)); max-width: calc(1440px - (30px * 2)); margin-right: auto; margin-left: auto; }
+.section-header { width: 100%; background-color: #FF52BB; height: 10em; position: relative; max-width: -webkit-calc(1440px - (30px)); max-width: calc(1440px - (30px)); margin-right: auto; margin-left: auto; }
 .section-header h1 { padding: 0; margin: 0; position: absolute; bottom: 0; width: 100%; text-align: center; line-height: 79%; vertical-align: baseline; }
 
 .full-media { top: 0; bottom: 0; position: fixed; width: 100%; }
@@ -115,6 +115,8 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .hero-content p { font-family: HeaderLight; font-size: 16px; font-style: normal; font-stretch: normal; line-height: 2.5; letter-spacing: 0.5px; text-align: center; color: #ffffff; text-shadow: 0 1px 1px black; padding: 1.5em 0; }
 
 .site-header { position: fixed; z-index: 100; width: 100%; }
+
+.filters { text-align: left; }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
@@ -189,11 +191,23 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .btn_invert p { background-color: #FF52BB; border: solid 1px white; color: white; }
 .btn_invert p:before { border: 1px solid white; background-color: #FF52BB; }
 
+.tag { font-family: HeaderLight; font-size: 10px; text-align: center; color: #ffffff; background-color: #FF52BB; display: inline-block; padding: 0.2em 1.5em; text-transform: uppercase; letter-spacing: 0.1em; text-decoration: none; border: 2px solid #FF52BB; width: 11em; min-height: 2.1em; vertical-align: top; line-height: 11px; }
+.tag:visited { color: white; }
+.tag:hover { color: white; text-decoration: none; }
+.tag:active { color: white; }
+
+.tag { display: table; }
+.tag p { display: table-cell; vertical-align: middle; }
+
+.tag-wrapper { display: inline-block; width: 10em; margin: 0 1em; }
+
+.tag_inverted { color: #FF52BB; background-color: white; border: 2px solid #FF52BB; }
+
+work .tags { margin-bottom: 1em; }
+
 h1 { width: 293px; font-family: HeaderLight; font-size: 48px; color: white; }
 
 .section-description { padding: 0 30%; font-family: Body; font-size: 14px; letter-spacing: 1px; text-align: center; color: #FF52BB; padding-top: 5em; }
-
-.tag { font-family: HeaderLight; font-size: 10px; text-align: center; color: #ffffff; background-color: #FF52BB; max-width: 15em; display: inline-block; padding: 0.4em 1.5em; margin: 0.5em; text-transform: uppercase; letter-spacing: 0.1em; }
 
 .work { position: relative; }
 .work .video-wrapper { height: 30em; overflow: hidden; margin: 3em 0; position: relative; }
@@ -201,12 +215,12 @@ h1 { width: 293px; font-family: HeaderLight; font-size: 48px; color: white; }
 .work .video-filter { -webkit-filter: url(#pinkfill); /* Safari 6.0 - 9.0 */ filter: url(#pinkfill); }
 .work .work-details { position: absolute; padding: 0 20%; top: 20%; text-align: center; }
 .work h2 { font-family: Header; font-size: 36px; text-align: center; color: white; }
-.work p { font-family: BodyMedium; font-size: 16px; text-align: center; color: white; letter-spacing: 0.1em; line-height: 1.5em; text-shadow: 0 1px 1px black; }
-.work .tags { margin-bottom: 1em; }
+.work .work-description { font-family: BodyMedium; font-size: 16px; text-align: center; color: white; letter-spacing: 0.1em; line-height: 1.5em; text-shadow: 0 1px 1px black; }
 
 .blue .section-header { background-color: #256EFF; }
 .blue #left, .blue #right, .blue #top, .blue #bottom { background: #256EFF; }
 .blue .wrapper-wide { border-right: calc(30px / 2) solid #256EFF; border-left: calc(30px / 2) solid #256EFF; }
 .blue .section-description { color: #256EFF; }
-.blue .tag { background-color: #256EFF; }
+.blue .tag { background-color: #256EFF; border: 2px solid #256EFF; }
+.blue .tag_inverted { color: #256EFF; border: 2px solid #256EFF; background-color: white; }
 .blue .video-filter { -webkit-filter: url(#bluefill); /* Safari 6.0 - 9.0 */ filter: url(#bluefill); }

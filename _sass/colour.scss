@@ -18,6 +18,13 @@
 
     .tag {
     	background-color: $blue-color;
+	    border: 2px solid $blue-color;
+    }
+
+    .tag_inverted {
+    	color: $blue-color;
+    	border: 2px solid $blue-color;
+    	background-color: white;
     }
 
 	.video-filter{

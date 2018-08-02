@@ -51,3 +51,61 @@
         }
     }
 }
+
+.tags {
+}
+
+.tag {
+    font-family: HeaderLight;
+    font-size: 10px;
+    text-align: center;
+    color: #ffffff;
+    background-color: $pink-color;
+    display: inline-block;
+    padding: 0.2em 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    border: 2px solid $pink-color;
+    width: 11em;
+    min-height: 2.1em;
+    vertical-align: top;
+    line-height: 11px;
+
+    &:visited {
+        color: white;
+    }
+    &:hover {
+        color: white;   
+        text-decoration: none;
+    }
+    &:active {
+        color: white;
+    }
+}
+
+.tag {
+    display: table;
+    p {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+.tag-wrapper {
+    display: inline-block;
+    width: 10em;
+    margin: 0 1em;
+}
+
+.tag_inverted {
+    color: $pink-color;
+    background-color: white;
+    border: 2px solid $pink-color;
+}
+
+work {
+    .tags {
+        margin-bottom: 1em;
+    }
+}

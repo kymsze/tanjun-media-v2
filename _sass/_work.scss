@@ -6,11 +6,12 @@
 		margin: 3em 0;		
 		position: relative;
 	}
+
 	video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+	    width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+	}
 
 	.video-filter{
 	    -webkit-filter: url(#pinkfill); /* Safari 6.0 - 9.0 */
@@ -30,7 +31,7 @@
 		color: white;
 	}
 
-	p {
+	.work-description {
 	  font-family: BodyMedium;
 	  font-size: 16px;
 	  text-align: center;
@@ -38,10 +39,6 @@
 	  letter-spacing: 0.1em;
 	  line-height: 1.5em;
 	  text-shadow: 0 1px 1px black;
-	}
-
-	.tags {
-		margin-bottom: 1em;
 	}
 }
 

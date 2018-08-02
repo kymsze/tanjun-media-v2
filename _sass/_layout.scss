@@ -169,8 +169,8 @@ col-wrapper {
     width: 100%;
     background-color: white;
     text-align: center;
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     margin-right: auto;
     margin-left: auto;
 }
@@ -180,8 +180,8 @@ col-wrapper {
     background-color: $pink-color;
     height: 10em;
     position: relative;    
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     margin-right: auto;
     margin-left: auto;
     h1 {
@@ -246,5 +246,7 @@ col-wrapper {
     width: 100%;
 }
 
-
+.filters {
+    text-align: left;
+}
 
