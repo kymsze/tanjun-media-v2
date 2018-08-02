@@ -65,11 +65,11 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .site-nav .page-link:not(:last-child) { margin-right: 20px; }
 
 /** ---------------------------------------   Grid  --------------------------------------* */
-.wrapper { position: relative; max-width: -webkit-calc(1440px - (30px * 2)); max-width: calc(1440px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
-@media screen and (max-width: 1440px) { .wrapper { max-width: -webkit-calc(1440px - (30px)); max-width: calc(1440px - (30px)); padding-right: 15px; padding-left: 15px; } }
+.wrapper { position: relative; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 1440px) { .wrapper { padding-right: 15px; padding-left: 15px; } }
 
-.wrapper-wide { z-index: 96; position: relative; max-width: -webkit-calc(1440px - (30px / 2)); max-width: calc(1440px - (30px / 2)); margin-right: auto; margin-left: auto; padding-right: 0; padding-left: 0; border-right: calc(30px / 2) solid #FF52BB; border-left: calc(30px / 2) solid #FF52BB; }
-@media screen and (max-width: 1440px) { .wrapper-wide { max-width: -webkit-calc(1440px - (30px)); max-width: calc(1440px - (30px)); padding-right: 0; padding-left: 0; } }
+.wrapper-wide { z-index: 96; position: relative; padding-right: 0; padding-left: 0; border-right: calc(30px / 2) solid #FF52BB; border-left: calc(30px / 2) solid #FF52BB; background-color: #FF52BB; }
+@media screen and (max-width: 1440px) { .wrapper-wide { padding-right: 0; padding-left: 0; } }
 
 .full-screen-wrapper { width: 100%; position: relative; height: 100vh; z-index: 95; }
 
@@ -102,9 +102,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 * <![endif]-->
 */
 /** ---------------------------------------   Other  --------------------------------------* */
-.section { width: 100%; background-color: white; text-align: center; }
+.section { width: 100%; background-color: white; text-align: center; max-width: -webkit-calc(1440px - (30px * 2)); max-width: calc(1440px - (30px * 2)); margin-right: auto; margin-left: auto; }
 
-.section-header { width: 100%; background-color: #FF52BB; height: 10em; position: relative; }
+.section-header { width: 100%; background-color: #FF52BB; height: 10em; position: relative; max-width: -webkit-calc(1440px - (30px * 2)); max-width: calc(1440px - (30px * 2)); margin-right: auto; margin-left: auto; }
 .section-header h1 { padding: 0; margin: 0; position: absolute; bottom: 0; width: 100%; text-align: center; line-height: 79%; vertical-align: baseline; }
 
 .full-media { top: 0; bottom: 0; position: fixed; width: 100%; }
