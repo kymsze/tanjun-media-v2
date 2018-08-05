@@ -10,6 +10,7 @@
 	.wrapper-wide {
 		border-right: calc(30px / 2) solid $blue-color;
 	    border-left: calc(30px / 2) solid $blue-color;
+	    background-color: $blue-color;
     }
 
     .section-description {
@@ -30,5 +31,9 @@
 	.video-filter{
 	    -webkit-filter: url(#bluefill); /* Safari 6.0 - 9.0 */
 		filter: url(#bluefill);
+	}
+
+	h3 {
+	    color: $blue-color;
 	}
 }

@@ -1,0 +1,125 @@
+/* variables */
+:root {
+  --black: #000;
+  --white: #fff;
+  --color-1: #000;
+  --gutter: 2rem;
+  /* this value is going to be changed by javascript */
+  --replace-offset: 50%;
+  --replace-offset-2: calc((100% - var(--replace-offset) ) * -1)
+}
+
+/* set image position */
+/*img {
+  vertical-align: bottom;
+}*/
+
+/* Sticky Footer */
+/*.body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+}*/
+
+/*.footer {
+  padding: calc(var(--gutter) * .5);
+  background-color: var(--black);
+  color: var(--white);
+}*/
+
+/* without fixed header this makes no sense */
+/*.header {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  padding: calc(var(--gutter) * .5);
+  text-align: center;
+}*/
+
+.logo {
+  display: inline-block;
+  width: 2em;
+  padding: 1em 0.5em;
+  font-size: 2em;
+}
+
+.logo--invert {
+}
+
+.hamburger-box {
+	display: grid;
+}
+
+/*.section {
+  border: 1px solid;
+  padding-top: var(--gutter);
+  padding-bottom: var(--gutter);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}*/
+
+/*.section--bg {
+  background-color: var(--color-1);
+}*/
+
+/**
+  This is the interesting part
+**/
+
+/* align content above each other without absolute */
+.js-replace {
+  display: grid;
+}
+
+.js-replace__item {
+  grid-row: -1 / 1;
+  grid-column: -1 / 1; 
+  overflow: hidden;
+  will-change: transform;
+}
+
+/* item to replace with */
+.js-replace__item {
+  transform: translateY(calc(var(--replace-offset) * 1));  
+}
+.js-replace__content {
+  /* fixes problem with calculating correct height in js */
+  border: 1px solid transparent; 
+  will-change: transform;
+
+  transform: translateY(calc(var(--replace-offset) * -1));
+}
+
+/* previous replace item*/
+.js-replace__item--active {
+  transform: translateY(calc(var(--replace-offset-2) * 1));  
+}
+.js-replace__item--active .js-replace__content {
+  transform: translateY(calc(var(--replace-offset-2) * -1));  
+}
+
+
+/* REVERSE ANIMATION */
+.js-replace--reverse 
+.js-replace__item {
+  transform: translateY(calc(var(--replace-offset-2) * 1));  
+}
+.js-replace--reverse 
+.js-replace__content {
+  transform: translateY(calc(var(--replace-offset-2) * -1));
+}
+
+/* previous replace item*/
+.js-replace--reverse 
+.js-replace__item--active {
+  transform: translateY(calc(var(--replace-offset) * 1));  
+}
+.js-replace--reverse 
+.js-replace__item--active .js-replace__content {
+  transform: translateY(calc(var(--replace-offset) * -1));
+}

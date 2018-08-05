@@ -3,63 +3,19 @@ layout: default-blue
 ---
 
 <div class="wrapper wrapper-wide">
-	<div class="section-header" id="border-top-trigger">
-		
-		<h1 class="page-heading">our work</h1>
+	{% include section-header.html title="our work" %}
 
-	</div>
 
 	<div class="section">
 
-		{% include filters.html %}
+		<div class="filters">
+			{% include filters-client.html %}
+			{% include filters-service.html %}
+		</div>
 
 		{% assign works = site.work | where: 'client', page.title %}
 		{% for work in works %}
-
-				<div class="work work-feature"> 
-					<a href="{{ work.url | prepend: site.baseurl }}">
-						
-						<div class="video-wrapper">
-							<video class="video-filter" poster="{{work.video}}hero.jpg" preload="none" loop="" muted="" playsinline="" >
-								<source id="mp4" src="{{ work.video }}reel.mp4" type="video/mp4">
-								<source id="webm" src="{{ work.video }}reel.webm" type="video/webm">
-								<source src="{{ work.video }}reel.ogv" type="video/ogg"></source>
-							</video>
-
-							<svg id='image' version="1.1" xmlns="http://www.w3.org/2000/svg">
-								<defs>
-									<filter id="bluefill" x="0%" y="0%" width="100%" height="100%">
-								    <feColorMatrix
-								      type="matrix"
-								      values="0 1 0 0 0
-								              0 1 0 0 0
-								              0 1 0.3 0 0
-								              0 1 0 3 5 "/>
-									</filter>
-								</defs>
-							</svg>
-
-					    <div class="work-details">
-
-						    <div class="tags">
-							    {% for service in work.service %}
-							      <div class="tag">{{ service }}</div>
-							    {% endfor %}
-						    </div>
-
-						    <h2>
-						     	{{ work.title }}
-						    </h2>
-
-						    <p>{{ work.description }}</p>
-					    </div>
-
-						</div>
-
-			    </a>
-				</div>
-
-
+			{% include work-block.html %}
 		{% endfor %}
 
 		<a class="btn btn_white" href="/work">

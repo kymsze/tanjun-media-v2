@@ -67,21 +67,10 @@
     letter-spacing: 0.1em;
     text-decoration: none;
     border: 2px solid $pink-color;
-    width: 11em;
-    min-height: 2.1em;
+    width: 13.5em;
+    min-height: 3em;
     vertical-align: top;
     line-height: 11px;
-
-    &:visited {
-        color: white;
-    }
-    &:hover {
-        color: white;   
-        text-decoration: none;
-    }
-    &:active {
-        color: white;
-    }
 }
 
 .tag {
@@ -94,14 +83,23 @@
 
 .tag-wrapper {
     display: inline-block;
-    width: 10em;
-    margin: 0 1em;
+    width: 12em;
+    margin: 0.5em 1em;
 }
 
 .tag_inverted {
     color: $pink-color;
     background-color: white;
     border: 2px solid $pink-color;
+}
+
+.tag-small {
+    width: auto;
+    min-width: 5em;
+    padding: 0.6em 1em; 
+    min-height: auto;
+    display: inline-block;
+    margin: 0.2em;
 }
 
 work {

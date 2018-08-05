@@ -4,14 +4,75 @@ layout: default
 
 <div class="home">
 
+	<!--   HERO   -->
+
   <div class="full-screen-wrapper">
     {% include hero.html %}
   </div>
+
+  
+	<!--   WORK   -->
 
   <div class="wrapper wrapper-wide">
     {% include featured-work.html %}
   </div>
 
+  
+	<!--   GET IN TOUCH   -->
 
+	{% include get-in-touch.html %}
+
+	<!--   SERVICES   -->
+
+
+  <div class="wrapper wrapper-wide">
+
+		{% include section-header.html title="services" %}
+
+		<div class="section section--bg">
+
+			<p class="section-description">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
+			</p>
+
+
+			<div class="filters">
+				{% include filters-service.html %}
+			</div>
+
+		</div>	
+  </div>
+  
+	<!--   CLIENTS   -->
+
+  <div class="wrapper wrapper-wide">
+		{% include section-header.html title="clients" %}
+
+		<div class="section section--bg">
+
+			<p class="section-description">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
+			</p>
+
+			{% include clients.html %}
+
+		</div>	
+  </div>
+
+  
+	<!--   GET IN TOUCH   -->
+
+	{% include get-in-touch.html %}
+  
+	<!--   SOCIAL   -->
+
+  <div class="wrapper wrapper-wide">
+		{% include section-header.html title="social" %}
+
+		<div class="section section--bg">
+			HI THERE
+
+		</div>	
+  </div>
 
 </div>

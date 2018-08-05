@@ -1,10 +1,16 @@
-h1 {
+h2 {
   width: 293px;
   font-family: HeaderLight;
   font-size: 48px;
   color: white;
+  text-transform: lowercase;
 }
 
+h3 {
+	padding: 1em 1em 0;
+    margin-bottom: 0;
+    color: $pink-color;
+}
 
 .section-description {
 	padding: 0 30%;

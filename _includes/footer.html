@@ -1,34 +1,40 @@
 <footer class="site-footer">
 
-  <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+  <div class="wrapper wrapper-wide">
+    {% include section-header.html title="get in touch" %}
 
-    <div class="col-wrapper">
-      <div class="col col-1">
-        {{ site.title }}
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+
+    <div class="section">
+
+     
+      <div class="col-wrapper">
+        <div class="col col-1">
+          {{ site.title }}
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+
+        <div class="col col-2">
+          {% if site.github_username %}
+            {% include icon-github.html username=site.github_username %}
+          {% endif %}
+
+          {% if site.twitter_username %}
+            {% include icon-twitter.html username=site.twitter_username %}
+          {% endif %}
+        </div>
+
+        <div class="col col-3">
+          <p>Description: {{ site.description }}</p>
+        </div>
+
+        <div class="col col-4">
+          <p>Description: {{ site.description }}</p>
+        </div>
       </div>
 
-      <div class="col col-2">
-        {% if site.github_username %}
-          {% include icon-github.html username=site.github_username %}
-        {% endif %}
-
-        {% if site.twitter_username %}
-          {% include icon-twitter.html username=site.twitter_username %}
-        {% endif %}
-      </div>
-
-      <div class="col col-3">
-        <p>Description: {{ site.description }}</p>
-      </div>
-
-      <div class="col col-4">
-        <p>Description: {{ site.description }}</p>
-      </div>
-    </div>
-
+    </div>  
   </div>
+
 
 </footer>

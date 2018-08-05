@@ -1,10 +1,6 @@
-<div class="section-header" id="border-top-trigger">
-	
-	<h1 class="page-heading">featured work</h1>
+{% include section-header.html title="featured work" %}
 
-</div>
-
-<div class="section">
+<div class="section section--bg">
 
 	<p class="section-description">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
@@ -12,56 +8,9 @@
 
 
 	{% for work in site.work %}
-
 	  {% if work.featured == true %}
-
-			<div class="work work-feature"> 
-				<a href="{{ work.url | prepend: site.baseurl }}">
-					
-					<div class="video-wrapper">
-						<video class="video-filter" poster="{{work.video}}hero.jpg" preload="none" loop="" muted="" playsinline="" >
-							<source id="mp4" src="{{ work.video }}reel.mp4" type="video/mp4">
-							<source id="webm" src="{{ work.video }}reel.webm" type="video/webm">
-							<source src="{{ work.video }}reel.ogv" type="video/ogg"></source>
-						</video>
-
-						<svg id='image' version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<defs>
-								<filter id="pinkfill" x="0%" y="0%" width="100%" height="100%">
-							    <feColorMatrix
-							      type="matrix"
-							      values="0 1 0 0 0
-							              0 1 -0.2 0 0
-							              0 1 0.1 0 0
-							              0 1 0 3 0 "/>
-								</filter>
-							</defs>
-						</svg>
-
-				    <div class="work-details">
-
-					    <div class="tags">
-						    {% for service in work.service %}
-							    <div class="tag-wrapper" >
-							      <div class="tag"><p>{{ service }}</p></div>
-							  </div>
-						    {% endfor %}
-					    </div>
-
-					    <h2>
-					     	{{ work.title }}
-					    </h2>
-
-					    <p class="work-description">{{ work.description }}</p>
-				    </div>
-
-					</div>
-
-		    </a>
-			</div>
-
+		{% include work-block.html %}
 	  {% endif %}
-
 	{% endfor %}
 
 	<a class="btn btn_white" href="/work">
