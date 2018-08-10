@@ -6,20 +6,21 @@ layout: default-blue
 <div class="wrapper wrapper-wide">
 		{% include section-header.html title="our work" %}
 
-	<div class="section">
+	<div class="section section--bg">
 
-		<div class="filters">
-			{% include filters-client.html %}
-			{% include filters-service.html %}
+		<div class="section-inner">
+
+			<div class="filters">
+				{% include filters-client.html %}
+				{% include filters-service.html %}
+			</div>
+
+			{% for work in site.work %}
+				{% include work-block.html %}
+			{% endfor %}
+			
+			{% include button.html link="/work" cta="see more" colour="btn_white" %}
 		</div>
-
-		{% for work in site.work %}
-			{% include work-block.html %}
-		{% endfor %}
-
-		<a class="btn btn_white" href="/work">
-			<p>see more</p>
-		</a>
 
 	</div>	
 </div>

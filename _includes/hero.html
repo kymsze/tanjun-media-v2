@@ -3,6 +3,7 @@
 	<div id="inline" style="background:#fff" class="lity-hide">
 		Inline content
 	</div>
+	<div class="overlay"></div>
 
 	<video id="vid" poster="https://s3.eu-west-2.amazonaws.com/tanjun/hero.jpg" preload="none" loop="" muted="" playsinline="" autoplay="autoplay">
 		<source id="mp4" src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.mp4" type="video/mp4">
@@ -17,14 +18,14 @@
 		<img src="{{ "/assets/img/logo-text.png" | prepend: site.baseurl }}">
 	</div>
 
-	<p>
+	<p class="video-text">
 		We are digital film content creators.
 		<br/>
 		We are digital natives We live and breathe social content.
 		<br/>
 		We make great stuff and tell great stories and we would love to help tell yours.
 	</p>
-	<a class="btn btn_white" data-lity href="//vimeo.com/193598001">
-		<p>play reel</p>
+
+	{% include button.html link="//vimeo.com/193598001" lity="true" cta="play reel" colour="btn_white" %}
 	</a>
 </div>

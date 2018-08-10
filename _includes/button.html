@@ -1,0 +1,13 @@
+{% if include.lity %}
+	<a class="btn {{include.colour}}" data-lity href={{include.link}}>
+		<span class="inner">
+			{{include.cta}}
+		</span>
+	</a>
+{% else %}
+	<a class="btn {{include.colour}}" href={{include.link}}>
+		<span class="inner">
+			{{include.cta}}
+		</span>
+	</a>
+{% endif %}

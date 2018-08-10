@@ -6,21 +6,23 @@ layout: default-blue
 	{% include section-header.html title="our work" %}
 
 
-	<div class="section">
+	<div class="section section--bg">
 
-		<div class="filters">
-			{% include filters-client.html %}
-			{% include filters-service.html %}
+		<div class="section-inner">
+
+			<div class="filters">
+				{% include filters-client.html %}
+				{% include filters-service.html %}
+			</div>
+
+			{% assign works = site.work | where: 'client', page.title %}
+			{% for work in works %}
+				{% include work-block.html %}
+			{% endfor %}
+
+			{% include button.html link="/work" cta="see more" colour="btn_white" %}
 		</div>
 
-		{% assign works = site.work | where: 'client', page.title %}
-		{% for work in works %}
-			{% include work-block.html %}
-		{% endfor %}
-
-		<a class="btn btn_white" href="/work">
-			<p>see more</p>
-		</a>
-
-	</div>	
+	</div>
+		
 </div>

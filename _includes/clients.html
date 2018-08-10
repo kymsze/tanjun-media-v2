@@ -1,5 +1,22 @@
-{% for client in site.clients %}
-	<a class = "" href="{{ client.url }}">
-		<p>{{client.title}}</p>
-	</a>
-{% endfor%}
+{% assign rows = site.clients.size | divided_by: 3.0 | ceil %}
+
+<div class="filters">
+	<div class="col-wrapper">
+
+		{% for i in (1..rows) %}
+			{% assign offset = forloop.index0 | times: 3 %}
+		    
+		    {% for client in site.clients limit:3 offset:offset %}
+				  
+				  <div class="col col-{{forloop.index}}">
+						<a class = "" href="{{ client.url }}">
+							<img src="{{client.logo}}" style="max-width:85%;">
+						</a>
+				  </div>
+		  	
+		  	{% endfor %}
+		  
+		{% endfor %}
+
+	</div>
+</div>

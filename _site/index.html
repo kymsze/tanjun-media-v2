@@ -33,21 +33,19 @@
 
   <div class="wrapper">
 
-<!--     <a class="site-title" href="/">
-      <img src="/assets/img/CombinationMarkV1Pink2.png" style="width:50px; margin: 2em 1em;">
-    </a> -->
-
     <!-- replace content -->
     <div class="header__logo  js-replace">
       <!-- item to replace -->
       <div class="js-replace__item  js-replace__item--active">
         <div class="js-replace__content">
           <div class="logo">
-            <img src="/assets/img/CombinationMarkV1White.png">
+            <a href="/">
+              <img src="/assets/img/CombinationMarkV1White.png">
+            </a>
           </div>
 
           <nav class="site-nav">
-            <button id="nav" class="hamburger hamburger--collapse" type="button">
+            <button class="nav hamburger hamburger--collapse" type="button">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
@@ -62,12 +60,14 @@
       <div class="js-replace__item">
         <div class="js-replace__content">
           <div class="logo logo--invert">
-            <img src="/assets/img/CombinationMarkV1Pink.svg">
+            <a href="/">
+              <img src="/assets/img/CombinationMarkV1Pink2.png">
+            </a>
           </div>
 
           <nav class="site-nav">
-            <button id="nav" class="hamburger hamburger--collapse" type="button">
-              <span class="hamburger-box">
+            <button class="nav hamburger hamburger--collapse" type="button">
+              <span class="hamburger-box hamburger-box-colour">
                 <span class="hamburger-inner"></span>
               </span>
             </button>
@@ -78,10 +78,15 @@
       <!-- end item to replace with -->
     </div>
     <!-- end replace content -->
-
   </div>
 
 </header>
+
+<div class="navigation">
+  <a href="/work">one</a>
+  <a href="/work">two</a>
+  <a href="/work">three</a>
+</div>
 
 
         <div class="home">
@@ -94,6 +99,7 @@
 	<div id="inline" style="background:#fff" class="lity-hide">
 		Inline content
 	</div>
+	<div class="overlay"></div>
 
 	<video id="vid" poster="https://s3.eu-west-2.amazonaws.com/tanjun/hero.jpg" preload="none" loop="" muted="" playsinline="" autoplay="autoplay">
 		<source id="mp4" src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.mp4" type="video/mp4">
@@ -108,15 +114,22 @@
 		<img src="/assets/img/logo-text.png">
 	</div>
 
-	<p>
+	<p class="video-text">
 		We are digital film content creators.
 		<br/>
 		We are digital natives We live and breathe social content.
 		<br/>
 		We make great stuff and tell great stories and we would love to help tell yours.
 	</p>
-	<a class="btn btn_white" data-lity href="//vimeo.com/193598001">
-		<p>play reel</p>
+
+	
+	<a class="btn btn_white" data-lity href=//vimeo.com/193598001>
+		<span class="inner">
+			play reel
+		</span>
+	</a>
+
+
 	</a>
 </div>
   </div>
@@ -130,17 +143,18 @@
 </div>
 
 <div class="section section--bg">
+	<div class="section-inner">
 
-	<p class="section-description">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
-	</p>
+		<p class="section-description">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
+		</p>
 
 
-	
-	  
-	
-	  
-		<div class="work work-feature"> 
+		
+		  
+		
+		  
+			<div class="work work-feature"> 
 	<a href="/work/parkrun/">
 		
 		<div class="video-wrapper">
@@ -206,10 +220,10 @@
 
     </a>
 </div>
-	  
-	
-	  
-		<div class="work work-feature"> 
+		  
+		
+		  
+			<div class="work work-feature"> 
 	<a href="/work/winter-games/">
 		
 		<div class="video-wrapper">
@@ -273,12 +287,18 @@
 
     </a>
 </div>
-	  
-	
+		  
+		
 
-	<a class="btn btn_white" href="/work">
-		<p>see more</p>
+		
+	<a class="btn btn_white" href=/work>
+		<span class="inner">
+			see more
+		</span>
 	</a>
+
+
+	</div>
 
 </div>	
   </div>
@@ -286,18 +306,17 @@
   
 	<!--   GET IN TOUCH   -->
 
-	<!-- <div class="wrapper wrapper-wide">
-	<a class="btn btn_invert" href="/work">
-		<p>see more</p>
-	</a>
-</div> -->
-
-<div class="wrapper wrapper-wide">
+	<div class="wrapper wrapper-wide">
 
 	<div class=" section section-header">
-		<a class="btn btn_invert" href="/work">
-			<p>see more</p>
-		</a>
+		
+	<a class="btn btn_invert" href=/#footer>
+		<span class="inner">
+			get in touch
+		</span>
+	</a>
+
+
 	</div>
 
 </div>
@@ -312,14 +331,15 @@
 </div>
 
 		<div class="section section--bg">
+			<div class="section-inner">
 
-			<p class="section-description">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
-			</p>
+				<p class="section-description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
+				</p>
 
 
-			<div class="filters">
-				
+				<div class="filters">
+					
 
 
 <h3> content </h3>
@@ -447,6 +467,7 @@
 	
 
 </div>
+				</div>
 			</div>
 
 		</div>	
@@ -461,54 +482,100 @@
 
 		<div class="section section--bg">
 
-			<p class="section-description">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
-			</p>
+			<div class="section-inner">
 
+				<p class="section-description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
+				</p>
+
+				
+
+<div class="filters">
+	<div class="col-wrapper">
+
+		
 			
-	<a class = "" href="/work/tag/the-national-lottery/">
-		<p>the national lottery</p>
-	</a>
+		    
+		    
+				  
+				  <div class="col col-1">
+						<a class = "" href="/work/tag/the-national-lottery/">
+							<img src="/uploads/nlpu.png" style="max-width:85%;">
+						</a>
+				  </div>
+		  	
+		  	
+				  
+				  <div class="col col-2">
+						<a class = "" href="/work/tag/team-gb/">
+							<img src="/uploads/teamgb.png" style="max-width:85%;">
+						</a>
+				  </div>
+		  	
+		  	
+				  
+				  <div class="col col-3">
+						<a class = "" href="/work/tag/parkrun/">
+							<img src="/uploads/parkrun.png" style="max-width:85%;">
+						</a>
+				  </div>
+		  	
+		  	
+		  
+		
+			
+		    
+		    
+				  
+				  <div class="col col-1">
+						<a class = "" href="/work/tag/uk-sport/">
+							<img src="/uploads/uksport.png" style="max-width:85%;">
+						</a>
+				  </div>
+		  	
+		  	
+				  
+				  <div class="col col-2">
+						<a class = "" href="/work/tag/british-triathlon/">
+							<img src="/uploads/britishtri.png" style="max-width:85%;">
+						</a>
+				  </div>
+		  	
+		  	
+				  
+				  <div class="col col-3">
+						<a class = "" href="/work/tag/panasonic/">
+							<img src="/uploads/panasonic.png" style="max-width:85%;">
+						</a>
+				  </div>
+		  	
+		  	
+		  
+		
 
-	<a class = "" href="/work/tag/team-gb/">
-		<p>team gb</p>
-	</a>
-
-	<a class = "" href="/work/tag/parkrun/">
-		<p>parkrun</p>
-	</a>
-
-	<a class = "" href="/work/tag/uk-sport/">
-		<p>uk sport</p>
-	</a>
-
-	<a class = "" href="/work/tag/british-triathlon/">
-		<p>british triathlon</p>
-	</a>
-
-	<a class = "" href="/work/tag/panasonic/">
-		<p>panasonic</p>
-	</a>
-
+	</div>
+</div>
+			</div>
 
 		</div>	
-  </div>
+ 
+	</div>
+
 
   
 	<!--   GET IN TOUCH   -->
 
-	<!-- <div class="wrapper wrapper-wide">
-	<a class="btn btn_invert" href="/work">
-		<p>see more</p>
-	</a>
-</div> -->
-
-<div class="wrapper wrapper-wide">
+	<div class="wrapper wrapper-wide">
 
 	<div class=" section section-header">
-		<a class="btn btn_invert" href="/work">
-			<p>see more</p>
-		</a>
+		
+	<a class="btn btn_invert" href=/#footer>
+		<span class="inner">
+			get in touch
+		</span>
+	</a>
+
+
 	</div>
 
 </div>
@@ -521,7 +588,10 @@
 </div>
 
 		<div class="section section--bg">
-			HI THERE
+
+			<div class="section-inner">
+				HI THERE
+			</div>
 
 		</div>	
   </div>

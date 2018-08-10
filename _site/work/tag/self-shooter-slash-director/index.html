@@ -33,21 +33,19 @@
 
   <div class="wrapper">
 
-<!--     <a class="site-title" href="/">
-      <img src="/assets/img/CombinationMarkV1Pink2.png" style="width:50px; margin: 2em 1em;">
-    </a> -->
-
     <!-- replace content -->
     <div class="header__logo  js-replace">
       <!-- item to replace -->
       <div class="js-replace__item  js-replace__item--active">
         <div class="js-replace__content">
           <div class="logo">
-            <img src="/assets/img/CombinationMarkV1White.png">
+            <a href="/">
+              <img src="/assets/img/CombinationMarkV1White.png">
+            </a>
           </div>
 
           <nav class="site-nav">
-            <button id="nav" class="hamburger hamburger--collapse" type="button">
+            <button class="nav hamburger hamburger--collapse" type="button">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
@@ -62,12 +60,14 @@
       <div class="js-replace__item">
         <div class="js-replace__content">
           <div class="logo logo--invert">
-            <img src="/assets/img/CombinationMarkV1Pink.svg">
+            <a href="/">
+              <img src="/assets/img/CombinationMarkV1Pink2.png">
+            </a>
           </div>
 
           <nav class="site-nav">
-            <button id="nav" class="hamburger hamburger--collapse" type="button">
-              <span class="hamburger-box">
+            <button class="nav hamburger hamburger--collapse" type="button">
+              <span class="hamburger-box hamburger-box-colour">
                 <span class="hamburger-inner"></span>
               </span>
             </button>
@@ -78,10 +78,15 @@
       <!-- end item to replace with -->
     </div>
     <!-- end replace content -->
-
   </div>
 
 </header>
+
+<div class="navigation">
+  <a href="/work">one</a>
+  <a href="/work">two</a>
+  <a href="/work">three</a>
+</div>
 
 
         <div class="wrapper wrapper-wide">
@@ -89,10 +94,12 @@
 	<h2 class="page-heading">our work</h2>
 </div>
 
-	<div class="section">
+	<div class="section section--bg">
 
-		<div class="filters">
-			<h3> clients </h3>
+		<div class="section-inner">
+
+			<div class="filters">
+				<h3> clients </h3>
 
 <div class="tags">
 
@@ -147,7 +154,7 @@
 	
 
 </div>
-			
+				
 
 
 <h3> content </h3>
@@ -275,16 +282,23 @@
 	
 
 </div>
+			</div>
+
+			
+			
+
+			
+	<a class="btn btn_white" href=/work>
+		<span class="inner">
+			see more
+		</span>
+	</a>
+
+
 		</div>
 
-		
-		
-
-		<a class="btn btn_white" href="/work">
-			<p>see more</p>
-		</a>
-
 	</div>	
+
 </div>
         
         <footer class="site-footer">

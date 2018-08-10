@@ -16,7 +16,8 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    padding: 2em 1.5em 0 0;
+    max-width: 3em;
 
     .menu-icon {
         display: none;
@@ -30,6 +31,18 @@
         &:not(:last-child) {
             margin-right: 20px;
         }
+    }
+}
+
+.hamburger-box {
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        background-color: white;
+    }
+}
+
+.hamburger-box-colour {
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        background-color: $pink-color;
     }
 }
 
@@ -87,26 +100,26 @@ col-wrapper {
 }
 
 .col-1 {
-    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-    width:         calc(25% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(33.333% - (#{$spacing-unit} / 2));
+    width:         calc(33.333% - (#{$spacing-unit} / 2));
 }
 
 .col-2 {
-    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-    width:         calc(25% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(33.333% - (#{$spacing-unit} / 2));
+    width:         calc(33.333% - (#{$spacing-unit} / 2));
 }
 
 .col-3 {
-    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-    width:         calc(25% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(33.333% - (#{$spacing-unit} / 2));
+    width:         calc(33.333% - (#{$spacing-unit} / 2));
 }
 
 .col-4 {
-    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-    width:         calc(25% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(33.333% - (#{$spacing-unit} / 2));
+    width:         calc(33.333% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
+@include media-query($on-palm) {
     .col-1,
     .col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -120,13 +133,13 @@ col-wrapper {
     }
 }
 
-@include media-query($on-palm) {
+/*@include media-query($on-palm) {
     .col {
         float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
     }
-}
+}*/
 
 
 /**
@@ -169,10 +182,9 @@ col-wrapper {
     width: 100%;
     background-color: white;
     text-align: center;
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     margin-right: auto;
     margin-left: auto;
+    margin: 0 auto;
 }
 
 .section-header {
@@ -180,8 +192,6 @@ col-wrapper {
     background-color: $pink-color;
     height: 10em;
     position: relative;    
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     margin-right: auto;
     margin-left: auto;
     h2 {
@@ -191,10 +201,31 @@ col-wrapper {
         bottom: 0;
         width: 100%;
         text-align: center;
-        line-height: 79%;
         vertical-align: baseline;
 
     }
+}
+.section-description {
+    @extend %contentwrapper;
+    padding-bottom: 1em;
+}
+
+.section-inner {
+    @extend %clearfix;
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+%contentwrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+%contentwrapperwide {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .full-media {
@@ -207,15 +238,30 @@ col-wrapper {
         min-height: 100%;
         min-width: 100%;
         width: auto;
-        height: 102vh;
         position: fixed;
         left: 50%;
         transform: translate(-50%, 0);
     }
 }
 
-.hero-content {
+
+.overlay {
+    background: url("/assets/img/smaller-dot.png") repeat;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.hero-content {
+    position: fixed;
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
@@ -224,19 +270,8 @@ col-wrapper {
 
     .logo-text {
         text-align: center;
-    }
-
-    p {
-        font-family: HeaderLight;
-        font-size: 16px;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 2.5;
-        letter-spacing: 0.5px;
-        text-align: center;
-        color: #ffffff;
-        text-shadow: 0 1px 1px black;
-        padding: 1.5em 0;
+        width: 65%;
+        margin: 0 auto;
     }
 }
 
@@ -247,6 +282,12 @@ col-wrapper {
 }
 
 .filters {
-    text-align: left;
+    text-align: center;
+    @extend %contentwrapperwide;
+    @extend %clearfix;
+
+    h3 {
+        text-align: left;
+    }
 }
 
