@@ -46,6 +46,9 @@ p {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     @extend %contentwrapper;
+    p {
+    	color: white;
+    }
 }
 
 h2 {
@@ -58,7 +61,6 @@ h2 {
 }
 
 h3 {
-	padding: 1em 1em 0;
     margin-bottom: 0;
     color: $pink-color;
 }
@@ -67,6 +69,7 @@ h3 {
     text-shadow: none;
     text-transform: uppercase;
     font-family: Header;
+    letter-spacing: 0.1em;
     .inner { 
         font-size: 1.2em;
     }
@@ -82,10 +85,11 @@ h3 {
 .work {
 	h3 {
 		font-family: Header;
-		font-size: 2em;
+		font-size: 3.5em;
 		line-height: 2em;
 		text-align: center;
 		color: white;
+	    text-shadow: 0 1px 1px black;
 	}
 
 	.work-description {

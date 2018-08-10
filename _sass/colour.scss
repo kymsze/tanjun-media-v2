@@ -29,8 +29,10 @@
     }
 
 	.video-filter{
-	    -webkit-filter: url(#bluefill); /* Safari 6.0 - 9.0 */
-		filter: url(#bluefill);
+/*	    -webkit-filter: url(#bluefill);  Safari 6.0 - 9.0 
+		filter: url(#bluefill);*/
+		  -webkit-filter: saturate(51%) grayscale(9%) hue-rotate(165deg);
+  filter: saturate(51%) grayscale(9%) hue-rotate(165deg);
 	}
 
 	h3 {

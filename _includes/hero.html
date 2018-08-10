@@ -3,9 +3,9 @@
 	<div id="inline" style="background:#fff" class="lity-hide">
 		Inline content
 	</div>
-	<div class="overlay"></div>
+	<!-- <div class="overlay"></div> -->
 
-	<video id="vid" poster="https://s3.eu-west-2.amazonaws.com/tanjun/hero.jpg" preload="none" loop="" muted="" playsinline="" autoplay="autoplay">
+	<video class="hero-filter" id="vid" poster="https://s3.eu-west-2.amazonaws.com/tanjun/hero.jpg" preload="none" loop="" muted="" playsinline="" autoplay="autoplay">
 		<source id="mp4" src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.mp4" type="video/mp4">
 		<source id="webm" src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.webm" type="video/webm">
 		<source src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.ogv" type="video/ogg"></source>
@@ -14,17 +14,17 @@
 
 <div class="hero-content">
 
-	<div class=logo-text>
-		<img src="{{ "/assets/img/logo-text.png" | prepend: site.baseurl }}">
+	<div class="logo-text">
+		<img src="{{ "/assets/img/logo-text-2.png" | prepend: site.baseurl }}" width: "350">
 	</div>
 
-	<p class="video-text">
-		We are digital film content creators.
-		<br/>
-		We are digital natives We live and breathe social content.
-		<br/>
-		We make great stuff and tell great stories and we would love to help tell yours.
-	</p>
+	<div class="video-text">
+		<p>We are digital film content creators.</p>
+		
+		<p>We are digital natives We live and breathe social content.</p>
+		
+		<p>We make great stuff and tell great stories and we would love to help tell yours.</p>
+	</div>
 
 	{% include button.html link="//vimeo.com/193598001" lity="true" cta="play reel" colour="btn_white" %}
 	</a>

@@ -99,9 +99,9 @@
 	<div id="inline" style="background:#fff" class="lity-hide">
 		Inline content
 	</div>
-	<div class="overlay"></div>
+	<!-- <div class="overlay"></div> -->
 
-	<video id="vid" poster="https://s3.eu-west-2.amazonaws.com/tanjun/hero.jpg" preload="none" loop="" muted="" playsinline="" autoplay="autoplay">
+	<video class="hero-filter" id="vid" poster="https://s3.eu-west-2.amazonaws.com/tanjun/hero.jpg" preload="none" loop="" muted="" playsinline="" autoplay="autoplay">
 		<source id="mp4" src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.mp4" type="video/mp4">
 		<source id="webm" src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.webm" type="video/webm">
 		<source src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.ogv" type="video/ogg"></source>
@@ -110,17 +110,17 @@
 
 <div class="hero-content">
 
-	<div class=logo-text>
-		<img src="/assets/img/logo-text.png">
+	<div class="logo-text">
+		<img src="/assets/img/logo-text-2.png" width: "350">
 	</div>
 
-	<p class="video-text">
-		We are digital film content creators.
-		<br/>
-		We are digital natives We live and breathe social content.
-		<br/>
-		We make great stuff and tell great stories and we would love to help tell yours.
-	</p>
+	<div class="video-text">
+		<p>We are digital film content creators.</p>
+		
+		<p>We are digital natives We live and breathe social content.</p>
+		
+		<p>We make great stuff and tell great stories and we would love to help tell yours.</p>
+	</div>
 
 	
 	<a class="btn btn_white" data-lity href=//vimeo.com/193598001>
@@ -164,31 +164,6 @@
 				<source src="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/big-and-bold/reel.ogv" type="video/ogg"></source>
 			</video>
 
-			<svg id='image' version="1.1" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<filter id="bluefill" x="0%" y="0%" width="100%" height="100%">
-				    <feColorMatrix
-				      type="matrix"
-				      values="0 1 0 0 0
-				              0 1 0 0 0
-				              0 1 0.3 0 0
-				              0 1 0 3 5 "/>
-					</filter>
-				</defs>
-			</svg>
-			<svg id='image' version="1.1" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<filter id="pinkfill" x="0%" y="0%" width="100%" height="100%">
-				    <feColorMatrix
-				      type="matrix"
-				      values="0 1 0 0 0
-				              0 1 -0.2 0 0
-				              0 1 0.1 0 0
-				              0 1 0 3 0 "/>
-					</filter>
-				</defs>
-			</svg>
-
 		    <div class="work-details">
 
 			    <div class="tags">
@@ -213,6 +188,10 @@
 			     	winter games
 			    </h3>
 
+			    <div class="tag tag-small">
+			     	team gb
+			    </div>
+
 			    <p class="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. Nullam magna justo, porttitor vitae mi maximus, pellentesque tristique ex. Vivamus aliquet ipsum.</p>
 		    </div>
 
@@ -232,31 +211,6 @@
 				<source id="webm" src="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/big-and-bold/reel.webm" type="video/webm">
 				<source src="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/big-and-bold/reel.ogv" type="video/ogg"></source>
 			</video>
-
-			<svg id='image' version="1.1" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<filter id="bluefill" x="0%" y="0%" width="100%" height="100%">
-				    <feColorMatrix
-				      type="matrix"
-				      values="0 1 0 0 0
-				              0 1 0 0 0
-				              0 1 0.3 0 0
-				              0 1 0 3 5 "/>
-					</filter>
-				</defs>
-			</svg>
-			<svg id='image' version="1.1" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<filter id="pinkfill" x="0%" y="0%" width="100%" height="100%">
-				    <feColorMatrix
-				      type="matrix"
-				      values="0 1 0 0 0
-				              0 1 -0.2 0 0
-				              0 1 0.1 0 0
-				              0 1 0 3 0 "/>
-					</filter>
-				</defs>
-			</svg>
 
 		    <div class="work-details">
 
@@ -279,6 +233,10 @@
 			    <h3>
 			     	parkrun
 			    </h3>
+
+			    <div class="tag tag-small">
+			     	parkrun
+			    </div>
 
 			    <p class="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. Nullam magna justo, porttitor vitae mi maximus, pellentesque tristique ex. Vivamus aliquet ipsum.</p>
 		    </div>

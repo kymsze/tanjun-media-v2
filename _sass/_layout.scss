@@ -214,14 +214,26 @@ col-wrapper {
     @extend %clearfix;
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    margin: 0 auto;
     padding-top: 5em;
     padding-bottom: 5em;
 }
 
 %contentwrapper {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
+
+@include media-query($on-mobile) {
+    %contentwrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+
 
 %contentwrapperwide {
     padding-left: 5%;
@@ -242,6 +254,17 @@ col-wrapper {
         left: 50%;
         transform: translate(-50%, 0);
     }
+}
+
+.hero-filter {
+/*    -webkit-filter: url(#fill);  Safari 6.0 - 9.0 
+    filter: url(#fill);*/
+
+/*  -webkit-filter: saturate(55%) sepia(6%) grayscale(14%) hue-rotate(348deg);
+  filter: saturate(55%) sepia(6%) grayscale(14%) hue-rotate(348deg);*/
+
+  -webkit-filter: saturate(29%) hue-rotate(261deg);
+  filter: saturate(29%) hue-rotate(261deg);
 }
 
 
@@ -272,6 +295,8 @@ col-wrapper {
         text-align: center;
         width: 65%;
         margin: 0 auto;
+        max-width: 350px;
+        margin-bottom: 2em; 
     }
 }
 

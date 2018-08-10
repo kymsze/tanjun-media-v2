@@ -14,8 +14,10 @@
 	}
 
 	.video-filter{
-	    -webkit-filter: url(#pinkfill); /* Safari 6.0 - 9.0 */
-		filter: url(#pinkfill);
+/*	    -webkit-filter: url(#pinkfill);  Safari 6.0 - 9.0 
+		filter: url(#pinkfill);*/
+ -webkit-filter: saturate(51%) grayscale(9%) hue-rotate(283deg);
+  filter: saturate(51%) grayscale(9%) hue-rotate(283deg);
 	}
 
 	.work-details {
@@ -26,3 +28,11 @@
 	}
 }
 
+
+@include media-query($on-mobile) {
+    .work {
+    	.work-details {
+		top: 10%;
+	    }
+    }
+}
