@@ -1,0 +1,72 @@
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  overflow: hidden;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+label {
+	text-align: left;
+  position: relative;
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .25s;
+  -o-transition: max-height .25s;
+  transition: max-height .25s;
+}
+
+.blue .tab-content {
+}
+
+.tab-content p {
+  margin: 1em;
+}
+
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 10em;
+}
+
+/* Icon */
+label::after {
+	font-size: 2em;
+	line-height: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  text-align: center;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+input[type=checkbox] + label::after {
+  content: "+";
+}
+
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}

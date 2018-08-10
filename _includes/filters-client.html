@@ -1,16 +1,16 @@
-<h3> clients </h3>
-
-<div class="tags">
+<div class="col-wrapper">
 
 	{% for client in site.clients %}
-		<div class="tag-wrapper">
+		<div class="col col-4">
 			{% if client.title == page.title %}
-			<a class = "tag " href="{{ client.url }}">
+				<a class= "tag" href="{{ client.url }}">
+					<p>{{client.title}}</p>
+				</a>
 			{% else %}
-			<a class = "tag tag_inverted" href="{{ client.url }}">
+				<a class= "tag tag_inverted" href="{{ client.url }}">
+					<p>{{client.title}}</p>
+				</a>
 			{% endif %}
-				<p>{{client.title}}</p>
-			</a>
 		</div>
 	{% endfor%}
 

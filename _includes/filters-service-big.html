@@ -1,0 +1,20 @@
+{% assign contents = site.services | where: 'type', 'big' %}
+
+<div class="col-wrapper">
+
+
+	{% for content in contents %}
+		<div class="col col-4">
+			{% if content.title == page.title %}
+				<a class = "tag " href="{{ content.url }}">
+					<p>{{content.title}}</p>
+				</a>
+			{% else %}
+				<a class = "tag tag_inverted" href="{{ content.url }}">
+					<p>{{content.title}}</p>
+				</a>
+			{% endif %}
+		</div>
+	{% endfor%}
+
+</div>

@@ -61,34 +61,32 @@
     .tags {
         text-align: left;
     }
+
+    .tag {
+        p {
+            text-align: center;
+        }
+    }
 }
 
 .tag {
     background-color: $pink-color;
     display: inline-block;
-    padding: 0.2em 1.5em;
+    padding: 0.5em 0.5em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     text-decoration: none;
-    border: 2px solid $pink-color;
-    width: 13.5em;
+    border: 2px solid $pink-color;    
+    min-width: 120px;
+    max-width: 250px;
+    width: 75%;
     min-height: 3em;
-    vertical-align: top;
-    line-height: 11px;
-}
-
-.tag {
+    line-height: 0.5em;
     display: table;
     p {
         display: table-cell;
         vertical-align: middle;
     }
-}
-
-.tag-wrapper {
-    display: inline-block;
-    width: 16em;
-    margin: 0.5em 1em;
 }
 
 .tag_inverted {
@@ -112,3 +110,4 @@ work {
         margin-bottom: 1em;
     }
 }
+

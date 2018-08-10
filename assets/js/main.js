@@ -28,8 +28,6 @@ $( document ).ready(function() {
 	borders();
 
 
-
-
 	// HEADER COLOUR SWAP 
 
 	// Detect request animation frame
@@ -161,38 +159,70 @@ $( document ).ready(function() {
 
 
 
+	// CAROUSEL 
+	var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {};
+	var $checkboxes = $(".tab :checkbox");
+
+	function openCarousel() {
+	// 	$.each(checkboxValues, function(key, value) {
+	// 		$("#" + key).prop('checked', value);
+	// 	});
+		
+
+	// 	$(".tab :checkbox").on("change", function(){
+	// 		console.log("The checkbox with the ID '" + this.id + "' changed");
+	// 		console.log(checkboxValues);
+	// 		$(".tab :checkbox").each(function(){
+	// 			checkboxValues[this.id] = this.checked;
+	// 		});
+
+	// 		localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
+	// 	});
+	};
+
+	openCarousel();
+
+
 	// BARBA
 
- //    var transEffect = Barba.BaseTransition.extend({
- //        start: function(){
- //          this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
- //        },
- //        fadeInNewcontent: function(nc) {
- //          nc.hide();
- //          var _this = this;
- //          $(this.oldContainer).fadeOut(100).promise().done(() => {
- //            nc.css('visibility','visible');
- //            nc.fadeIn(100, function(){
- //              _this.done();
- //            })
- //          });
- //        }
- //    });
+    var transEffect = Barba.BaseTransition.extend({
+        oldContainer: function(){
+        },
+        start: function(){
+			$.each(checkboxValues, function(key, value) {
+				$("#" + key).prop('checked', false);
+			});
+			this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+        },
+        fadeInNewcontent: function(nc) {
+			nc.hide();
+			var _this = this;
+			$(this.oldContainer).delay(250).promise().done(() => {
+				nc.css('visibility','visible');
+				nc.fadeIn(300, function(){
+					_this.done();
+				})
+			});
+        }
+    });
 
 
 
-	// Barba.Pjax.getTransition = function() {
-	//     return transEffect;
-	// }
+	Barba.Pjax.getTransition = function() {
+	    return transEffect;
+	}
+
 
     Barba.Pjax.start();
 
     Barba.Dispatcher.on('newPageReady', function() {
+		openCarousel();
 		borders();
 		videoHover();
 		openNav();
 		loop();
 	});
+
 
 
 	// WINDOW RESIZE

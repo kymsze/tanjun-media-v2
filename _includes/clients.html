@@ -8,7 +8,7 @@
 		    
 		    {% for client in site.clients limit:3 offset:offset %}
 				  
-				  <div class="col col-{{forloop.index}}">
+				  <div class="col col-3">
 						<a class = "" href="{{ client.url }}">
 							<img src="{{client.logo}}" style="max-width:85%;">
 						</a>

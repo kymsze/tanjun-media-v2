@@ -85,28 +85,27 @@
     z-index: 95;
 }
 
-col-wrapper {
+.col-wrapper {
     @extend %clearfix;
+    display: inline-block;
+    width: 100%;
+    margin: 1em 0;
 }
 
 .col {
     float: left;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-
-    &:first-of-type {
-        padding-left: 0;
-    }
+    padding-right: $spacing-unit / 2;
 }
 
 .col-1 {
-    width: -webkit-calc(33.333% - (#{$spacing-unit} / 2));
-    width:         calc(33.333% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
 }
 
 .col-2 {
-    width: -webkit-calc(33.333% - (#{$spacing-unit} / 2));
-    width:         calc(33.333% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
 }
 
 .col-3 {
@@ -115,15 +114,15 @@ col-wrapper {
 }
 
 .col-4 {
-    width: -webkit-calc(33.333% - (#{$spacing-unit} / 2));
-    width:         calc(33.333% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+    width:         calc(25% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-palm) {
     .col-1,
     .col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
     }
 
     .col-3,

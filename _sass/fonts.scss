@@ -33,6 +33,14 @@ p {
 	letter-spacing: 1.2px;
 }
 
+label {
+	font-family: Body;
+	color: $pink-color;
+	font-size: 1.1em; 
+	line-height: 1.2em;
+	letter-spacing: 1.2px;
+}
+
 .video-text {
     font-family: HeaderLight;
     font-size: 1.1em;
@@ -51,6 +59,12 @@ p {
     }
 }
 
+.filters {
+	p {
+		text-align: left;
+	}
+}
+
 h2 {
   width: 293px;
   font-family: HeaderLight;
@@ -61,8 +75,20 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 0;
+  	font-family: HeaderLight;
+    margin-bottom: 1em;
     color: $pink-color;
+}
+
+.clear-btn {
+    text-transform: uppercase;
+    font-size: 0.6em;
+    color: white;
+    background: $blue-color;
+    float: right;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    margin: -0.5em 0;
 }
 
 .btn{
@@ -80,6 +106,11 @@ h3 {
     font-size: 0.9em;
     text-align: center;
     color: #ffffff;
+    p {
+	    font-family: HeaderLight;
+	    font-size: 1em;
+	    text-align: center;
+    }
 }
 
 .work {

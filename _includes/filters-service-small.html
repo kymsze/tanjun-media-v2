@@ -1,0 +1,19 @@
+{% assign services = site.services | where: 'type', 'small' %}
+
+<div class="col-wrapper">
+
+	{% for service in services %}
+		<div class="col col-4">
+			{% if service.title == page.title %}
+				<a class = "tag " href="{{ service.url }}">
+					<p>{{service.title}}</p>
+				</a>
+			{% else %}
+				<a class = "tag tag_inverted" href="{{ service.url }}">
+					<p>{{service.title}}</p>
+				</a>
+			{% endif %}
+		</div>
+	{% endfor%}
+
+</div>

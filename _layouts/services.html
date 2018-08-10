@@ -8,18 +8,12 @@ layout: default-blue
 	<div class="section section--bg">
 
 		<div class="section-inner">
-
-			<div class="filters">
-				{% include filters-client.html %}
-				{% include filters-service.html %}
-			</div>
+			{% include filters-block.html %}
 
 			{% assign works = site.work | where: 'service', page.title %}
 			{% for work in works %}
 				{% include work-block.html %}
 			{% endfor %}
-
-			{% include button.html link="/work" cta="see more" colour="btn_white" %}
 		</div>
 
 	</div>	

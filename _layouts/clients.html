@@ -5,22 +5,15 @@ layout: default-blue
 <div class="wrapper wrapper-wide">
 	{% include section-header.html title="our work" %}
 
-
 	<div class="section section--bg">
 
 		<div class="section-inner">
-
-			<div class="filters">
-				{% include filters-client.html %}
-				{% include filters-service.html %}
-			</div>
+			{% include filters-block.html %}
 
 			{% assign works = site.work | where: 'client', page.title %}
 			{% for work in works %}
 				{% include work-block.html %}
 			{% endfor %}
-
-			{% include button.html link="/work" cta="see more" colour="btn_white" %}
 		</div>
 
 	</div>

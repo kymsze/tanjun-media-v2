@@ -1,0 +1,45 @@
+<div class="filters">
+
+	<h3>
+		Filter
+		<a class="clear-btn" href="/work">Clear filter</a>
+	</h3>
+
+	<div class="tab">
+	  	<input id="tab-one" type="checkbox" name="tabs">
+	  	<label for="tab-one">clients</label>
+		<div class="tab-content">{% include filters-client.html %}</div>
+	</div>
+	
+	<div class="tab">
+	  	<input id="tab-two" type="checkbox" name="tabs">
+	  	<label for="tab-two">content type</label>
+		<div class="tab-content">{% include filters-service-big.html %}</div>
+	</div>
+	
+	<div class="tab">
+	  	<input id="tab-three" type="checkbox" name="tabs">
+	  	<label for="tab-three">services</label>
+		<div class="tab-content">{% include filters-service-small.html %}</div>
+	</div>
+</div>
+
+
+<!-- <div class="filters">
+	
+	<div class="tab">
+	  	<input id="tab-one" type="checkbox" name="tabs">
+	  	<label for="tab-one">Filter</label>
+		<div class="tab-content">
+
+			<p>content type</p>
+			{% include filters-service-big.html %}
+
+			<p>services</p>
+			{% include filters-service-small.html %}
+
+			<p>clients</p>
+			{% include filters-client.html %}
+
+		</div>
+</div> -->

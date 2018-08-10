@@ -32,14 +32,19 @@ layout: default
 		<div class="section section--bg">
 			<div class="section-inner">
 
-				<p class="section-description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
-				</p>
+				<div class="filters">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus.</p> 
 
+					{% include filters-service-big.html%}
+				</div>
+				
+				<br/><br/><br/><br/><br/><br/>
 
 				<div class="filters">
-					{% include filters-service.html %}
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. </p>
+					{% include filters-service-small.html%}
 				</div>
+
 			</div>
 
 		</div>	
@@ -53,11 +58,6 @@ layout: default
 		<div class="section section--bg">
 
 			<div class="section-inner">
-
-				<p class="section-description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
-				</p>
-
 				{% include clients.html %}
 			</div>
 
