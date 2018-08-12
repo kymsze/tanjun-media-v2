@@ -3,9 +3,9 @@
 	<div id="inline" style="background:#fff" class="lity-hide">
 		Inline content
 	</div>
-	<!-- <div class="overlay"></div> -->
 
-	<video class="hero-filter" id="vid" poster="https://s3.eu-west-2.amazonaws.com/tanjun/hero.jpg" preload="none" loop="" muted="" playsinline="" autoplay="autoplay">
+<!-- 	<video class="hero-filter" id="vid" poster="/assets/img/JJ.png" preload="none" loop="" muted="" playsinline="">	 -->
+	<video id="vid" poster="/assets/img/JJ.png" preload="none" loop="" muted="" playsinline="">
 		<source id="mp4" src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.mp4" type="video/mp4">
 		<source id="webm" src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.webm" type="video/webm">
 		<source src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.ogv" type="video/ogg"></source>
@@ -26,6 +26,7 @@
 		<p>We make great stuff and tell great stories and we would love to help tell yours.</p>
 	</div>
 
-	{% include button.html link="//vimeo.com/193598001" lity="true" cta="play reel" colour="btn_white" %}
-	</a>
+	<div class="cta">
+		{% include button.html link="//vimeo.com/193598001" lity="true" cta="play reel" colour="btn_white" %}
+	</div>
 </div>

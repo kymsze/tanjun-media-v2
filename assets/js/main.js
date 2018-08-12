@@ -1,31 +1,41 @@
 $( document ).ready(function() {
 
-
 	// BORDER
 	function borders() {
-		var sectionTop = $('#border-top-trigger').offset().top;
 
-		$('#top').hide();
-		$('#bottom').hide();
-		$(window).scroll(function() {
+		var header = $('.full-screen-wrapper'),
+			top = $('#top'),
+			bottom = $('#bottom'),
+			range = 400;
 
-			var scroll = $(window).scrollTop();
+		$(window).on('scroll', function () {
+		  
+			var scrollTop = $(this).scrollTop(),
+				height = header.outerHeight(),
+				offset = height / 2,
+				calcbg = 1 - (scrollTop - offset + range) / range;
+				calcbor = 0 + (scrollTop - offset + range) / range;
 
-			if ($(window).scrollTop() > sectionTop) {
-				$('#top').show();
-			} else {
-				$('#top').hide();
+			header.css({ 'opacity': calcbg });
+			top.css({ 'opacity': calcbor });
+			bottom.css({ 'opacity': calcbor });
+
+			if (calcbg < '-5') {
+				header.css({ 'opacity': 0 });
+				top.css({ 'opacity': 1 });
+				bottom.css({ 'opacity': 1 });
+			} else if ( calcbg > '2' ) {
+				header.css({ 'opacity': 1 });
+				top.css({ 'opacity': 0 });
+				bottom.css({ 'opacity': 0 });
 			}
-
-			if (scroll >= 15) {
-				$('#bottom').show();
-			} else {
-				$('#bottom').hide();
-			}
+		  
 		});
 	}
 
 	borders();
+
+
 
 
 	// HEADER COLOUR SWAP 
@@ -164,20 +174,20 @@ $( document ).ready(function() {
 	var $checkboxes = $(".tab :checkbox");
 
 	function openCarousel() {
-	// 	$.each(checkboxValues, function(key, value) {
-	// 		$("#" + key).prop('checked', value);
-	// 	});
+		// $.each(checkboxValues, function(key, value) {
+		// 	$("#" + key).prop('checked', value);
+		// });
 		
 
-	// 	$(".tab :checkbox").on("change", function(){
-	// 		console.log("The checkbox with the ID '" + this.id + "' changed");
-	// 		console.log(checkboxValues);
-	// 		$(".tab :checkbox").each(function(){
-	// 			checkboxValues[this.id] = this.checked;
-	// 		});
+		// $(".tab :checkbox").on("change", function(){
+		// 	console.log("The checkbox with the ID '" + this.id + "' changed");
+		// 	console.log(checkboxValues);
+		// 	$(".tab :checkbox").each(function(){
+		// 		checkboxValues[this.id] = this.checked;
+		// 	});
 
-	// 		localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
-	// 	});
+		// 	localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
+		// });
 	};
 
 	openCarousel();
@@ -192,15 +202,45 @@ $( document ).ready(function() {
 			$.each(checkboxValues, function(key, value) {
 				$("#" + key).prop('checked', false);
 			});
-			this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+
+			Promise
+			.all([this.newContainerLoading, this.scrollTop()])
+			.then(val => this.fadeInNewcontent($(this.newContainer)));
         },
+		scrollTop: function() {
+			var deferred = Barba.Utils.deferred();
+			var obj = { y: window.pageYOffset };
+
+			TweenLite.to(obj, 0.4, {
+				y: 0,
+				
+				onUpdate: function() {
+					if (obj.y === 0) {
+						deferred.resolve();
+					}
+
+					window.scroll(0, obj.y);
+				},
+				onComplete: function() {
+				    deferred.resolve();
+				}
+			});
+
+			return deferred.promise;
+		},
+
         fadeInNewcontent: function(nc) {
 			nc.hide();
 			var _this = this;
-			$(this.oldContainer).delay(250).promise().done(() => {
+			$(this.oldContainer).delay(400).promise().done(() => {
 				nc.css('visibility','visible');
-				nc.fadeIn(300, function(){
+				nc.fadeIn(400, function(){
 					_this.done();
+					borders();
+					openCarousel();
+					videoHover();
+					openNav();
+					loop();
 				})
 			});
         }
@@ -214,15 +254,6 @@ $( document ).ready(function() {
 
 
     Barba.Pjax.start();
-
-    Barba.Dispatcher.on('newPageReady', function() {
-		openCarousel();
-		borders();
-		videoHover();
-		openNav();
-		loop();
-	});
-
 
 
 	// WINDOW RESIZE

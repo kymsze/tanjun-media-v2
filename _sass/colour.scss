@@ -8,8 +8,7 @@
 	}
 
 	.wrapper-wide {
-		border-right: calc(30px / 2) solid $blue-color;
-	    border-left: calc(30px / 2) solid $blue-color;
+		border-color: $blue-color;
 	    background-color: $blue-color;
     }
 

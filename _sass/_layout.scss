@@ -68,9 +68,8 @@
     padding-right: 0;
     padding-left: 0;
     @extend %clearfix;
-    border-right: calc(#{$spacing-unit} / 2) solid $pink-color;
-    border-left: calc(#{$spacing-unit} / 2) solid $pink-color;
-    background-color: $pink-color;
+    border-right: calc(#{$spacing-unit} / 4) solid $pink-color;
+    border-left: calc(#{$spacing-unit} / 4) solid $pink-color;
 
     @include media-query($on-laptop) {
         padding-right: 0;
@@ -151,12 +150,13 @@
     background: $pink-color;
     position: fixed;
     z-index:97;
+    opacity: 0;
 
 }
         
 #top, #bottom {
     left: 0; right: 0;
-    height: calc(#{$spacing-unit} / 2);
+    height: calc(#{$spacing-unit} / 4);
 }
 
 #top { 
@@ -188,7 +188,7 @@
 
 .section-header {
     width: 100%;
-    background-color: $pink-color;
+    background-color: unset;
     height: 10em;
     position: relative;    
     margin-right: auto;
@@ -201,7 +201,6 @@
         width: 100%;
         text-align: center;
         vertical-align: baseline;
-
     }
 }
 .section-description {
@@ -231,8 +230,9 @@
     }
 }
 
-
-
+.home {
+    background: $pink-color;
+}
 
 %contentwrapperwide {
     padding-left: 5%;
@@ -284,18 +284,35 @@
 
 .hero-content {
     position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 100vh;
+    top: 0;
     z-index: 100;
     width: 100%;
     text-align: center;
 
     .logo-text {
+        position: absolute;
         text-align: center;
-        width: 65%;
-        margin: 0 auto;
-        max-width: 350px;
-        margin-bottom: 2em; 
+        width: 100%;
+
+        img {
+            width: 65%;
+            margin: 0 auto;
+            max-width: 10em;
+            margin-top: 1em ;
+
+        }
+    }
+
+    .video-text {
+        position: absolute;
+        top: 25vh;
+    }
+
+    .cta {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
 
