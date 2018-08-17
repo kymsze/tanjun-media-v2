@@ -169,51 +169,22 @@ $( document ).ready(function() {
 
 
 
-	// CAROUSEL 
-	var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {};
-	var $checkboxes = $(".tab :checkbox");
-
-	function openCarousel() {
-		// $.each(checkboxValues, function(key, value) {
-		// 	$("#" + key).prop('checked', value);
-		// });
-		
-
-		// $(".tab :checkbox").on("change", function(){
-		// 	console.log("The checkbox with the ID '" + this.id + "' changed");
-		// 	console.log(checkboxValues);
-		// 	$(".tab :checkbox").each(function(){
-		// 		checkboxValues[this.id] = this.checked;
-		// 	});
-
-		// 	localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
-		// });
-	};
-
-	openCarousel();
-
-
 	// BARBA
 
     var transEffect = Barba.BaseTransition.extend({
         oldContainer: function(){
         },
         start: function(){
-			$.each(checkboxValues, function(key, value) {
-				$("#" + key).prop('checked', false);
-			});
 
 			Promise
 			.all([this.newContainerLoading, this.scrollTop()])
-			.then([this.newContainerLoading, this.fadeOut()])
 			.then(this.fadeIn.bind(this));
-			// .then(val => this.fadeInNewcontent($(this.newContainer)));
         },
 		scrollTop: function() {
 			var deferred = Barba.Utils.deferred();
 			var obj = { y: window.pageYOffset };
 
-			TweenLite.to(obj, 0.9, {
+			TweenLite.to(obj, 0.7, {
 				y: 0,
 				
 				onUpdate: function() {
@@ -230,22 +201,11 @@ $( document ).ready(function() {
 
 			return deferred.promise;
 		},
-		fadeOut: function() {
-			/**
-			 * this.oldContainer is the HTMLElement of the old Container
-			 */
-
-			return $(this.oldContainer).animate({ opacity: 0 }, 1000).promise();
-		},
 		fadeIn: function() {
-			/**
-			 * this.newContainer is the HTMLElement of the new Container
-			 * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
-			 * Please note, newContainer is available just after newContainerLoading is resolved!
-			 */
 
 			var _this = this;
 			var $el = $(this.newContainer);
+
 
 			$(this.oldContainer).hide();
 
@@ -254,15 +214,11 @@ $( document ).ready(function() {
 				opacity : 0
 			});
 
-			$el.animate({ opacity: 1 }, 400, function() {
-				/**
-				* Do not forget to call .done() as soon your transition is finished!
-				* .done() will automatically remove from the DOM the old Container
-				*/
 
+			$el.animate({ opacity: 1 }, 200, function() {
+			    document.body.scrollTop = 0;
 				_this.done();
 				borders();
-				openCarousel();
 				videoHover();
 				openNav();
 				loop();
