@@ -1,9 +1,28 @@
 /* variables */
 :root {
   /* this value is going to be changed by javascript */
+  --percent: 100%;
   --replace-offset: 50%;
-  --replace-offset-2: calc((100% - var(--replace-offset) ) * -1)
+  --replace-offset-2: calc((100% - var(--replace-offset) ) * -1);
+  /*--mobile-var: calc(-1 * var(--percent));*/
+  --mobile-var: -1;
+
 }
+
+@include media-query($on-palm) {
+  :root {
+    --percent: 85%;
+    --mobile-var: -1.1;
+  }
+}
+
+@include media-query($on-mobile) {
+  :root {
+    --percent: 65%;
+    --mobile-var: -1.2;
+  }
+}
+
 
 .logo {
   display: inline-block;
@@ -59,7 +78,7 @@
   border: 1px solid transparent; 
   will-change: transform;
 
-  transform: translateY(calc(var(--replace-offset) * -1));
+  transform: translateY(calc(var(--replace-offset) * var(--mobile-var)));
 }
 
 /* previous replace item*/
@@ -67,7 +86,7 @@
   transform: translateY(calc(var(--replace-offset-2) * 1));  
 }
 .js-replace__item--active .js-replace__content {
-  transform: translateY(calc(var(--replace-offset-2) * -1));  
+  transform: translateY(calc(var(--replace-offset-2) * var(--mobile-var)));  
 }
 
 
@@ -78,7 +97,7 @@
 }
 .js-replace--reverse 
 .js-replace__content {
-  transform: translateY(calc(var(--replace-offset-2) * -1));
+  transform: translateY(calc(var(--replace-offset-2) * var(--mobile-var)));
 }
 
 /* previous replace item*/
@@ -88,5 +107,7 @@
 }
 .js-replace--reverse 
 .js-replace__item--active .js-replace__content {
-  transform: translateY(calc(var(--replace-offset) * -1));
+  transform: translateY(calc(var(--replace-offset) * var(--mobile-var)));
 }
+
+

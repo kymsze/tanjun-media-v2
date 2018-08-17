@@ -7,6 +7,10 @@ body {
 	body {
 		font-size: 85%;
 		line-height: 85%;
+		.site-header {
+			font-size: 100%;
+			line-height: 100%;
+		}
 	}
 }
 
@@ -14,6 +18,10 @@ body {
 	body {
 		font-size: 75%;
 		line-height: 75%;
+		.site-header {
+			font-size: 100%;
+			line-height: 100%;
+		}
 	}
 }
 
@@ -21,6 +29,10 @@ body {
 	body {
 		font-size: 65%;
 		line-height: 65%;
+		.site-header {
+			font-size: 100%;
+			line-height: 100%;
+		}
 	}
 }
 
@@ -28,9 +40,9 @@ p {
 	font-family: Body;
 	text-align: center;
 	color: $pink-color;
-	font-size: 1.1em; 
-	line-height: 1.2em;
-	letter-spacing: 1.2px;
+	font-size: 1.2em; 
+	line-height: 1.3em;
+	letter-spacing: 0.9;
 }
 
 label {
@@ -60,6 +72,19 @@ label {
     }
 }
 
+p.feature {
+    font-family: HeaderLight;
+    font-size: 3.7em;
+    text-align: left; 
+    max-width: 90%;
+}
+
+@include media-query($on-palm) {
+	p.feature {
+		max-width: 100%;
+	}
+}
+
 .filters {
 	p {
 		text-align: left;
@@ -68,16 +93,15 @@ label {
 
 h2 {
   width: 293px;
-  font-family: HeaderLight;
+  font-family: Header;
   font-size: 4em;
-  line-height: 0.78em;
+  line-height: 0.68em;
   color: white;
   text-transform: lowercase;
 }
 
 h3 {
   	font-family: HeaderLight;
-    margin-bottom: 1em;
     color: $pink-color;
 }
 

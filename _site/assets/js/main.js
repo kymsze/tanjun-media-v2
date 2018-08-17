@@ -5,14 +5,14 @@ $( document ).ready(function() {
 
 		var header = $('.full-screen-wrapper'),
 			top = $('#top'),
-			bottom = $('#bottom'),
-			range = 400;
+			bottom = $('#bottom');
 
 		$(window).on('scroll', function () {
 		  
 			var scrollTop = $(this).scrollTop(),
-				height = header.outerHeight(),
+				height = header.innerHeight(),
 				offset = height / 2,
+				range = height / 4,
 				calcbg = 1 - (scrollTop - offset + range) / range;
 				calcbor = 0 + (scrollTop - offset + range) / range;
 
@@ -20,11 +20,11 @@ $( document ).ready(function() {
 			top.css({ 'opacity': calcbor });
 			bottom.css({ 'opacity': calcbor });
 
-			if (calcbg < '-5') {
+			if (calcbg < '0') {
 				header.css({ 'opacity': 0 });
 				top.css({ 'opacity': 1 });
 				bottom.css({ 'opacity': 1 });
-			} else if ( calcbg > '2' ) {
+			} else if ( calcbg > '1' ) {
 				header.css({ 'opacity': 1 });
 				top.css({ 'opacity': 0 });
 				bottom.css({ 'opacity': 0 });
@@ -205,13 +205,15 @@ $( document ).ready(function() {
 
 			Promise
 			.all([this.newContainerLoading, this.scrollTop()])
-			.then(val => this.fadeInNewcontent($(this.newContainer)));
+			.then([this.newContainerLoading, this.fadeOut()])
+			.then(this.fadeIn.bind(this));
+			// .then(val => this.fadeInNewcontent($(this.newContainer)));
         },
 		scrollTop: function() {
 			var deferred = Barba.Utils.deferred();
 			var obj = { y: window.pageYOffset };
 
-			TweenLite.to(obj, 0.4, {
+			TweenLite.to(obj, 0.9, {
 				y: 0,
 				
 				onUpdate: function() {
@@ -228,22 +230,44 @@ $( document ).ready(function() {
 
 			return deferred.promise;
 		},
+		fadeOut: function() {
+			/**
+			 * this.oldContainer is the HTMLElement of the old Container
+			 */
 
-        fadeInNewcontent: function(nc) {
-			nc.hide();
+			return $(this.oldContainer).animate({ opacity: 0 }, 1000).promise();
+		},
+		fadeIn: function() {
+			/**
+			 * this.newContainer is the HTMLElement of the new Container
+			 * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+			 * Please note, newContainer is available just after newContainerLoading is resolved!
+			 */
+
 			var _this = this;
-			$(this.oldContainer).delay(400).promise().done(() => {
-				nc.css('visibility','visible');
-				nc.fadeIn(400, function(){
-					_this.done();
-					borders();
-					openCarousel();
-					videoHover();
-					openNav();
-					loop();
-				})
+			var $el = $(this.newContainer);
+
+			$(this.oldContainer).hide();
+
+			$el.css({
+				visibility : 'visible',
+				opacity : 0
 			});
-        }
+
+			$el.animate({ opacity: 1 }, 400, function() {
+				/**
+				* Do not forget to call .done() as soon your transition is finished!
+				* .done() will automatically remove from the DOM the old Container
+				*/
+
+				_this.done();
+				borders();
+				openCarousel();
+				videoHover();
+				openNav();
+				loop();
+			});
+		}
     });
 
 

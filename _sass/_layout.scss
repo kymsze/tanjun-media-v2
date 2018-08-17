@@ -68,8 +68,8 @@
     padding-right: 0;
     padding-left: 0;
     @extend %clearfix;
-    border-right: calc(#{$spacing-unit} / 4) solid $pink-color;
-    border-left: calc(#{$spacing-unit} / 4) solid $pink-color;
+    border-right: calc(#{$spacing-unit} / 4) solid rgba(249, 97, 174, 0.1);
+    border-left: calc(#{$spacing-unit} / 4) solid rgba(249, 97, 174, 0.1);
 
     @include media-query($on-laptop) {
         padding-right: 0;
