@@ -15,11 +15,11 @@ collections:
   clients:
     title: clients
     output: true
-  services:
-    title: services
-    output: true
   contents:
     title: contents
+    output: true
+  services:
+    title: services
     output: true
 defaults:
 - scope:
