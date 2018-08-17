@@ -18,6 +18,9 @@ collections:
   services:
     title: services
     output: true
+  contents:
+    title: contents
+    output: true
 defaults:
 - scope:
     path: ''
@@ -31,6 +34,12 @@ defaults:
   values:
     permalink: "/work/tag/:title/"
     layout: services
+- scope:
+    path: ''
+    type: contents
+  values:
+    permalink: "/work/tag/:title/"
+    layout: contents
 email: hello@tanjunmedia.com
 description: 'Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for Google search

@@ -6,7 +6,7 @@
 	</h3>
 
 
-	{% if include.open == "clients" %}
+	{% if include.open == "client" %}
 		<div class="tab">
 		  	<input id="tab-one" type="checkbox" name="tabs" checked>
 		  	<label for="tab-one">clients</label>
@@ -21,15 +21,35 @@
 	{% endif %}
 	
 
-	<div class="tab">
-	  	<input id="tab-two" type="checkbox" name="tabs">
-	  	<label for="tab-two">content type</label>
-		<div class="tab-content">{% include filters-service-big.html %}</div>
-	</div>
+
+	{% if include.open == "content" %}
+		<div class="tab">
+		  	<input id="tab-two" type="checkbox" name="tabs" checked>
+		  	<label for="tab-two">content type</label>
+			<div class="tab-content">{% include filters-content.html %}</div>
+		</div>
+	{% else %}
+		<div class="tab">
+		  	<input id="tab-two" type="checkbox" name="tabs">
+		  	<label for="tab-two">content type</label>
+			<div class="tab-content">{% include filters-content.html %}</div>
+		</div>
+	{% endif %}
 	
-	<div class="tab">
-	  	<input id="tab-three" type="checkbox" name="tabs">
-	  	<label for="tab-three">services</label>
-		<div class="tab-content">{% include filters-service-small.html %}</div>
-	</div>
+
+
+
+	{% if include.open == "service" %}
+		<div class="tab">
+		  	<input id="tab-three" type="checkbox" name="tabs" checked>
+		  	<label for="tab-three">services</label>
+			<div class="tab-content">{% include filters-service.html %}</div>
+		</div>
+	{% else %}
+		<div class="tab">
+		  	<input id="tab-three" type="checkbox" name="tabs">
+		  	<label for="tab-three">services</label>
+			<div class="tab-content">{% include filters-service.html %}</div>
+		</div>
+	{% endif %}
 </div>

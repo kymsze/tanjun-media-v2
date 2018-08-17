@@ -8,7 +8,7 @@ layout: default-blue
 	<div class="section section--bg">
 
 		<div class="section-inner">
-			{% include filters-block.html open="clients" %}
+			{% include filters-block.html open="client" %}
 
 			{% assign works = site.work | where: 'client', page.title %}
 			{% for work in works %}
