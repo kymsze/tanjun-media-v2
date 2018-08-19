@@ -1,0 +1,44 @@
+.site-footer {
+	background: $pink-color; 
+
+	p {
+		color: white;
+	    text-align: left;
+	    margin-bottom: 2em;
+	    margin-top: 1em;
+	    line-height: 1.9
+	}
+
+	.right {
+		text-align: right;
+	}
+
+	h3 {
+		margin-top: 3em;
+	}
+
+	h3, a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.col-wrapper, .section-inner {
+		background: $pink-color; 
+	}
+
+	@include media-query($on-palm) {
+		.right, .social {
+			text-align: left;
+		}
+	}
+}
+
+.social {
+	width: 100%;
+	margin-top: 4em;
+	text-align: right;
+	img {
+		width: 2.5em;
+	}
+}
+

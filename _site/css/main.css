@@ -141,6 +141,8 @@ input[type="button" i]:active, input[type="button" i]:hover, input[type="button"
 .filters { text-align: center; }
 .filters h3 { text-align: left; }
 
+.right { text-align: right; }
+
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 .highlighter-rouge .highlight { background: #eef; }
@@ -392,3 +394,13 @@ input[type=radio]:checked + label::after { transform: rotateX(180deg); }
 @media screen and (max-width: 800px) { #resource-slider .resource-slider-item { width: 50%; } }
 @media screen and (max-width: 500px) { #resource-slider .resource-slider-item { width: 100%; }
   #resource-slider { height: 30em; } }
+.site-footer { background: #F851A5; }
+.site-footer p { color: white; text-align: left; margin-bottom: 2em; margin-top: 1em; line-height: 1.9; }
+.site-footer .right { text-align: right; }
+.site-footer h3 { margin-top: 3em; }
+.site-footer h3, .site-footer a { color: white; text-decoration: none; }
+.site-footer .col-wrapper, .site-footer .section-inner { background: #F851A5; }
+@media screen and (max-width: 800px) { .site-footer .right, .site-footer .social { text-align: left; } }
+
+.social { width: 100%; margin-top: 4em; text-align: right; }
+.social img { width: 2.5em; }
