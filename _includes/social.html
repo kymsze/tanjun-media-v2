@@ -1,0 +1,32 @@
+{% assign posts = site.social| reverse %}
+
+<div class="row resources ">
+  <div class="container" id="resource-slider">
+    <button class='arrow prev'></button>
+    <button class='arrow next'></button>
+    <div class="resource-slider-frame">
+
+			{% for post in posts %}
+	      <div class="resource-slider-item">
+	        <div class="resource-slider-inset">
+	          <div class="resource">
+	            <a href="{{ post.Link }}" target="_blank">
+	            	<img class="carousel-img" src="{{ post.Image }}">
+	            	<div class="resource-content">
+	            		<p> 
+	            			{% capture var %}
+	            			{{ post }}
+										{% endcapture %}
+										{{ var | newline_to_br }}
+	            		</p>
+	            	</div>
+	            </a>
+	          </div>
+	        </div>
+	      </div>
+	    {% endfor %}
+
+
+    </div>
+  </div>
+</div>

@@ -1,5 +1,88 @@
 $( document ).ready(function() {
 
+	// CAROUSEL 
+
+	function defer(method) {
+	    if (window.jQuery)
+	        method();
+	    else
+	        setTimeout(function() {
+	            defer(method)
+	        }, 50);
+	}
+
+	defer(function() {
+	    (function($) {
+
+	        function doneResizing() {
+	            var totalScroll = $('.resource-slider-frame').scrollLeft();
+	            var itemWidth = $('.resource-slider-item').width();
+	            var difference = totalScroll % itemWidth;
+	            if (difference !== 0) {
+	                $('.resource-slider-frame').animate({
+	                    scrollLeft: '-=' + difference
+	                }, 500, function() {
+	                    // check arrows
+	                });
+	            }
+	        }
+
+	        $('.arrow').on('click', function() {
+	            var $this = $(this),
+	                width = $('.resource-slider-item').width(),
+	                speed = 500;
+	            if ($this.hasClass('prev')) {
+	                $('.resource-slider-frame').animate({
+	                    scrollLeft: '-=' + width
+	                }, speed, function() {
+	                    // check arrows
+	                });
+	            } else if ($this.hasClass('next')) {
+	                $('.resource-slider-frame').animate({
+	                    scrollLeft: '+=' + width
+	                }, speed, function() {
+	                    // check arrows
+	                });
+	            }
+	        }); // end on arrow click
+
+	        $(window).on("load resize", function() {
+	        	var resourceWidth = $('.resource').first().width();
+
+				$('.carousel-img').each(function() {
+					var $this = $(this)
+				  	if ($this.width() > resourceWidth) {
+						$this.css({
+						  '-webkit-transform' : 'translateX(-20%)',
+						  '-moz-transform'    : 'translateX(-20%)',
+						  '-ms-transform'     : 'translateX(-20%)',
+						  '-o-transform'      : 'translateX(-20%)',
+						  'transform'         : 'translateX(-20%)'
+						});
+				  	}
+				});
+
+	            $('#resource-slider .resource-slider-item').each(function(i) {
+	                var $this = $(this),
+	                    left = $this.width() * i;
+	                $this.css({
+	                    left: left
+	                })
+	            }); // end each
+	        }); // end window resize/load
+
+	        var resizeId;
+	        $(window).resize(function() {
+	            clearTimeout(resizeId);
+	            resizeId = setTimeout(doneResizing, 500);
+	        });
+
+	    })(jQuery); // end function
+	});
+
+
+
+
 	// BORDER
 	function borders() {
 
