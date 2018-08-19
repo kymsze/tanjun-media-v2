@@ -21,6 +21,9 @@ collections:
   services:
     title: services
     output: true
+  social:
+    title: social
+    output: true
 defaults:
 - scope:
     path: ''
