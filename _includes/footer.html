@@ -16,26 +16,26 @@
                 Contact us on
               </h3>
               <p>
-                Tel: 020 7684 9872
+                office: {{ site.office }}  |  {{ site.mobile }}
                 <br/>
-                Mob: 07855259898
-                <br/>
-                <a href="mailto:{{ site.email }}">Email: {{ site.email }}</a>
+                <a href="mailto:{{ site.email }}">email: {{ site.email }}</a>
               </p>
 
               <h3>
                 Find us at
               </h3>
               <p>
-                TANJUN MEDIA, UNIT 7,
-                <br/>
-                1C SHELFORD PLACE, LONDON, N16
+              Tanjun Media
+              {% capture var %}
+                {{ site.address }}
+              {% endcapture %}
+              {{ var | newline_to_br }}
               </p>
             </div>
 
             <div class="col col-2">
               <p class="right">
-                COMPANY NO: 10184325
+                COMPANY NO: {{ site.company_number }}
               </p>
               <div class="social">
                 <a href="mailto:{{ site.email }}">

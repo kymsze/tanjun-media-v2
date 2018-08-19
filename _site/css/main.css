@@ -289,6 +289,8 @@ h3 { font-family: HeaderLight; color: #F851A5; }
 .blue .btn_invert .inner { background-color: #256EFF; }
 .blue .hamburger-box-colour .hamburger-inner, .blue .hamburger-box-colour .hamburger-inner:after, .blue .hamburger-box-colour .hamburger-inner:before { background-color: #256EFF; }
 .blue .logo--invert .logo-img { background-image: url("/assets/img/LogoBlueFull.png"); }
+.blue .site-footer { background: #256EFF; }
+.blue .site-footer .col-wrapper, .blue .site-footer .section-inner { background: #256EFF; }
 
 /* variables */
 :root { /* this value is going to be changed by javascript */ --percent: 100%; --replace-offset: 50%; --replace-offset-2: calc((100% - var(--replace-offset) ) * -1); /*--mobile-var: calc(-1 * var(--percent));*/ --mobile-var: -1; }
