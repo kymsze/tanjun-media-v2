@@ -227,15 +227,6 @@ $( document ).ready(function() {
     });
 
 
-
-	Barba.Pjax.getTransition = function() {
-	    return transEffect;
-	}
-
-
-    Barba.Pjax.start();
-
-
 	// WINDOW RESIZE
 
 
