@@ -6,8 +6,10 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laor
   accumsan tempus. Nullam magna justo, porttitor vitae mi maximus, pellentesque tristique
   ex. Vivamus aliquet ipsum.
 chat:
-  brand: 'i need help '
-  tanjun: 'I can help! '
+  1-brand: 'i need help '
+  2-tanjun: 'I can help! '
+  3-brand: 'good '
+  4-tanjun: 'yes, that is good '
 client: parkrun
 featured: true
 service:
