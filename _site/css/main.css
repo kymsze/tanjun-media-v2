@@ -107,7 +107,9 @@ input[type="button" i]:active, input[type="button" i]:hover, input[type="button"
 * <![endif]-->
 */
 /** ---------------------------------------   Other  --------------------------------------* */
-.section { width: 100%; background-color: white; text-align: center; margin-right: auto; margin-left: auto; margin: 0 auto; }
+.section { width: 100%; background-color: #F851A5; text-align: center; margin-right: auto; margin-left: auto; margin: 0 auto; }
+
+.section--bg { background-color: white; }
 
 .section-header { width: 100%; background-color: unset; height: 10em; position: relative; margin-right: auto; margin-left: auto; }
 .section-header h2 { padding: 0; margin: 0; position: absolute; bottom: 0; width: 100%; text-align: center; vertical-align: baseline; }
@@ -291,6 +293,8 @@ h3 { font-family: HeaderLight; color: #F851A5; }
 .blue .logo--invert .logo-img { background-image: url("/assets/img/LogoBlueFull.png"); }
 .blue .site-footer { background: #256EFF; }
 .blue .site-footer .col-wrapper, .blue .site-footer .section-inner { background: #256EFF; }
+.blue .section { background-color: #256EFF; }
+.blue .section--bg { background-color: white; }
 
 /* variables */
 :root { /* this value is going to be changed by javascript */ --percent: 100%; --replace-offset: 50%; --replace-offset-2: calc((100% - var(--replace-offset) ) * -1); /*--mobile-var: calc(-1 * var(--percent));*/ --mobile-var: -1; }

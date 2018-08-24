@@ -14,10 +14,7 @@
 	            	<img class="carousel-img" src="{{ post.Image }}">
 	            	<div class="resource-content">
 	            		<p> 
-	            			{% capture var %}
-	            				{{ post }}
-							{% endcapture %}
-							{{ var | newline_to_br }}
+							{{ post | newline_to_br }}
 	            		</p>
 	            	</div>
 	            </a>

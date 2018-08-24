@@ -178,11 +178,15 @@
 
 .section {
     width: 100%;
-    background-color: white;
+    background-color: $pink-color;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     margin: 0 auto;
+}
+
+.section--bg {
+    background-color: white;
 }
 
 .section-header {

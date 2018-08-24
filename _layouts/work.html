@@ -1,27 +1,43 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default-blue
+---
 
-  {% include head.html %}
+{% assign bubbles = page.chat | newline_to_br | split: '<br />' %}
 
-  <body>
-    <div class="page-content" id="barba-wrapper">
-      <div class="barba-container">
+{% for member in beatles %}
+  {{ member }}
+{% endfor %}
 
-	    {% include border.html %}
+<div class="home">
+  <div class="full-screen-wrapper">
+    {% include hero.html video=page.video content=page.description link="//vimeo.com/193598001" %}
+  </div>
 
-	    {% include header.html %}
+  <div class="wrapper wrapper-wide">
+    {% include section-header.html title="the challenge" %}
 
-		<video id="vid" poster="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/winter-games/hero.jpg" preload="none" loop="" muted="" playsinline="" autoplay="autoplay">
-			<source id="mp4" src="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/winter-games/reel.mp4" type="video/mp4">
-			<source id="webm" src="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/winter-games/reel.webm" type="video/webm">
-			<source src="https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/winter-games/reel.ogv" type="video/ogg"></source>
-		</video>
-        {{ content }}
+    <div class="section section--bg">
+
+      <div class="section-inner">
+        <div class="filters">
+          <div class="col-wrapper chat-block">
+
+            <div class="col col-2">
+            </div>
+
+            <div class="col col-2">
+              {% for chat in bubbles %}
+                <p>{{ chat }}</p>
+              {% endfor %}
+            </div>
+
+
+
+          </div>
+        </div>
       </div>
-    </div>
 
-    {% include footer.html %}
+    </div>  
+  </div>
 
-  </body>
-
-</html>
+</div>

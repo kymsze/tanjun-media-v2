@@ -4,11 +4,10 @@
 		Inline content
 	</div>
 
-<!-- 	<video class="hero-filter" id="vid" poster="/assets/img/JJ.png" preload="none" loop="" muted="" playsinline="">	 -->
-	<video id="vid" poster="/assets/img/JJ.png" preload="none" loop="" muted="" playsinline="">
-		<source id="mp4" src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.mp4" type="video/mp4">
-		<source id="webm" src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.webm" type="video/webm">
-		<source src="https://s3.eu-west-2.amazonaws.com/tanjun/hero.ogv" type="video/ogg"></source>
+	<video id="vid" poster="{{ include.video }}.png" preload="none" loop="" muted="" playsinline="" autoplay="">
+		<source id="mp4" src="{{ include.video }}.mp4" type="video/mp4">
+		<source id="webm" src="{{ include.video }}.webm" type="video/webm">
+		<source src="{{ include.video }}.ogv" type="video/ogg"></source>
 	</video>
 </div>
 
@@ -19,14 +18,10 @@
 	</div>
 
 	<div class="video-text">
-		<p>We are digital film content creators.</p>
-		
-		<p>We are digital natives We live and breathe social content.</p>
-		
-		<p>We make great stuff and tell great stories and we would love to help tell yours.</p>
+		<p>{{ include.content }}</p>
 	</div>
 
 	<div class="cta">
-		{% include button.html link="//vimeo.com/193598001" lity="true" cta="play reel" colour="btn_white" %}
+		{% include button.html link=include.link lity="true" cta="play" colour="btn_white" %}
 	</div>
 </div>
