@@ -6,11 +6,13 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laor
   accumsan tempus. Nullam magna justo, porttitor vitae mi maximus, pellentesque tristique
   ex. Vivamus aliquet ipsum.
 chat:
-- I need help
-- I can help
-- 'good '
-- yes that is good!
-client: parkrun
+- Winter is coming
+- Haha yeah we like Game of Thrones also!!
+- No! Winter is coming! We’re approaching one year until the Winter Olympics and we want you guys to create all of the content for the campaign.
+- Blimey! That’s great! BTW we’ve actually never watched Game of Thrones.
+- Dragons and naked girls basically, you’re not missing much! Anyway, we really want to ramp our content up and create the same buzz there is around the Summer Games.
+- No problem. Our monkeys can adapt to any climate! Let’s hit the slopes.
+client: team gb
 featured: true
 service:
 - digital campaigns

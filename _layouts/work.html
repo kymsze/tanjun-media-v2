@@ -1,12 +1,6 @@
 ---
-layout: default-blue
+layout: default
 ---
-
-{% assign bubbles = page.chat | newline_to_br | split: '<br />' %}
-
-{% for member in beatles %}
-  {{ member }}
-{% endfor %}
 
 <div class="home">
   <div class="full-screen-wrapper">
@@ -20,20 +14,41 @@ layout: default-blue
 
       <div class="section-inner">
         <div class="filters">
-          <div class="col-wrapper chat-block">
 
-            <div class="col col-2">
-            </div>
+          {% for content in page.chat %}
+            
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            {% assign my_client = site.clients | where:"title",page.client %}
+            {% assign my_client_logo = my_client.first.logo %}
 
-            <div class="col col-2">
-              {% for chat in bubbles %}
-                <p>{{ chat }}</p>
-              {% endfor %}
-            </div>
+            {% if thecycle == 'odd' %}
+
+              {% include chat-bubble.html chat=content brand="client" logo=my_client_logo %}
+
+            {% else %}
+
+              {% include chat-bubble.html chat=content brand="tanjun" logo="/uploads/britishtri.png" %}
+
+            {% endif %}
+          {% endfor %}
+
+        </div>
+      </div>
+
+    </div>  
+  </div>
 
 
 
-          </div>
+  <div class="wrapper wrapper-wide">
+    {% include section-header.html title="the solution" %}
+
+    <div class="section section--bg">
+
+      <div class="section-inner">
+        <div class="filters">
+
+          hi
         </div>
       </div>
 

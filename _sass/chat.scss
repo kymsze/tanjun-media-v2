@@ -1,0 +1,120 @@
+.chat {
+  width: 55%;
+  margin: 0 auto;
+  border: 2px solid $pink-color;
+  padding: 15px;
+  color: $pink-color;
+  position: relative;
+  text-align: left;
+  margin: 1.5em 0;
+  display: table;
+
+  .logo {
+    display: table-cell;
+    width: 15%;
+    padding: 0;
+    vertical-align: middle;
+    img {
+      max-width: 3em;
+      min-width: 0.9em;
+    }
+  }
+
+  .text {
+    display: table-cell;
+    width: 85%;
+    vertical-align: middle;
+    padding: 1em;
+    p {
+      margin-bottom: 0;
+      color: black;
+    }
+  }
+
+  .logo, .text {
+    margin: 0;
+  }
+}
+
+
+@include media-query($on-palm) {
+  .chat {
+    width: 75%;
+  }
+}
+
+.chat-client {
+  float: left;
+
+  .logo {    
+    img {
+      float: left; 
+    }
+
+  }
+
+  &:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    bottom: -2px;
+    position: absolute;
+    border-left: 2px solid transparent;
+    border-right: 20px solid $pink-color;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    left: -22px;
+  }
+
+  &:after {    
+    content: "";
+    width: 0px;
+    height: 0px;
+    bottom: 0px;
+    position: absolute;
+    border-left: 4px solid transparent;
+    border-right: 20px solid #fff;
+    border-top: 20px solid transparent;
+    border-bottom: 0 solid transparent;
+    left: -19px;
+  }
+}
+
+
+
+.chat-tanjun {
+  float: right;
+
+  .logo {    
+    img {
+      float: right; 
+    }
+    
+  }
+
+  &:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    border-left: 20px solid #F851A5;
+    border-right: 2px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    right: -23px;
+  }
+
+  &:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    position: absolute;
+    border-left: 20px solid #fff;
+    border-right: 0px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 0 solid transparent;
+    right: -17px;
+  }
+}

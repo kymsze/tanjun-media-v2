@@ -410,3 +410,21 @@ input[type=radio]:checked + label::after { transform: rotateX(180deg); }
 
 .social { width: 100%; margin-top: 4em; text-align: right; }
 .social img { width: 2.5em; }
+
+.chat { width: 55%; margin: 0 auto; border: 2px solid #F851A5; padding: 15px; color: #F851A5; position: relative; text-align: left; margin: 1.5em 0; display: table; }
+.chat .logo { display: table-cell; width: 15%; padding: 0; vertical-align: middle; }
+.chat .logo img { max-width: 3em; min-width: 0.9em; }
+.chat .text { display: table-cell; width: 85%; vertical-align: middle; padding: 1em; }
+.chat .text p { margin-bottom: 0; color: black; }
+.chat .logo, .chat .text { margin: 0; }
+
+@media screen and (max-width: 800px) { .chat { width: 75%; } }
+.chat-client { float: left; }
+.chat-client .logo img { float: left; }
+.chat-client:before { content: ""; width: 0px; height: 0px; bottom: -2px; position: absolute; border-left: 2px solid transparent; border-right: 20px solid #F851A5; border-top: 20px solid transparent; border-bottom: 0px solid transparent; left: -22px; }
+.chat-client:after { content: ""; width: 0px; height: 0px; bottom: 0px; position: absolute; border-left: 4px solid transparent; border-right: 20px solid #fff; border-top: 20px solid transparent; border-bottom: 0 solid transparent; left: -19px; }
+
+.chat-tanjun { float: right; }
+.chat-tanjun .logo img { float: right; }
+.chat-tanjun:before { content: ""; width: 0px; height: 0px; position: absolute; bottom: -2px; border-left: 20px solid #F851A5; border-right: 2px solid transparent; border-top: 20px solid transparent; border-bottom: 0px solid transparent; right: -23px; }
+.chat-tanjun:after { content: ""; width: 0px; height: 0px; bottom: 0; position: absolute; border-left: 20px solid #fff; border-right: 0px solid transparent; border-top: 20px solid transparent; border-bottom: 0 solid transparent; right: -17px; }
