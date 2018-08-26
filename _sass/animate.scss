@@ -1,0 +1,45 @@
+.chat-client {
+  transition: all 500ms ease-out;
+	transform: translate(-120%, 0);
+}
+
+.chat-tanjun {
+  transition: all 500ms ease-out;
+	transform: translate(120%, 0);
+}
+
+.page-heading {
+  transition: all 500ms ease-out;
+	transform: translate(0, 110%);
+}
+
+.solution-section {
+	&:nth-child(odd) {
+		p {
+		  transition: all 500ms ease-out;
+	    transform: translate(-100%, 120%);
+		}
+
+		.awkward-animate {
+			transform: translate(0, 0);
+		  transition: all 500ms ease-out;			
+		}
+	}
+
+	&:nth-child(even) {
+		p {
+		  transition: all 500ms ease-out;
+	    transform: translate(100%, 120%);
+		}
+
+		.awkward-animate {
+			transform: translate(0, 0);
+		  transition: all 500ms ease-out;			
+		}
+	}
+}
+
+.animate {
+	transform: translate(0, 0);
+  transition: all 500ms ease-out;
+}

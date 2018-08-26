@@ -2,57 +2,111 @@
 layout: default
 ---
 
+  <!--   CHALLENGE   -->
+
+
 <div class="home">
   <div class="full-screen-wrapper">
     {% include hero.html video=page.video content=page.description link="//vimeo.com/193598001" %}
   </div>
 
-  <div class="wrapper wrapper-wide">
-    {% include section-header.html title="the challenge" %}
+  {% if page.chat %}
+    <div class="wrapper wrapper-wide">
+      {% include section-header.html title="the challenge" %}
 
-    <div class="section section--bg">
+      <div class="section section--bg">
 
-      <div class="section-inner">
-        <div class="filters">
+        <div class="section-inner">
+          <div class="filters">
 
-          {% for content in page.chat %}
-            
-            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-            {% assign my_client = site.clients | where:"title",page.client %}
-            {% assign my_client_logo = my_client.first.logo %}
+            {% for content in page.chat %}
+              
+              {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+              {% assign my_client = site.clients | where:"title",page.client %}
+              {% assign my_client_logo = my_client.first.logo %}
 
-            {% if thecycle == 'odd' %}
+              {% if thecycle == 'odd' %}
 
-              {% include chat-bubble.html chat=content brand="client" logo=my_client_logo %}
+                {% include chat-bubble.html chat=content brand="client" logo=my_client_logo %}
 
-            {% else %}
+              {% else %}
 
-              {% include chat-bubble.html chat=content brand="tanjun" logo="/uploads/britishtri.png" %}
+                {% include chat-bubble.html chat=content brand="tanjun" logo="/uploads/britishtri.png" %}
 
-            {% endif %}
-          {% endfor %}
+              {% endif %}
+            {% endfor %}
 
+          </div>
         </div>
-      </div>
 
-    </div>  
-  </div>
+      </div>  
+    </div>
+  {% endif %}
 
 
+  <!--   SOLUTION   -->
+
+
+
+  {% if page.content.size > 1 %}
+    <div class="wrapper wrapper-wide">
+      {% include section-header.html title="the solution" %}
+
+      <div class="section section--bg">
+
+        <div class="section-inner">
+          <div class="filters solution">
+
+            {% assign sections = page.content | split: '<hr />' %}
+
+            {% for section in sections %}
+              <div class="solution-section">{{ section }}</div>
+            {% endfor %}
+
+          </div>
+        </div>
+
+      </div>  
+    </div>
+  {% endif %}
+
+
+  <!--   RESULTS   -->
+
+
+    {% if page.results %}
+        <div class="wrapper wrapper-wide">
+
+            {% include section-header.html title="results" %}
+
+
+            <div class="section">
+                <div class="section-inner">
+
+                    {% for result in page.results %}
+                        <div class="result-block white">
+                            <div class="result">
+                                <h5>2m</h5>
+                                <p>Views</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+
+  <!--   GET IN TOUCH   -->
+
+  {% include get-in-touch.html %}
+
+
+  <!--   SEE SOME MORE   -->
 
   <div class="wrapper wrapper-wide">
-    {% include section-header.html title="the solution" %}
-
-    <div class="section section--bg">
-
-      <div class="section-inner">
-        <div class="filters">
-
-          hi
-        </div>
-      </div>
-
-    </div>  
+    {% include featured-work.html %}
   </div>
 
 </div>

@@ -196,16 +196,18 @@
     position: relative;    
     margin-right: auto;
     margin-left: auto;
-    h2 {
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        vertical-align: baseline;
-    }
 }
+
+.page-heading {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: baseline;
+}
+    
 .section-description {
     @extend %contentwrapper;
     padding-bottom: 1em;

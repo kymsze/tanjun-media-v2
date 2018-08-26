@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+
+
 	// CAROUSEL 
 
 	function defer(method) {
@@ -214,6 +216,48 @@ $( document ).ready(function() {
 	// Call the loop for the first time
 	loop();
 
+
+
+
+
+	//  ANIAMTE 
+	var $chatClient = $('.chat-client');
+	var $chatTanjun = $('.chat-tanjun');
+	var $FeatureText = $('.feature');
+	var $PageHeading = $('.page-heading');
+	var $solution = $('.solution-section > p')
+
+	$chatClient.waypoint(function (direction) {
+		if (direction == 'down') {
+			$(this.element).addClass('animate');
+		} else {
+			$(this.element).removeClass('animate');
+		};
+	}, { offset: '70%' })
+
+	$chatTanjun.waypoint(function (direction) {
+		if (direction == 'down') {
+			$(this.element).addClass('animate');
+		} else {
+			$(this.element).removeClass('animate');
+		};
+	}, { offset: '70%' })
+
+	$PageHeading.waypoint(function(direction) {
+		if (direction == 'down') {
+			$(this.element).addClass('animate');
+		} else {
+			$(this.element).removeClass('animate');
+		};	
+	}, { offset: '80%' })
+
+	$solution.waypoint(function(direction) {
+		if (direction == 'down') {
+			$(this.element).addClass('awkward-animate');
+		} else {
+			$(this.element).removeClass('awkward-animate');
+		};	
+	}, { offset: '100%' })
 
 
 
