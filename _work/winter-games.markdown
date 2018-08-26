@@ -22,12 +22,13 @@ results:
 client: team gb
 featured: true
 service:
-- digital campaigns
 - CONCEPTS & CREATIVES
 - PRODUCTION
 - EDITING
 - VFX
 - COLOUR GRADE
+content:
+- digital campaigns
 layout: work
 ---
 

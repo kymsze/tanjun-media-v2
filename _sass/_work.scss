@@ -1,7 +1,8 @@
 .work {
 	position: relative;
+	
 	.video-wrapper {
-	    height: 40em;
+	    height: 27em;
 	    overflow: hidden;
 		margin: 3em 0;		
 		position: relative;
@@ -20,18 +21,32 @@
 
 	.work-details {
 		position: absolute;
-		top: 20%;
+		top: 15%;
 		text-align: center;
 		@extend %contentwrapper;
+
+		@include media-query($on-palm) {
+			top: 10%;
+			padding-left: 5%;
+		    padding-right: 5%;
+		}
+
+		@include media-query($on-mobile) {
+		    h3 {
+		    	font-size: 2.5em;
+		    }
+		}
 	}
-}
+
+	.work-large {
+		.video-wrapper {
+		    height: 35em;
+		}
+
+		.work-details {
+			top: 20%;
+		}
+	}
 
 
-
-@include media-query($on-mobile) {
-    .work {
-    	.work-details {
-		top: 10%;
-	    }
-    }
 }

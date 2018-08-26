@@ -86,8 +86,8 @@ layout: default
                     {% for result in page.results %}
                         <div class="result-block white">
                             <div class="result">
-                                <h5>2m</h5>
-                                <p>Views</p>
+                                <h5>{{ result[1] }}</h5>
+                                <p>{{ result[0] }}</p>
                             </div>
                         </div>
                     {% endfor %}

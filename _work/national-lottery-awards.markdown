@@ -9,12 +9,13 @@ client: uk sport
 featured: false
 layout: work
 service:
-- digital campaigns
 - CONCEPTS & CREATIVES
 - PRODUCTION
 - EDITING
 - VFX
 - COLOUR GRADE
 - EQUIPMENT HIRE
+content:
+- influencers
 ---
 

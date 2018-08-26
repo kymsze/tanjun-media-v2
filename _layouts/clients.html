@@ -12,6 +12,7 @@ layout: default-blue
 
 			{% assign works = site.work | where: 'client', page.title %}
 			{% for work in works %}
+				{{work | inspect}}
 				{% include work-block.html %}
 			{% endfor %}
 		</div>
