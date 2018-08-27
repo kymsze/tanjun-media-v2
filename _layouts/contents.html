@@ -10,7 +10,7 @@ layout: default-blue
 		<div class="section-inner">
 			{% include filters-block.html open="content" %}
 
-			{% assign works = site.work | where: 'content', page.title %}
+			{% assign works = site.work | where: 'contents', page.title %}
 			{% for work in works %}
 				{% include work-block.html %}
 			{% endfor %}

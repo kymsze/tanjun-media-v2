@@ -6,8 +6,10 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laor
   accumsan tempus. Nullam magna justo, porttitor vitae mi maximus, pellentesque tristique
   ex. Vivamus aliquet ipsum.
 client: uk sport
-featured: false
+featured: true
 layout: work
+contents:
+- influencers
 service:
 - CONCEPTS & CREATIVES
 - PRODUCTION
@@ -15,7 +17,5 @@ service:
 - VFX
 - COLOUR GRADE
 - EQUIPMENT HIRE
-content:
-- influencers
 ---
 

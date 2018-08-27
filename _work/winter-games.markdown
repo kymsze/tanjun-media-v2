@@ -21,14 +21,15 @@ results:
   Behind the  Scenes: 10k
 client: team gb
 featured: true
+contents:
+- digital campaigns
+- influencer
 service:
 - CONCEPTS & CREATIVES
 - PRODUCTION
 - EDITING
 - VFX
 - COLOUR GRADE
-content:
-- digital campaigns
 layout: work
 ---
 

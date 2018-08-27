@@ -4,85 +4,93 @@ $( document ).ready(function() {
 
 	// CAROUSEL 
 
-	function defer(method) {
-	    if (window.jQuery)
-	        method();
-	    else
-	        setTimeout(function() {
-	            defer(method)
-	        }, 50);
+	function triggerCaroselLoad() {
+		var resourceWidth = $('.resource').first().width();
+
+		$('.carousel-img').each(function() {
+			var $this = $(this)
+		  	if ($this.width() > resourceWidth) {
+				$this.css({
+				  '-webkit-transform' : 'translateX(-20%)',
+				  '-moz-transform'    : 'translateX(-20%)',
+				  '-ms-transform'     : 'translateX(-20%)',
+				  '-o-transform'      : 'translateX(-20%)',
+				  'transform'         : 'translateX(-20%)'
+				});
+		  	}
+		});
+
+	    $('#resource-slider .resource-slider-item').each(function(i) {
+	        var $this = $(this),
+	            left = $this.width() * i;
+	        $this.css({
+	            left: left
+	        })
+	    }); // end each
 	}
 
-	defer(function() {
-	    (function($) {
+	function carousel() {
 
-	        function doneResizing() {
-	            var totalScroll = $('.resource-slider-frame').scrollLeft();
-	            var itemWidth = $('.resource-slider-item').width();
-	            var difference = totalScroll % itemWidth;
-	            if (difference !== 0) {
-	                $('.resource-slider-frame').animate({
-	                    scrollLeft: '-=' + difference
-	                }, 500, function() {
-	                    // check arrows
-	                });
-	            }
-	        }
+		function defer(method) {
+		    if (window.jQuery)
+		        method();
+		    else
+		        setTimeout(function() {
+		            defer(method)
+		        }, 50);
+		}
 
-	        $('.arrow').on('click', function() {
-	            var $this = $(this),
-	                width = $('.resource-slider-item').width(),
-	                speed = 500;
-	            if ($this.hasClass('prev')) {
-	                $('.resource-slider-frame').animate({
-	                    scrollLeft: '-=' + width
-	                }, speed, function() {
-	                    // check arrows
-	                });
-	            } else if ($this.hasClass('next')) {
-	                $('.resource-slider-frame').animate({
-	                    scrollLeft: '+=' + width
-	                }, speed, function() {
-	                    // check arrows
-	                });
-	            }
-	        }); // end on arrow click
+		defer(function() {
+		    (function($) {
 
-	        $(window).on("load resize", function() {
-	        	var resourceWidth = $('.resource').first().width();
+		        function doneResizing() {
+		            var totalScroll = $('.resource-slider-frame').scrollLeft();
+		            var itemWidth = $('.resource-slider-item').width();
+		            var difference = totalScroll % itemWidth;
+		            if (difference !== 0) {
+		                $('.resource-slider-frame').animate({
+		                    scrollLeft: '-=' + difference
+		                }, 500, function() {
+		                    // check arrows
+		                });
+		            }
+		        }
 
-				$('.carousel-img').each(function() {
-					var $this = $(this)
-				  	if ($this.width() > resourceWidth) {
-						$this.css({
-						  '-webkit-transform' : 'translateX(-20%)',
-						  '-moz-transform'    : 'translateX(-20%)',
-						  '-ms-transform'     : 'translateX(-20%)',
-						  '-o-transform'      : 'translateX(-20%)',
-						  'transform'         : 'translateX(-20%)'
-						});
-				  	}
-				});
+		        $('.arrow').on('click', function() {
+		            var $this = $(this),
+		                width = $('.resource-slider-item').width(),
+		                speed = 500;
+		            if ($this.hasClass('prev')) {
+		                $('.resource-slider-frame').animate({
+		                    scrollLeft: '-=' + width
+		                }, speed, function() {
+		                    // check arrows
+		                });
+		            } else if ($this.hasClass('next')) {
+		                $('.resource-slider-frame').animate({
+		                    scrollLeft: '+=' + width
+		                }, speed, function() {
+		                    // check arrows
+		                });
+		            }
+		        }); // end on arrow click
 
-	            $('#resource-slider .resource-slider-item').each(function(i) {
-	                var $this = $(this),
-	                    left = $this.width() * i;
-	                $this.css({
-	                    left: left
-	                })
-	            }); // end each
-	        }); // end window resize/load
+		        $(window).on("load resize", function() {
+			        triggerCaroselLoad();
+		        }); // end window resize/load
 
-	        var resizeId;
-	        $(window).resize(function() {
-	            clearTimeout(resizeId);
-	            resizeId = setTimeout(doneResizing, 500);
-	        });
+		        var resizeId;
+		        $(window).resize(function() {
+		            clearTimeout(resizeId);
+		            resizeId = setTimeout(doneResizing, 500);
+		        });
 
-	    })(jQuery); // end function
-	});
+		    })(jQuery); // end function
+		});
 
+	}
 
+	carousel();
 
 
 	// BORDER
@@ -142,7 +150,7 @@ $( document ).ready(function() {
 	var replaceItemHeight = -1;
 	 
 	// The Scroll Function
-	function loop(){
+	function Headerloop(){
 		var top = window.pageYOffset;
 		// my variables
 
@@ -164,7 +172,7 @@ $( document ).ready(function() {
 	  
 		// Fire when needed
 		if (lastPosition == window.pageYOffset) {
-			scroll(loop);
+			scroll(Headerloop);
 			return false;
 		} else {
 			lastPosition = window.pageYOffset;
@@ -209,57 +217,61 @@ $( document ).ready(function() {
 
 		}
 
-		// Recall the loop
-		scroll( loop )
+		// Recall the Headerloop
+		scroll( Headerloop )
 	}
 
-	// Call the loop for the first time
-	loop();
+	// Call the Headerloop for the first time
+	Headerloop();
 
 
 
 
 
 	//  ANIAMTE 
-	var $chatClient = $('.chat-client');
-	var $chatTanjun = $('.chat-tanjun');
-	var $FeatureText = $('.feature');
-	var $PageHeading = $('.page-heading');
-	var $solution = $('.solution-section > p')
 
-	$chatClient.waypoint(function (direction) {
-		if (direction == 'down') {
-			$(this.element).addClass('animate');
-		} else {
-			$(this.element).removeClass('animate');
-		};
-	}, { offset: '70%' })
+	function animate() {
+		var $chatClient = $('.chat-client');
+		var $chatTanjun = $('.chat-tanjun');
+		var $FeatureText = $('.feature');
+		var $PageHeading = $('.page-heading');
+		var $solution = $('.solution-section > p')
 
-	$chatTanjun.waypoint(function (direction) {
-		if (direction == 'down') {
-			$(this.element).addClass('animate');
-		} else {
-			$(this.element).removeClass('animate');
-		};
-	}, { offset: '70%' })
+		$chatClient.waypoint(function (direction) {
+			if (direction == 'down') {
+				$(this.element).addClass('animate');
+			} else {
+				$(this.element).removeClass('animate');
+			};
+		}, { offset: '70%' })
 
-	$PageHeading.waypoint(function(direction) {
-		if (direction == 'down') {
-			$(this.element).addClass('animate');
-		} else {
-			$(this.element).removeClass('animate');
-		};	
-	}, { offset: '80%' })
+		$chatTanjun.waypoint(function (direction) {
+			if (direction == 'down') {
+				$(this.element).addClass('animate');
+			} else {
+				$(this.element).removeClass('animate');
+			};
+		}, { offset: '70%' })
 
-	$solution.waypoint(function(direction) {
-		if (direction == 'down') {
-			$(this.element).addClass('awkward-animate');
-		} else {
-			$(this.element).removeClass('awkward-animate');
-		};	
-	}, { offset: '100%' })
+		$PageHeading.waypoint(function(direction) {
+			if (direction == 'down') {
+				$(this.element).addClass('animate');
+			} else {
+				$(this.element).removeClass('animate');
+			};	
+		}, { offset: '80%' })
 
+		$solution.waypoint(function(direction) {
+			if (direction == 'down') {
+				$(this.element).addClass('awkward-animate');
+			} else {
+				$(this.element).removeClass('awkward-animate');
+			};	
+		}, { offset: '100%' })
 
+	}
+
+	animate();
 
 
 	// VID HOVER
@@ -311,7 +323,7 @@ $( document ).ready(function() {
 			var deferred = Barba.Utils.deferred();
 			var obj = { y: window.pageYOffset };
 
-			TweenLite.to(obj, 0.7, {
+			TweenLite.to(obj, 0, {
 				y: 0,
 				
 				onUpdate: function() {
@@ -342,23 +354,31 @@ $( document ).ready(function() {
 			});
 
 
-			$el.animate({ opacity: 1 }, 200, function() {
+			$el.animate({ opacity: 1 }, 0, function() {
 			    document.body.scrollTop = 0;
 				_this.done();
 				borders();
 				videoHover();
 				openNav();
-				loop();
+				Headerloop();
+				animate();
+				triggerCaroselLoad();
+				carousel();
 			});
 		}
     });
 
+	Barba.Pjax.getTransition = function() {
+	  return transEffect;
+	};
+
+	Barba.Pjax.start();
 
 	// WINDOW RESIZE
 
 
 	window.onresize = function(event) {
-		loop();
+		Headerloop();
 		borders();
 	};
 

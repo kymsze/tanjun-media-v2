@@ -97,16 +97,39 @@ layout: default
         </div>
     {% endif %}
 
+    <!--   GET IN TOUCH   -->
 
-  <!--   GET IN TOUCH   -->
-
-  {% include get-in-touch.html %}
+    {% include get-in-touch.html %}
 
 
-  <!--   SEE SOME MORE   -->
+    <!--   SEE SOME MORE   -->
 
-  <div class="wrapper wrapper-wide">
-    {% include featured-work.html %}
-  </div>
+    <div class="wrapper wrapper-wide">
+            {% include section-header.html title="related work" %}
+
+        <div class="section section--bg">
+
+            <div class="section-inner">
+            
+            {% assign linked_work_1 = site.work | where: 'client', page.client %}
+            {% assign linked_work_2 = site.work | where: 'contents', page.contents[0] %}
+            {% assign linked_work_3 = site.work | where: 'contents', page.contents[1] %}
+            {% assign linked_work_4 = site.work | where: 'contents', page.contents[2] %}
+            {% assign featured_work = site.work | where: 'featured', true %}
+
+            {% assign linked_work = linked_work_1 | concat: linked_work_2 | concat: linked_work_3 | concat: linked_work_4 | concat: featured_work | uniq | at_most: 3 %}
+
+            {% for work in linked_work %}
+                {% unless work.title contains page.title %}
+                    {% include work-block.html %}
+                {% endunless %}
+            {% endfor %}
+
+            {% include button.html link="/work" class="next" cta="see more" colour="btn_white" %}
+
+            </div>
+
+        </div>  
+    </div>
 
 </div>
