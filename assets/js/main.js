@@ -293,18 +293,93 @@ $( document ).ready(function() {
 
 
 
+	// VIDEO AUTOPALY
+	function iframeAutoplay() {
+
+		function checkScroll(trigger, key) {
+			trigger.waypoint(function(direction) {
+				if (direction == 'down') {
+					key.play();
+				} else {
+					key.pause();
+				};	
+			}, { offset: '70%' })
+
+			trigger.waypoint(function(direction) {
+				if (direction == 'down') {
+					key.pause();
+				} else {
+					key.play();
+				};	
+			}, { offset: '20%' })
+		}
+
+	    var options = {
+	        autopause: true,
+	        background: true
+	    };
+
+		$.each( $(".iframe"), function( index, value ) {
+
+			var trigger = $( this );
+			var key = new Vimeo.Player(value, options);
+
+			key.ready().then(function() {
+				key.play().then(function() {
+				    key.pause().then(function() {
+				    	key.pause();
+						checkScroll(trigger, key);
+					});
+				})
+			});
+		});
+    };
+
+    iframeAutoplay();
+
 
 	// NAVIGATION 
 	function openNav() {
 		$(".nav").click(function() {
-			console.log("clicked");
 			$(".nav").toggleClass( 'is-active');
 			$(".navigation").slideToggle();
 			$("body").toggleClass('fixed');
+			$("#clients_nav").slideUp();
+			$("#contents_nav").slideUp();
+			$("#services_nav").slideUp();
 		});
 	};
 
 	openNav();
+
+	function openSubNav() {
+		$("#show_clients").click(function() {
+			$("#contents_nav").slideUp( function() {
+			    $("#clients_nav").slideDown("slow");
+			});
+			$("#services_nav").slideUp( function() {
+			    $("#clients_nav").slideDown("slow");
+			});
+		});
+		$("#show_contents").click(function() {
+			$("#clients_nav").slideUp( function() {
+			    $("#contents_nav").slideDown("slow");
+			});
+			$("#services_nav").slideUp( function() {
+			    $("#contents_nav").slideDown("slow");
+			});
+		});
+		$("#show_services").click(function() {
+			$("#contents_nav").slideUp( function() {
+			    $("#services_nav").slideDown("slow");
+			});
+			$("#clients_nav").slideUp( function() {
+			    $("#services_nav").slideDown("slow");
+			});
+		});
+	};
+
+	openSubNav();
 
 
 
@@ -360,10 +435,12 @@ $( document ).ready(function() {
 				borders();
 				videoHover();
 				openNav();
+				openSubNav();
 				Headerloop();
 				animate();
 				triggerCaroselLoad();
 				carousel();
+				iframeAutoplay();
 			});
 		}
     });

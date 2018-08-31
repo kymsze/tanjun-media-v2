@@ -6,21 +6,28 @@
     <button class='arrow next'></button>
     <div class="resource-slider-frame">
 
-			{% for post in posts %}
-	      <div class="resource-slider-item">
-	        <div class="resource-slider-inset">
-	          <div class="resource">
-	            <a href="{{ post.Link }}" target="_blank">
-	            	<img class="carousel-img" src="{{ post.Image }}">
-	            	<div class="resource-content">
-	            		<p> 
-							{{ post | newline_to_br }}
-	            		</p>
-	            	</div>
-	            </a>
-	          </div>
-	        </div>
-	      </div>
+		{% for post in posts %}
+			<div class="resource-slider-item">
+				<div class="resource-slider-inset">
+					<div class="resource">
+						<a href="{{ post.Link }}" target="_blank">
+
+							{% if post.Image.size > 2 %}
+								<div class="background background-image" style="background-image: url({{post.Image}})"></div>
+								<div class="resource-content content-image">
+									{{post}}
+								</div>
+							{% else %}
+								<div class="background"></div>
+								<div class="resource-content">
+									{{post}}
+								</div>
+							{% endif %}
+
+						</a>
+					</div>
+				</div>
+			</div>
 	    {% endfor %}
 
 

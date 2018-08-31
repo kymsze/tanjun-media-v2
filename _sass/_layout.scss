@@ -223,8 +223,8 @@
 }
 
 %contentwrapper {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 
@@ -261,12 +261,6 @@
 }
 
 .hero-filter {
-/*    -webkit-filter: url(#fill);  Safari 6.0 - 9.0 
-    filter: url(#fill);*/
-
-/*  -webkit-filter: saturate(55%) sepia(6%) grayscale(14%) hue-rotate(348deg);
-  filter: saturate(55%) sepia(6%) grayscale(14%) hue-rotate(348deg);*/
-
   -webkit-filter: saturate(29%) hue-rotate(261deg);
   filter: saturate(29%) hue-rotate(261deg);
 }

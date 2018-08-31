@@ -45,11 +45,11 @@ defaults:
     layout: contents
 email: hello@tanjunmedia.com
 description: |-
-  We are digital film content creators.
+  **We are** digital film content creators.
 
-  We are digital natives We live and breathe social content.
+  **We are** digital natives We live and breathe social content.
 
-  We make great stuff and tell great stories and we would love to help tell yours.
+  **We make** great stuff and tell great stories and we would love to help tell yours.
 baseurl: 
 url: http://www.tanjunmedia.com
 markdown: kramdown

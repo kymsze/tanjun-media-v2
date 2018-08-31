@@ -1,0 +1,36 @@
+<div class=" navigation">
+
+	<div class="col-wrapper">
+
+		<div class="col col-1">
+
+			<a class="nav-item nav-main nav-subs" id="show_clients" href="#"><p> clients </p></a>
+
+			<a class="nav-item nav-main nav-subs" id="show_contents" href="#"><p> content type </p></a>
+
+			<a class="nav-item nav-main nav-subs" id="show_services" href="#"><p> services </p></a>
+
+			<a class="nav-item nav-main nav" href="/#footer"><p> get in touch </p></a>
+		</div>
+
+		<div class="col col-1">
+			<div id="clients_nav">
+				{% for client in site.clients %}
+					<a class="nav-item nav" href="{{ client.url }}"><p>{{client.title}}</p></a>
+				{% endfor %}
+			</div>
+
+			<div id="contents_nav">
+				{% for contents in site.contents %}
+					<a class="nav-item nav" href="{{ contents.url }}"><p>{{contents.title}}</p></a>
+				{% endfor %}
+			</div>
+
+			<div id="services_nav">
+				{% for service in site.services %}
+					<a class="nav-item nav" href="{{ service.url }}"><p>{{service.title}}</p></a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
