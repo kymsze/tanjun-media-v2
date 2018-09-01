@@ -1,10 +1,6 @@
 <div class="full-media section">
-
-	<div id="inline" style="background:#fff" class="lity-hide">
-		Inline content
-	</div>
-
-	<video id="vid" poster="{{ include.video }}.png" preload="none" loop="" muted="" playsinline="" autoplay="">
+	<div class="overlay"></div>
+	<video id="vid" poster="{{ include.video }}.jpg" preload="none" loop="" muted="" playsinline="" autoplay="">
 		<source id="mp4" src="{{ include.video }}.mp4" type="video/mp4">
 		<source id="webm" src="{{ include.video }}.webm" type="video/webm">
 		<source src="{{ include.video }}.ogv" type="video/ogg"></source>
@@ -14,8 +10,15 @@
 <div class="hero-content">
 
 	<div class="video-text">
+
 		<p>{{ include.content | newline_to_br }}</p>
-		<p><a href={{include.link}}  data-lity>Play 2018 Reel</a></p>
+		
+		{% if include.reel == true %}
+			<p><a href={{include.video-link}}  data-lity>Play 2018 Reel</a></p>
+		{% else %}
+			<p><a href={{include.video-link}}  data-lity>Play {{ include.title }} reel</a></p>
+		{% endif %}
+	
 	</div>
 </div>
 

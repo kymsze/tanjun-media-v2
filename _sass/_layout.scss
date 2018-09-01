@@ -234,19 +234,28 @@
     padding-right: 5%;
 }
 
+
 .full-media {
-    top: 0;
-    bottom: 0;
     position: fixed;
-    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
 
     #vid {
-        min-height: 100%;
-        min-width: 100%;
-        width: auto;
         position: fixed;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, 0);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
     }
 }
 
@@ -257,7 +266,7 @@
 
 
 .overlay {
-    background: url("/assets/img/smaller-dot.png") repeat;
+    background-color: #0000002e;
     position: absolute;
     top: 50%;
     left: 50%;
