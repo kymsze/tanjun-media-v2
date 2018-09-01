@@ -11,25 +11,25 @@
 
 @font-face {
   font-family: 'Body';
-  src: url('fonts/FuturaLight.eot');
-  src: url('fonts/FuturaLight.eot?#iefix') format('embedded-opentype'), url('fonts/FuturaLight.woff') format('woff'), url('fonts/FuturaLight.ttf') format('truetype');
+  src: url('fonts/Rubik-Light.eot');
+  src: url('fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Rubik-Light.woff') format('woff'), url('fonts/Rubik-Light.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
- }
-
- @font-face {
-  font-family: 'BodyBold';
-  src: url('fonts/FuturaLight.eot');
-  src: url('fonts/FuturaLight.eot?#iefix') format('embedded-opentype'), url('fonts/FuturaLight.woff') format('woff'), url('fonts/FuturaLight.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
- }
+}
 
 @font-face {
   font-family: 'BodyMedium';
-  src: url('fonts/FuturaExtended.eot');
-  src: url('fonts/FuturaExtended.eot?#iefix') format('embedded-opentype'), url('fonts/FuturaExtended.woff') format('woff'), url('fonts/FuturaExtended.ttf') format('truetype');
+  src: url('fonts/Rubik-Bold.eot');
+  src: url('fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Rubik-Bold.woff') format('woff'), url('fonts/Rubik-Bold.ttf') format('truetype');
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'BodyBold';
+  src: url('fonts/Rubik-Black.eot');
+  src: url('fonts/Rubik-Black.eot?#iefix') format('embedded-opentype'), url('fonts/Rubik-Black.woff') format('woff'), url('fonts/Rubik-Black.ttf') format('truetype');
+  font-style: normal;
+  letter-spacing: 0.02em;
 }
 
 @font-face {

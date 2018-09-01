@@ -4,25 +4,18 @@
 		Inline content
 	</div>
 
-	<video id="vid" poster="https://s3-us-west-1.amazonaws.com/media-us-westslateappcom/madcowfilms/production/clips/landing-page-jan-2018.1280x720.2500.610ee6bfe52592bc2e59ad729282f3d7.png" preload="none" loop="" muted="" playsinline="" autoplay="">
-		<source id="mp4" src="https://s3-us-west-1.amazonaws.com/media-us-westslateappcom/madcowfilms/production/clips/landing-page-jan-2018.1280x720.2500.610ee6bfe52592bc2e59ad729282f3d7.mp4" type="video/mp4">
-		<source id="webm" src="https://s3-us-west-1.amazonaws.com/media-us-westslateappcom/madcowfilms/production/clips/landing-page-jan-2018.1280x720.2500.610ee6bfe52592bc2e59ad729282f3d7.webm" type="video/webm">
-		<source src="https://s3-us-west-1.amazonaws.com/media-us-westslateappcom/madcowfilms/production/clips/landing-page-jan-2018.1280x720.2500.610ee6bfe52592bc2e59ad729282f3d7.ogv" type="video/ogg"></source>
+	<video id="vid" poster="{{ include.video }}.png" preload="none" loop="" muted="" playsinline="" autoplay="">
+		<source id="mp4" src="{{ include.video }}.mp4" type="video/mp4">
+		<source id="webm" src="{{ include.video }}.webm" type="video/webm">
+		<source src="{{ include.video }}.ogv" type="video/ogg"></source>
 	</video>
 </div>
 
 <div class="hero-content">
 
-	<div class="logo-text">
-		<img src="{{ "/assets/img/LogoPinkText.png" | prepend: site.baseurl }}" width: "350">
-	</div>
-
 	<div class="video-text">
-		<p>{{ include.content }}</p>
-	</div>
-
-	<div class="cta">
-		{% include button.html link=include.link lity="true" cta="play" colour="btn_white" %}
+		<p>{{ include.content | newline_to_br }}</p>
+		<p><a href={{include.link}}  data-lity>Play 2018 Reel</a></p>
 	</div>
 </div>
 

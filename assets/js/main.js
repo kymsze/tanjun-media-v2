@@ -303,7 +303,7 @@ $( document ).ready(function() {
 				} else {
 					key.pause();
 				};	
-			}, { offset: '70%' })
+			}, { offset: '80%' })
 
 			trigger.waypoint(function(direction) {
 				if (direction == 'down') {
@@ -311,7 +311,7 @@ $( document ).ready(function() {
 				} else {
 					key.play();
 				};	
-			}, { offset: '20%' })
+			}, { offset: '0%' })
 		}
 
 	    var options = {

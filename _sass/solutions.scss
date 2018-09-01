@@ -1,5 +1,5 @@
 .solution-section {
-	margin: 2em 0;
+	margin: 5em 0;
 	float: left;
 
 	.image, .video, p {
@@ -214,6 +214,9 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
+	p {
+		text-align: center;
+	}
 }
 
 .result-block.white {

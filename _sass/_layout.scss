@@ -16,7 +16,7 @@
 
 .site-nav {
     float: right;
-    padding: 2em 1.5em 0 0;
+    padding: 0.4em 1em 0 0;
     max-width: 3em;
 
     .menu-icon {
@@ -130,14 +130,6 @@
     }
 }
 
-/*@include media-query($on-palm) {
-    .col {
-        float: none;
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-}*/
-
 
 /**
  * ---------------------------------------   Border  --------------------------------------*
@@ -179,7 +171,7 @@
 .section {
     width: 100%;
     background-color: $pink-color;
-    text-align: center;
+    text-align: left;
     margin-right: auto;
     margin-left: auto;
     margin: 0 auto;
@@ -204,7 +196,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    text-align: center;
+    text-align: left;
     vertical-align: baseline;
 }
     
@@ -215,8 +207,6 @@
 
 .section-inner {
     @extend %clearfix;
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     margin: 0 auto;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -305,13 +295,7 @@
 
     .video-text {
         position: absolute;
-        top: 25vh;
-    }
-
-    .cta {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+        bottom: 10vh;
     }
 }
 
@@ -322,7 +306,7 @@
 }
 
 .filters {
-    text-align: center;
+    text-align: left;
     @extend %contentwrapperwide;
     @extend %clearfix;
 
@@ -335,3 +319,6 @@
     text-align: right;
 }
 
+.center {
+    text-align: center;
+}

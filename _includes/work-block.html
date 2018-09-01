@@ -10,24 +10,28 @@
 
 		    <div class="work-details">
 
+			    <h3>
+			     	{{ work.title }}
+			    </h3>
+			    <p class="work-description">{{ work.client }} </p>
+			    
 			    <div class="tags">
 				    {% for service in work.service %}
 				    	<div class="tag tag-small">{{ service }}</div>
 				    {% endfor %}
-			    </div>
 
-			    <h3>
-			     	{{ work.title }}
-			    </h3>
-
-			    <div class="tags">
-			    <div class="tag tag-small"> {{ work.client }} </div>
+				    <br>
+			    	
 				    {% for contents in work.contents %}
 				    	<div class="tag tag-small">{{ contents }}</div>
 				    {% endfor %}
+
+			    	<br>
+
+			    	<!-- <div class="tag tag-small"> {{ work.client }} </div> -->
+
 			    </div>
 
-			    <p class="work-description">{{ work.description }}</p>
 		    </div>
 
 		</div>

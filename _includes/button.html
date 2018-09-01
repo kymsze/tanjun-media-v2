@@ -1,13 +1,15 @@
-{% if include.lity %}
-	<a class="btn {{include.colour}}" data-lity href={{include.link}}>
-		<span class="inner">
-			{{include.cta}}
-		</span>
-	</a>
-{% else %}
-	<a class="btn {{include.colour}} {{include.class}}" href={{include.link}}>
-		<span class="inner">
-			{{include.cta}}
-		</span>
-	</a>
-{% endif %}
+<div class="filters">
+	{% if include.lity %}
+		<a class="btn {{include.colour}}" data-lity href={{include.link}}>
+			<span class="inner">
+				{{include.cta}}
+			</span>
+		</a>
+	{% else %}
+		<a class="btn {{include.colour}} {{include.class}}" href={{include.link}}>
+			<span class="inner">
+				{{include.cta}}
+			</span>
+		</a>
+	{% endif %}
+</div>

@@ -2,12 +2,7 @@
 
 <div class="section section--bg">
 	<div class="section-inner">
-
-		<p class="section-description">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet accumsan tempus. 
-		</p>
-
-
+		
 		{% for work in site.work %}
 		  {% if work.featured == true %}
 			{% include work-block.html style="work-large"%}

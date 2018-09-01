@@ -43,6 +43,7 @@ p {
 	font-size: 1.2em; 
 	line-height: 1.3em;
 	letter-spacing: 0.9;
+	text-transform: lowercase;
 }
 
 label {
@@ -57,25 +58,46 @@ label {
     font-style: normal;
     font-stretch: normal;
     letter-spacing: 0.5px;
-    text-align: center;
     color: #ffffff;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     @extend %contentwrapper;
     p {
 		line-height: 1.5em;
-	    font-size: 2.5em;
-	    font-family: HeaderLight;
+	    letter-spacing: 0.03em;
+	    font-size: 2.2em;
+	    font-family: Body;
+
     	color: white;
+    	text-transform: uppercase;
     	margin-bottom: 0;
+	    text-align: left;
+	    text-shadow: 1px 1px 0px #1111117a;
+
+	    b {
+		    font-family: BodyMedium;
+	    }
+
+	    a {
+		    font-family: BodyBold;
+	    	color: $pink-color;
+	    	text-decoration: none;
+		    text-shadow: 1px 1px 0px #b5276f7d;
+			&:after {
+				content: '▶';
+			    position: absolute;
+			    padding-left: 0.5em;
+			}
+	    }
     }
 }
 
 p.feature {
-    font-family: HeaderLight;
+    font-family: Body;
     font-size: 3.7em;
     text-align: left; 
     max-width: 90%;
+    text-transform: lowercase;
 }
 
 @include media-query($on-palm) {
@@ -88,8 +110,9 @@ p.feature {
 	h5, p {
 	}
 	h5 {
-	    font-family: HeaderLight;
+	    font-family: BodyMedium;
 	    font-size: 3em;
+	    text-transform: uppercase;
 	}
 }
 
@@ -101,16 +124,17 @@ p.feature {
 
 h2 {
   width: 293px;
-  font-family: Header;
+  font-family: BodyBold;
   font-size: 4em;
   line-height: 0.68em;
   color: white;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 h3 {
   	font-family: HeaderLight;
     color: $pink-color;
+    text-transform: uppercase;
 }
 
 .clear-btn {
@@ -138,31 +162,47 @@ h3 {
     font-family: HeaderLight;
     font-size: 0.9em;
     text-align: center;
-    color: #ffffff;
+    color: $pink-color;
     p {
 	    font-family: HeaderLight;
 	    font-size: 1em;
 	    text-align: center;
+	    text-transform: uppercase;
     }
 }
 
 .work {
 	h3 {
-		font-family: Header;
-		font-size: 3.5em;
+		font-family: BodyBold;
+		font-size: 3em;
 		line-height: 1em;
-		text-align: center;
-		color: white;
-	    text-shadow: 0 1px 1px black;
+		text-align: left;
+		color: $pink-color;
+	    text-transform: uppercase;
 	}
 
 	.work-description {
 	  font-family: BodyMedium;
 	  font-size: 1.2em;
-	  text-align: center;
+	  text-align: left;
 	  color: white;
 	  letter-spacing: 0.1em;
 	  line-height: 1.5em;
-	  text-shadow: 0 1px 1px black;
+	  text-transform: lowercase;
+
+	}
+}
+
+.nav-item {
+	p {
+		font-family: Body;
+		text-transform: uppercase;
+	}
+
+}
+
+.nav-item.nav-main {
+	p {
+		font-family: BodyMedium;
 	}
 }

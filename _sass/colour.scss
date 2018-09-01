@@ -33,6 +33,12 @@
 	    }
     }
 
+    .tag-small {
+	    background-color: white;
+	    border: 2px solid white;
+	    color: $blue-color;
+    }
+
 	.video-filter{
 	  	-webkit-filter: saturate(51%) grayscale(9%) hue-rotate(165deg);
 	  	filter: saturate(51%) grayscale(9%) hue-rotate(165deg);
@@ -86,5 +92,44 @@
 
 	.section--bg {
 	    background-color: white;
+	}
+
+	.video-text {
+		p {
+			color: white;
+		}
+
+		a {
+			color: $blue-color;
+		    text-shadow: 1px 1px 0px #273fb57d;
+		}
+	}
+
+	.home {
+		background: $blue-color;
+	}
+
+	.chat {
+	    border: 2px solid $blue-color;
+	    color: $blue-color;
+	    .text {
+	    	p {
+	    		color: $blue-color;
+	    	}
+	    }
+    }
+
+    .chat-client:before {
+	    border-right: 20px solid $blue-color;
+	}
+
+	.chat-tanjun:before {
+	    border-left: 20px solid $blue-color;
+	}
+
+	.result-block.white {
+		h5, p {
+			color: $blue-color;
+		}
 	}
 }
