@@ -1,17 +1,21 @@
 ---
 title: Team GB Prep Camp
 date: 2018-07-21 06:52:00 Z
+<<<<<<< HEAD
 video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/team-gb-prep-camp/reel
 video-link: //vimeo.com/177714177
 description:
 chat:
 - Brazil. Olympic Preparation Camp. Team GB athletes. Make stuff?
 - Yes, yes...aaaand yes!
-- Cool! You’ll have very limited access and time with the athletes so you’ll need to be super reactive and think on your feet! Do monkeys even have feet?
+- Cool! You’ll have very limited access and time with the athletes so you’ll need
+  to be super reactive and think on your feet! Do monkeys even have feet?
 - Yes! Yes we do! Thank you very much!
-- Also, we need to tell the story of the Team GB Olympic prep camp. The team behind the team. It’s the first time we’ve done this, so don’t mess it up!!
+- Also, we need to tell the story of the Team GB Olympic prep camp. The team behind
+  the team. It’s the first time we’ve done this, so don’t mess it up!!
 - We’re highly professional, talented and handsome monkeys! We’ve got this!
-- Good! Anyway, swing on down to Belo Horizonte and we’ll see you there. It’s gonna be some summer!
+- Good! Anyway, swing on down to Belo Horizonte and we’ll see you there. It’s gonna
+  be some summer!
 - cue frantic swinging
 results:
   Increase Facebook Engagement: 6%

@@ -1,16 +1,19 @@
 ---
 title: British Tri Brand Relaunch
 date: 2018-07-21 06:52:00 Z
+<<<<<<< HEAD
 video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/tri-brand-relanch/reel
 video-link: //vimeo.com/177369087
 description:
 chat:
-- Our friends at Team GB gave us your details. We’re relaunching our entire digital brand and need some kick-ass content ideas. You in?
+- Our friends at Team GB gave us your details. We’re relaunching our entire digital
+  brand and need some kick-ass content ideas. You in?
 - Sounds more fun than a barrel of monkeys! We’re in!
 - Great! Can you come in and present three content ideas?
 - No! Nope, nooooo, nopey nope! We’ll do even better than that!
 - Ok!!!
-- We’ll create a whole content strategy which will develop a solid blueprint for your entire approach to content creation.
+- We’ll create a whole content strategy which will develop a solid blueprint for your
+  entire approach to content creation.
 - Well, i’ll be a monkey's uncle!!! That’d be awesome! You guys are the bestest!
 results:
   Views: 80k
