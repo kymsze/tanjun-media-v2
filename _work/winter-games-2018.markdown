@@ -2,8 +2,9 @@
 title: Winter Games 2018
 date: 2018-07-21 06:52:00 Z
 video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/winter-games-2018/reel
-video-link: //vimeo.com/266885189
-description: We worked with Team GB to create a campaign across channels to hep raise awareness for the 2018 winter games
+video-link: "//vimeo.com/266885189"
+description: We worked with Team GB to create a campaign across channels to hep raise
+  awareness for the 2018 winter games
 chat:
 - Winter is coming
 - Haha yeah we like Game of Thrones also!!
@@ -32,7 +33,6 @@ service:
 - 360 / VR
 layout: work
 ---
-
 
 <div class='image two-one'>
 <img src='/uploads/winter-games-2018-emailer.gif'>

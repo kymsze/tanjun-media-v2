@@ -2,8 +2,8 @@
 title: Team GB Prep Camp
 date: 2018-07-21 06:52:00 Z
 video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/team-gb-prep-camp/reel
-video-link: //vimeo.com/177714177
-description:
+video-link: "//vimeo.com/177714177"
+description: 
 chat:
 - Brazil. Olympic Preparation Camp. Team GB athletes. Make stuff?
 - Yes, yes...aaaand yes!
