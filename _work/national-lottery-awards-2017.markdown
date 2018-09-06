@@ -1,7 +1,6 @@
 ---
 title: National Lottery Awards 2017
 date: 2018-07-21 06:52:00 Z
-<<<<<<< HEAD
 video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/national-lottery-awards-2017/reel
 video-link: //vimeo.com/182348873
 description:
