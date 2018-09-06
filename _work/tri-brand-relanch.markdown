@@ -1,41 +1,6 @@
 ---
-title: British Tri Brand Relaunch
-date: 2018-07-21 06:52:00 Z
-<<<<<<< HEAD
-video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/tri-brand-relanch/reel
-video-link: //vimeo.com/177369087
-description:
-chat:
-- Our friends at Team GB gave us your details. We’re relaunching our entire digital
-  brand and need some kick-ass content ideas. You in?
-- Sounds more fun than a barrel of monkeys! We’re in!
-- Great! Can you come in and present three content ideas?
-- No! Nope, nooooo, nopey nope! We’ll do even better than that!
-- Ok!!!
-- We’ll create a whole content strategy which will develop a solid blueprint for your
-  entire approach to content creation.
-- Well, i’ll be a monkey's uncle!!! That’d be awesome! You guys are the bestest!
-results:
-  Views: 80k
-  Engagement Increase: 2%
-  Followers Increase: 15%
-  Website Traffic Increase: 5%
-client: british triathlon
-featured: false
-contents:
-- content strategy
-- digital campaigns
-service:
-- COLOUR GRADE
-- CONCEPTS & CREATIVES
-- EDITING
-- PRODUCTION
-- SELF SHOOTER & DIRECTOR
-- SHOOTER
-- VFX
-layout: work
+title: Tri Brand Relanch
 ---
-
 
 <div class='video one-one'>
 <div data-vimeo-url="//vimeo.com/215175022/9a6ddcc9f8" class='iframe'></div>

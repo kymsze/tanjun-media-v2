@@ -1,36 +1,5 @@
 ---
 title: National Lottery Awards 2017
-date: 2018-07-21 06:52:00 Z
-<<<<<<< HEAD
-video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/national-lottery-awards-2017/reel
-video-link: //vimeo.com/182348873
-description:
-chat:
-- It’s the National Lottery Awards!!!! Massive TV show on BBC One and a huuuge annual
-  campaign. We need content! LOT’S OF CONTENT! GOOD CONTENT! HELP!!!
-- Ain’t no thing like a monkey on a swing!
-- Errrr, thanks! We need to reach as many people as possible. Like zillions of ‘em!
-- Pah! We take your zillions and raise you to gatrillion zillion chillion! Aaaand
-  if we can’t deliver that, how about a few hundred thousand instead?
-- Yeah that’ll do!
-- Consider it done! dismounts swing
-results:
-  Views: 1m
-  Snap Chat views: 250k
-  Retweets: 1k
-  Engagement: 12k
-client: national lottery good causes
-featured: false
-contents:
-- influencers
-service:
-- COLOUR GRADE
-- CONCEPTS & CREATIVES
-- EDITING
-- PRODUCTION
-- SHOOTER
-- VFX
-layout: work
 ---
 
 <div class='video one-one'>
