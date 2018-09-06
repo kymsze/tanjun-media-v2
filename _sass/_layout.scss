@@ -16,7 +16,7 @@
 
 .site-nav {
     float: right;
-    padding: 0.4em 1em 0 0;
+    padding: 0.4em 4em 0 0;
     max-width: 3em;
 
     .menu-icon {
@@ -125,8 +125,8 @@
 
     .col-3,
     .col-4 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        width: 50%;
+        width: 50%;
     }
 }
 
@@ -234,28 +234,38 @@
     padding-right: 5%;
 }
 
+* { box-sizing: border-box; }
 
 .full-media {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+  max-width: 100%;
+  overflow: hidden;
+}
 
-    #vid {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
+.video-foreground,
+.full-media #vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { 
+        height: 300%; 
+        top: -100%; 
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground { 
+        width: 320%; 
+        left: -110%; 
     }
 }
 
@@ -330,4 +340,9 @@
 
 .center {
     text-align: center;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }

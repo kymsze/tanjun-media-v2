@@ -235,7 +235,8 @@ $( document ).ready(function() {
 		var $chatTanjun = $('.chat-tanjun');
 		var $FeatureText = $('.feature');
 		var $PageHeading = $('.page-heading');
-		var $solution = $('.solution-section > p')
+		var $solution = $('.solution-section > p');
+		var $solutionquote = $('.solution-section > blockquote')
 
 		$chatClient.waypoint(function (direction) {
 			if (direction == 'down') {
@@ -243,7 +244,7 @@ $( document ).ready(function() {
 			} else {
 				$(this.element).removeClass('animate');
 			};
-		}, { offset: '70%' })
+		}, { offset: '70%' });
 
 		$chatTanjun.waypoint(function (direction) {
 			if (direction == 'down') {
@@ -251,7 +252,7 @@ $( document ).ready(function() {
 			} else {
 				$(this.element).removeClass('animate');
 			};
-		}, { offset: '70%' })
+		}, { offset: '70%' });
 
 		$PageHeading.waypoint(function(direction) {
 			if (direction == 'down') {
@@ -259,7 +260,7 @@ $( document ).ready(function() {
 			} else {
 				$(this.element).removeClass('animate');
 			};	
-		}, { offset: '80%' })
+		}, { offset: '80%' });
 
 		$solution.waypoint(function(direction) {
 			if (direction == 'down') {
@@ -267,7 +268,15 @@ $( document ).ready(function() {
 			} else {
 				$(this.element).removeClass('awkward-animate');
 			};	
-		}, { offset: '100%' })
+		}, { offset: '100%' });
+
+		$solutionquote.waypoint(function(direction) {
+			if (direction == 'down') {
+				$(this.element).addClass('awkward-animate');
+			} else {
+				$(this.element).removeClass('awkward-animate');
+			};	
+		}, { offset: '100%' });
 
 	}
 
@@ -280,12 +289,12 @@ $( document ).ready(function() {
 
 		function hoverVideo(e) {  
 	    $('video', this).get(0).play(); 
-	    $('video', this).removeClass('video-filter');
+	    $('video', this).parent().removeClass('video-filter');
 		}
 
 		function hideVideo(e) {
 	    $('video', this).get(0).pause(); 
-	    $('video', this).addClass('video-filter');
+	    $('video', this).parent().addClass('video-filter');
 		}
 	};
 

@@ -79,7 +79,7 @@
     border: 2px solid white;    
     min-width: 120px;
     max-width: 250px;
-    width: 75%;
+    width: 100%;
     min-height: 3em;
     line-height: 0.5em;
     display: table;
@@ -113,6 +113,19 @@
 work {
     .tags {
         margin-bottom: 1em;
+    }
+}
+
+@include media-query($on-palm) {
+    .tag { 
+        width: 100%;
+        margin: 0 auto; 
+    }
+
+    .tag-small {
+        width: auto;
+        margin: 0.2em;
+        margin-bottom: 0.5em;
     }
 }
 

@@ -1,7 +1,7 @@
 ---
 title: National Lottery Awards 2017
 date: 2018-07-21 06:52:00 Z
-video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/national-lottery-awards-2017/reel
+video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/national-lottery-awards-2017/reel
 video-link: //vimeo.com/182348873
 description:
 chat:
@@ -43,11 +43,7 @@ Strategically we broke the content plan down into four stages:
 
 ---
 
-### Pre-show
-
-***Building excitement and engagement leading up to the shows pre-record.***
-
-Content included an Anto Sharp short form piece, a snapchat story of highlights from last year and a mobile optimised re-edit of Arron Crascall's previous behind the scenes.
+**Pre-show** ***Building excitement and engagement leading up to the shows pre-record.*** Content included an Anto Sharp short form piece, a snapchat story of highlights from last year and a mobile optimised re-edit of Arron Crascall's previous behind the scenes.
 
 ---
 
@@ -56,19 +52,11 @@ Content included an Anto Sharp short form piece, a snapchat story of highlights 
 <a href='//vimeo.com/214296255' data-lity class='video-filter'></a>
 </div>
 
-### Awards Night
-
-***Sneak peeks behind the scenes. With strong calls to action promoting the broadcast.***
-
-This included a facebook live stream by Stuggy to over 2 million followers, a snapchat story by Arron Crascall which was viewed 100k times, plus various posts from Anto Sharp to over 1 million followers.
+**Awards Night** ***Sneak peeks behind the scenes. With strong calls to action promoting the broadcast.*** This included a facebook live stream by Stuggy to over 2 million followers, a snapchat story by Arron Crascall which was viewed 100k times, plus various posts from Anto Sharp to over 1 million followers.
 
 ---
 
-### Awards Broadcast
-
-***Supplementing behind the scenes content as the Awards were broadcast. Driving ‘second screening’ and engagement.***
-
-This saw the release of a behind the scenes 360 tour, hosted by Stuggy. A highlights compilation by Anto Sharp, a snapchat story by Stuggy and a short form piece featuring Arron Crascall.
+**Awards Broadcast** ***Supplementing behind the scenes content as the Awards were broadcast. Driving ‘second screening’ and engagement.*** This saw the release of a behind the scenes 360 tour, hosted by Stuggy. A highlights compilation by Anto Sharp, a snapchat story by Stuggy and a short form piece featuring Arron Crascall.
 
 ---
 
@@ -78,17 +66,12 @@ This saw the release of a behind the scenes 360 tour, hosted by Stuggy. A highli
 <a href='//vimeo.com/183651482' data-lity class='video-filter'>  </a>
 </div>
 
-### Post Broadcast 
-
-***A series of additional pieces of content designed to drive iPlayer views post broadcast.***
-
-Our full behind the scenes film went live. This was supported by an Instagram highlights compilation by Arron Crascall, a final snapchat story featuring all highlights and three entertaining ad-hoc short form pieces.
+**Post Broadcast** ***A series of additional pieces of content designed to drive iPlayer views post broadcast.*** Our full behind the scenes film went live. This was supported by an Instagram highlights compilation by Arron Crascall, a final snapchat story featuring all highlights and three entertaining ad-hoc short form pieces.
 
 ---
 
-“ It’s always a risk mixing mainstream celebrities with internet sensations – especially on the red carpet - but Tanjun managed to do this very successfully. They managed to book us the holy trinity of Facebook – Arron, Anto and Stuggy and then concocted a whole series of encounters with the likes of Ainsley Harriott, Anton du Beke, Kimberley Wyatt and a host of Strictly dancers. They researched the opportunities and devised plans which they could then adapt to the situations as they arose. "
-— Jackie O Sullivan, Director, 
-National Lottery Promotions Unit
+> “ It’s always a risk mixing mainstream celebrities with internet sensations – especially on the red carpet - but Tanjun managed to do this very successfully. They managed to book us the holy trinity of Facebook – Arron, Anto and Stuggy and then concocted a whole series of encounters with the likes of Ainsley Harriott, Anton du Beke, Kimberley Wyatt and a host of Strictly dancers. They researched the opportunities and devised plans which they could then adapt to the situations as they arose. "
+*— Jackie O Sullivan, Director, National Lottery Promotions Unit*
 
 
 ---

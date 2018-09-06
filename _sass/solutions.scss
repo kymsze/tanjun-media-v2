@@ -73,24 +73,36 @@
 		overflow: hidden;
 	}
 
-	.big {
-		width: 66%;
-		padding-bottom: 39%;
-		max-width: none;
-	}
-
-	h3 {
-		font-size: 2em;
-		line-height: 1.5;
+	strong {
+		display: block;
+	    padding-bottom: 0.5em;
 	}
 
 	p {
-		width: 30%;
+		width: 50%;
 		line-height: 1.8;
 		padding: 0;
 
 		@include media-query($on-hoz-palm) {
 			line-height: 1.4;
+		}
+	}
+
+	blockquote {
+		p {
+			font-style: normal;
+			font-family: BodyMedium;
+		    text-transform: uppercase;
+		    letter-spacing: 0.04em;
+		    font-size: 1em;
+
+		    em {
+		    	padding-top: 1em;
+		    	font-family: 'Body';
+			    font-style: normal;
+			    display: inline-block;
+			    font-size: 0.8em;
+		    }
 		}
 	}
 
@@ -132,16 +144,23 @@
 @include media-query($on-palm) {
 	.solution-section {
 		margin: 1em 0;
-		
-		p {
+
+		p {		
 			width: 100%;
 			padding: 2em 0;
+		}
+
+		&:nth-child(even) {
+			p, blockquote {
+				padding-left: 0;
+			}
 		}
 
 		&:nth-child(odd) {
 		    text-align: center;
 
 			p, h3 {
+				padding-right: 0;
 				text-align: left;
 			}
 
@@ -176,10 +195,6 @@
 		.two-one {
 			max-width: 20em;
 			padding-bottom: 90%;
-		}
-
-		.big {
-			
 		}
 	}
 }
@@ -246,9 +261,15 @@
 		height: 20vh;
 		width: 100%;
 		margin-left: 0;
-		margin-bottom: 1vh;		
+		margin-bottom: 1vh;
+
 		h5 {
-			margin-top: 17%;
+			margin-top: 15%;
+			margin-bottom: 3%;
+		}
+		p {
+			max-width: 24%;
+		    margin: 0 auto;
 		}
 	}
 

@@ -17,6 +17,9 @@
     img {
       max-width: 3em;
       min-width: 0.9em;
+      @include media-query($on-palm) {
+        max-width: 2em;
+      }
     }
   }
 
@@ -35,8 +38,6 @@
     margin: 0;
   }
 }
-
-
 
 
 @include media-query($on-palm) {

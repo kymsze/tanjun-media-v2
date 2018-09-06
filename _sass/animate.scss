@@ -17,24 +17,54 @@
 	&:nth-child(odd) {
 		p {
 		  transition: all 500ms ease-out;
-	    transform: translate(-100%, 120%);
+	    	transform: translate(-100%, 120%);
+		}
+
+		blockquote {
+		  	transition: all 500ms ease-out;
+		    transform: translate(-100%, 120%);
+			p {
+				transform: none;
+			  	transition: none;		
+			}
+		}
+
+		@include media-query($on-palm) {
+			blockquote {
+			    transform: translate(0, 0);
+		    }
 		}
 
 		.awkward-animate {
 			transform: translate(0, 0);
-		  transition: all 500ms ease-out;			
+		  	transition: all 500ms ease-out;			
 		}
 	}
 
 	&:nth-child(even) {
 		p {
-		  transition: all 500ms ease-out;
-	    transform: translate(100%, 120%);
+		  	transition: all 500ms ease-out;
+		    transform: translate(100%, 120%);
+		}
+
+		@include media-query($on-palm) {
+			blockquote {
+			    transform: translate(0, 0);
+		    }
+		}
+
+		blockquote {
+		  	transition: all 500ms ease-out;
+		    transform: translate(100%, 120%);
+			p {
+				transform: none;
+			  	transition: none;		
+			}
 		}
 
 		.awkward-animate {
 			transform: translate(0, 0);
-		  transition: all 500ms ease-out;			
+		  	transition: all 500ms ease-out;			
 		}
 	}
 }

@@ -1,7 +1,7 @@
 ---
 title: Every youtube challenge ever
 date: 2018-07-21 06:52:00 Z
-video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/every-youtube-challenge-ever/reel
+video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/every-youtube-challenge-ever/reel
 video-link: //vimeo.com/191177712
 description:
 chat:
@@ -34,36 +34,24 @@ service:
 layout: work
 ---
 
-### Think big!
-
-The National Lottery Good Cause social channels are not of a size or reach to pull-off what was needed. This required the leverage of a digital influencer…a big influencer! That person was the UK’s biggest youtuber, KSI.
-
 <div class='image two-one'>
 <img src='/uploads/every-youtube-challenge-ever-jj.jpg'>
 </div>
 
-#### Authentic Message
+**Think big!**The National Lottery Good Cause social channels are not of a size or reach to pull-off what was needed. This required the leverage of a digital influencer…a big influencer! That person was the UK’s biggest youtuber, KSI.
 
-To help deliver the messaging needed, we needed a funded British athlete to feature and that person was Team GB athletics captain and 100m sprinter, Adam Gemili.
+**Authentic Message**To help deliver the messaging needed, we needed a funded British athlete to feature and that person was Team GB athletics captain and 100m sprinter, Adam Gemili.
 
 ---
-
-### Confident Execution
 
 <div class='video one-one'>
 <div data-vimeo-url="//vimeo.com/195614777/72e1ed8e7b" class='iframe'></div>
 <a href='//vimeo.com/195614777' data-lity class='video-filter'></a>
 </div>
 
-Youtube is saturated with generic challenge videos, in response we decided to satirise this popular trend by creating the ‘ultimate’ challenge ‘challenge’ video. Poking fun at some of the most tired and popular trends!
+**Confident Execution** Youtube is saturated with generic challenge videos, in response we decided to satirise this popular trend by creating the ‘ultimate’ challenge ‘challenge’ video. Poking fun at some of the most tired and popular trends!
 
 Our bottle flip challenge really got people talking! Was it real or not! A huge debate which drove engagment. The concept was for Adam and KSI to complete 19 challenges, which marked 19 years that British athletes have been funded by The National Lottery.
-
----
-
-Each challenge was designed to create a talking point, therefore driving engagement and views. Conversation was also driven by the voice over we created with up and coming social star Schieffer Bates, as he introduces each challenge with a different impression. We deliberately didn’t name the people he was impersonating, but instead gave visual clues through typography and design.
-
-Additionally, each challenge was re-edited to form individual short form pieces, which would help create additional relevant content for The National Lottery’s own social channels. This was also supported by a Behind the Scenes video that sat on The National Lottery’s youtube channel.
 
 ---
 
@@ -72,8 +60,13 @@ Additionally, each challenge was re-edited to form individual short form pieces,
 <a href='//vimeo.com/195639791' data-lity class='video-filter'>  </a>
 </div>
 
-“ Tanjun managed to produce a film which worked for both us and KSI. It was pitched perfectly – funny, tongue-in-cheek, well messaged – and has had great audience engagement. "
-— Jackie O Sullivan, Director, 
-National Lottery Promotions Unit
+**Confident Execution** Each challenge was designed to create a talking point, therefore driving engagement and views. Conversation was also driven by the voice over we created with up and coming social star Schieffer Bates, as he introduces each challenge with a different impression. We deliberately didn’t name the people he was impersonating, but instead gave visual clues through typography and design.
+
+Additionally, each challenge was re-edited to form individual short form pieces, which would help create additional relevant content for The National Lottery’s own social channels. This was also supported by a Behind the Scenes video that sat on The National Lottery’s youtube channel.
+
+---
+
+> “Tanjun managed to produce a film which worked for both us and KSI. It was pitched perfectly – funny, tongue-in-cheek, well messaged – and has had great audience engagement. "
+*— Jackie O Sullivan, Director, National Lottery Promotions Unit*
 
 ---

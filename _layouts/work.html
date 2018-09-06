@@ -7,7 +7,7 @@ layout: default-blue
 
 <div class="home">
   <div class="full-screen-wrapper">
-    {% include hero.html video=page.video content=page.description video-link=page.video-link reel=false title=page.title%}
+    {% include hero.html video=page.video content=page.description video-link=page.video-link reel=false title=page.title %}
   </div>
 
   {% if page.chat %}
@@ -102,13 +102,15 @@ layout: default-blue
 
     <!--   GET IN TOUCH   -->
 
-    {% include get-in-touch.html %}
+    {% if page.content.size > 1 %}
+      {% include get-in-touch.html %}
+    {% endif %}
 
 
     <!--   SEE SOME MORE   -->
 
     <div class="wrapper wrapper-wide">
-            {% include section-header.html title="related work" %}
+            {% include section-header.html title="similar work" %}
 
         <div class="section section--bg">
 
@@ -122,7 +124,7 @@ layout: default-blue
 
             {% assign linked_work = linked_work_1 | concat: linked_work_2 | concat: linked_work_3 | concat: linked_work_4 | concat: featured_work | uniq | at_most: 3 %}
 
-            {% for work in linked_work %}
+            {% for work in linked_work  limit:3 %}
                 {% unless work.title contains page.title %}
                     {% include work-block.html %}
                 {% endunless %}

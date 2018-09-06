@@ -12,11 +12,26 @@
 	    width: 100%;
 	    height: 100%;
 	    object-fit: cover;
+		transform: translateY(-25%);
 	}
 	
-	.video-filter{
-		-webkit-filter: saturate(51%) grayscale(9%) hue-rotate(283deg);
-		filter: 		saturate(51%) grayscale(9%) hue-rotate(283deg);
+	.video-filter {
+		video {
+			-webkit-filter: contrast(70%) saturate(20%) brightness(130%);
+			filter: 		contrast(70%) saturate(20%) brightness(130%);
+		}
+	}
+
+	.video-filter-overlay {
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #f851a508;
+		} 
 	}
 
 	.work-details {

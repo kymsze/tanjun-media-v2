@@ -2,11 +2,11 @@
 	<a href="{{ work.url | prepend: site.baseurl }}">
 		
 		<div class="video-wrapper">
-			<video class="video-filter" poster="{{work.video}}.jpg" preload="none" loop="" muted="" playsinline="" >
-				<source id="mp4" src="{{ work.video }}.mp4" type="video/mp4">
-				<source id="webm" src="{{ work.video }}.webm" type="video/webm">
-				<source src="{{ work.video }}.ogv" type="video/ogg"></source>
-			</video>
+			<div class="video-filter video-filter-overlay">
+				<video poster="{{work.video}}.jpg" preload="none" loop="" muted="" playsinline="" >
+					<source id="mp4" src="{{ work.video }}.mp4" type="video/mp4">
+				</video>
+			</div>
 
 		    <div class="work-details">
 
@@ -25,10 +25,6 @@
 				    {% for contents in work.contents %}
 				    	<div class="tag tag-small">{{ contents }}</div>
 				    {% endfor %}
-
-			    	<br>
-
-			    	<!-- <div class="tag tag-small"> {{ work.client }} </div> -->
 
 			    </div>
 

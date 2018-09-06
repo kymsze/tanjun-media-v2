@@ -39,12 +39,13 @@
 	    color: $blue-color;
     }
 
-	.video-filter{
-	  	-webkit-filter: saturate(51%) grayscale(9%) hue-rotate(165deg);
-	  	filter: saturate(51%) grayscale(9%) hue-rotate(165deg);
+	.video-filter-overlay {
+		&:after {
+			background-color: #256eff12;
+		} 
 	}
 
-	h3, p, label {
+	h3, p, label, h4, strong {
 	    color: $blue-color;
 	}
 
