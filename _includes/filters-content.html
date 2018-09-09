@@ -5,11 +5,11 @@
 	{% for content in contents %}
 		<div class="col col-4">
 			{% if content.title == page.title %}
-				<a class = "tag " href="{{ content.url }}">
+				<a class = "tag " href="{{ content.url | relative_url }}">
 					<p>{{content.title}}</p>
 				</a>
 			{% else %}
-				<a class = "tag tag_inverted" href="{{ content.url }}">
+				<a class = "tag tag_inverted" href="{{ content.url | relative_url }}">
 					<p>{{content.title}}</p>
 				</a>
 			{% endif %}

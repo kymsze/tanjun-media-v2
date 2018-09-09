@@ -3,11 +3,11 @@
 	{% for client in site.clients %}
 		<div class="col col-4">
 			{% if client.title == page.title %}
-				<a class= "tag" href="{{ client.url }}">
+				<a class= "tag" href="{{ client.url | relative_url }}">
 					<p>{{client.title}}</p>
 				</a>
 			{% else %}
-				<a class= "tag tag_inverted" href="{{ client.url }}">
+				<a class= "tag tag_inverted" href="{{ client.url | relative_url }}">
 					<p>{{client.title}}</p>
 				</a>
 			{% endif %}
