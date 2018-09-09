@@ -1,12 +1,12 @@
 <div class="filters">
 	{% if include.lity %}
-		<a class="btn {{include.colour}}" data-lity href={{include.link}}>
+		<a class="btn {{include.colour}}" data-lity href="{{include.link | relative_url }}">
 			<span class="inner">
 				{{include.cta}}
 			</span>
 		</a>
 	{% else %}
-		<a class="btn {{include.colour}} {{include.class}}" href={{include.link}}>
+		<a class="btn {{include.colour}} {{include.class}}" href="{{include.link | relative_url }}">
 			<span class="inner">
 				{{include.cta}}
 			</span>
