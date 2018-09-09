@@ -2,8 +2,8 @@
 title: Every youtube challenge ever
 date: 2018-07-21 06:52:00 Z
 video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/every-youtube-challenge-ever/reel
-video-link: //vimeo.com/191177712
-description:
+video-link: "//vimeo.com/191177712"
+description: 
 chat:
 - Hey! Can you communicate that over 1300 British athletes are funded by The National
   Lottery , making them some of the best athletes in the world?

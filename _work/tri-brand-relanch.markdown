@@ -2,8 +2,8 @@
 title: British Tri Brand Relaunch
 date: 2018-07-21 06:52:00 Z
 video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/tri-brand-relanch/reel
-video-link: //vimeo.com/177369087
-description:
+video-link: "//vimeo.com/177369087"
+description: 
 chat:
 - Our friends at Team GB gave us your details. We’re relaunching our entire digital
   brand and need some kick-ass content ideas. You in?
@@ -34,7 +34,6 @@ service:
 - VFX
 layout: work
 ---
-
 
 <div class='video one-one'>
 <div data-vimeo-url="//vimeo.com/215175022/9a6ddcc9f8" class='iframe'></div>
