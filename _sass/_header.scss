@@ -34,7 +34,7 @@
     width: 55px;
     height: 55px;
     background-size: cover;
-    background-image: url("/assets/img/LogoWhiteFull.png");
+    background-image: url('#{$image-path}/assets/img/LogoWhiteFull.png')
   }
 }
 

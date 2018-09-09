@@ -1,6 +1,10 @@
 ---
 ---
 
+
+$image-path: '{{relative_url}}';
+
+
 @charset "utf-8";
 
 @font-face {
@@ -88,7 +92,6 @@ $on-laptop:        1440px;
         @content;
     }
 }
-
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
