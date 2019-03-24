@@ -48,10 +48,10 @@ description: |-
   <b>Tanjun Media</b> are digital film content creators.
   We are filmmakers.
   We just want to make great stuff and tell great stories and we would love to help tell yours.
-about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. morbi laoreet accumsan
-  tempus. lorem ipsum dolor sit amet, consectetur adipiscing elit. morbi laoreet accumsan
-  tempus. YES!
-baseurl: "/"
+about: We can do the lot! From the creative to the execution. We don't have fancy
+  offices or account managers. This allows us to put all of your money on the screen.  Where
+  it should be.
+baseurl: 
 url: http://www.tanjunmedia.com
 markdown: kramdown
 plugins:
