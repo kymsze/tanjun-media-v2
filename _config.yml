@@ -50,7 +50,7 @@ description: |-
 about: We can do the lot! From the creative to the execution. We don't have fancy
   offices or account managers. This allows us to put all of your money on what people
   see on the screen. Where it counts.
-baseurl: '/'
+baseurl: "/"
 url: http://www.tanjunmedia.com
 markdown: kramdown
 plugins:
