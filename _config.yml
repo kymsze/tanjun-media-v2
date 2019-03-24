@@ -47,9 +47,9 @@ email: hello@tanjunmedia.com
 description: |-
   <b>Tanjun Media</b> are digital film content creators.
   We want to make great stuff and tell great stories and we would love to help tell yours.
-about: We can do the lot! From the creative to the execution. We don't have fancy
-  offices or account managers. This allows us to put all of your money on the screen.  Where
-  it should be.
+about: 'We can do the lot! From the creative to the execution. We don''t have fancy
+  offices or account managers. This allows us to put all of your money to where it
+  counts. What people see on the screen. '
 baseurl: 
 url: http://www.tanjunmedia.com
 markdown: kramdown
