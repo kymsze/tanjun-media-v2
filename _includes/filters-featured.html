@@ -12,6 +12,8 @@
 		<div class="col-wrapper">
 
 			{% for content in contents %}
+
+				{{ content.phase }}
 				<div class="col col-3">
 					{% if content.title == page.title %}
 						<a class = "tag " href="{{ content.url | relative_url }}">
