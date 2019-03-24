@@ -139,6 +139,7 @@ p.feature {
 	}
 }
 
+
 h2 {
   width: 293px;
   font-family: BodyBold;
@@ -146,6 +147,10 @@ h2 {
   line-height: 0.68em;
   color: white;
   text-transform: uppercase;
+}
+
+h2.color {
+	color: $pink-color;
 }
 
 h3 {

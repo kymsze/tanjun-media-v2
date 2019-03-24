@@ -1,0 +1,58 @@
+<div class="col-wrapper">
+
+	<div class="col col-2">
+
+		<br/>
+		<br/>
+		<h3 class="color">Creative</h3>
+		<br/>
+
+		{% assign contents = site.contents %}
+
+		<div class="col-wrapper">
+
+			{% for content in contents %}
+				<div class="col col-2">
+					{% if content.title == page.title %}
+						<a class = "tag " href="{{ content.url | relative_url }}">
+							<p>{{content.title}}</p>
+						</a>
+					{% else %}
+						<a class = "tag tag_inverted" href="{{ content.url | relative_url }}">
+							<p>{{content.title}}</p>
+						</a>
+					{% endif %}
+				</div>
+			{% endfor%}
+
+		</div>
+    </div>
+
+	<div class="col col-2">
+		
+		<br/>
+		<br/>
+		<h3 class="color">Production</h3>
+		<br/>
+
+		{% assign services = site.services %}
+
+		<div class="col-wrapper">
+
+			{% for service in services %}
+				<div class="col col-2">
+					{% if service.title == page.title %}
+						<a class = "tag " href="{{ service.url | relative_url }}"">
+							<p>{{service.title}}</p>
+						</a>
+					{% else %}
+						<a class = "tag tag_inverted" href="{{ service.url | relative_url }}"">
+							<p>{{service.title}}</p>
+						</a>
+					{% endif %}
+				</div>
+			{% endfor%}
+
+		</div>
+    </div>
+</div>
