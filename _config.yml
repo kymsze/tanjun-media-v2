@@ -51,7 +51,7 @@ about: We can do the lot! From the creative to the execution. We don't have fanc
   offices or account managers. This allows us to put all of your money on what people
   see on the screen. Where it counts.
 baseurl: "/"
-url: http://www.tanjunmedia.com
+url: https://www.tanjunmedia.com
 markdown: kramdown
 plugins:
 - github-pages
@@ -66,3 +66,8 @@ office: '020 7684 9872 '
 mobile: '078 5525 9898'
 company_number: 10184325
 reel: https://s3.eu-west-2.amazonaws.com/tanjun/hero
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default" # this ensures all content renders with layouts/default.html
