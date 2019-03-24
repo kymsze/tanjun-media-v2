@@ -10,11 +10,11 @@
 		{% for service in pre %}
 			<div class="col col-4">
 				{% if service.title == page.title %}
-					<a class = "tag " href="{{ service.url | relative_url }}"">
+					<a class = "tag " href="{{ service.url | relative_url }}">
 						<p>{{service.title}}</p>
 					</a>
 				{% else %}
-					<a class = "tag tag_inverted" href="{{ service.url | relative_url }}"">
+					<a class = "tag tag_inverted" href="{{ service.url | relative_url }}">
 						<p>{{service.title}}</p>
 					</a>
 				{% endif %}
@@ -32,11 +32,11 @@
 		{% for service in prod %}
 			<div class="col col-4">
 			{% if service.title == page.title %}
-				<a class = "tag " href="{{ service.url | relative_url }}"">
+				<a class = "tag " href="{{ service.url | relative_url }}">
 					<p>{{service.title}}</p>
 				</a>
 			{% else %}
-				<a class = "tag tag_inverted" href="{{ service.url | relative_url }}"">
+				<a class = "tag tag_inverted" href="{{ service.url | relative_url }}">
 					<p>{{service.title}}</p>
 				</a>
 			{% endif %}
@@ -54,11 +54,11 @@
 		{% for service in post %}
 			<div class="col col-4">
 			{% if service.title == page.title %}
-				<a class = "tag " href="{{ service.url | relative_url }}"">
+				<a class = "tag " href="{{ service.url | relative_url }}">
 					<p>{{service.title}}</p>
 				</a>
 			{% else %}
-				<a class = "tag tag_inverted" href="{{ service.url | relative_url }}"">
+				<a class = "tag tag_inverted" href="{{ service.url | relative_url }}">
 					<p>{{service.title}}</p>
 				</a>
 			{% endif %}

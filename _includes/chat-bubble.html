@@ -2,13 +2,13 @@
 
 	<div class="chat chat-{{ include.brand }}">
 		<div class="text"><p>{{ include.chat }}</p></div>
-		<div class="logo"><img src="{{ include.logo }}"></div>
+		<div class="logo"><img src="{{ include.logo | relative_url }}"></div>
 	</div>
 
 {% else %}
 
 	<div class="chat chat-{{ include.brand }}">
-		<div class="logo"><img src="{{ include.logo }}"></div>
+		<div class="logo"><img src="{{ include.logo | relative_url }}"></div>
 		<div class="text"><p>{{ include.chat }}</p></div>
 	</div>
 
