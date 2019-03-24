@@ -21,7 +21,7 @@ results:
   Likes: 146k
   Behind the  Scenes: 10k
 client: parkrun
-featured: true
+featured: false
 contents:
 - digital campaigns
 - 
