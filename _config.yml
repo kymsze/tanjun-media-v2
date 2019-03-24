@@ -27,22 +27,8 @@ collections:
 defaults:
 - scope:
     path: ''
-    type: clients
   values:
-    permalink: "/work/tag/:title/"
-    layout: clients
-- scope:
-    path: ''
-    type: services
-  values:
-    permalink: "/work/tag/:title/"
-    layout: services
-- scope:
-    path: ''
-    type: contents
-  values:
-    permalink: "/work/tag/:title/"
-    layout: contents
+    layout: default
 email: hello@tanjunmedia.com
 description: |-
   <b>Tanjun Media</b> are digital film content creators.
