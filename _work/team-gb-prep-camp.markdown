@@ -23,7 +23,7 @@ results:
   Short form views: 60k
   BBC Rating Views: 2m
 client: team gb
-featured: true
+featured: false
 contents:
 - digital campaigns
 service:
