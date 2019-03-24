@@ -113,3 +113,9 @@ $on-laptop:        1440px;
         "solutions",
         "navigation"
 ;
+
+
+.result-block.white {
+  background: url({{ relative_url}}"/uploads/heart-blue.png") no-repeat bottom center;
+  background-size: contain;
+}

@@ -235,10 +235,12 @@
 }
 
 .result-block.white {
-	background: url("/assets/img/heart-blue.png") no-repeat bottom center;
-	background-size: contain;
 	h5, p {
 		color: $pink-color;
+	}
+	p {
+	    max-width: 80%;
+	    margin: 0 auto;
 	}
 }
 
