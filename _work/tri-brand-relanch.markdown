@@ -1,6 +1,7 @@
 ---
 title: British Tri Brand Relaunch
 date: 2018-07-21 06:52:00 Z
+position: 4
 video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/tri-brand-relanch/reel
 video-link: "//vimeo.com/177369087"
 description: 
