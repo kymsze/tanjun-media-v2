@@ -55,10 +55,15 @@ url: http://www.tanjunmedia.com
 markdown: kramdown
 plugins:
 - github-pages
+mailto_img: "/uploads/social1.png"
 twitter_username: tanjunmedia
+twitter_img: "/uploads/social1.png"
 facebook_username: tanjunmedia
+facebook_img: "/uploads/social2.png"
 instagram_username: tanjunmediauk
+instagram_img: "/uploads/social3.png"
 vimeo_username: tanjunmedia
+vimeo_img: "/uploads/social5.png"
 address: |-
   UNIT 7, 1C SHELFORD PLACE
   LONDON, N16 9HS
