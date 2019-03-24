@@ -27,22 +27,8 @@ collections:
 defaults:
 - scope:
     path: ''
-    type: clients
   values:
-    permalink: "/work/tag/:title/"
-    layout: clients
-- scope:
-    path: ''
-    type: services
-  values:
-    permalink: "/work/tag/:title/"
-    layout: services
-- scope:
-    path: ''
-    type: contents
-  values:
-    permalink: "/work/tag/:title/"
-    layout: contents
+    layout: default
 email: hello@tanjunmedia.com
 description: |-
   <b>Tanjun Media</b> are digital film content creators.
@@ -66,8 +52,3 @@ office: '020 7684 9872 '
 mobile: '078 5525 9898'
 company_number: 10184325
 reel: https://s3.eu-west-2.amazonaws.com/tanjun/hero
-defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default" # this ensures all content renders with layouts/default.html
