@@ -21,7 +21,7 @@ results:
   Impressions: 22m
   per view ROI: 0.004p
 client: team gb
-featured: true
+featured: false
 contents:
 - digital campaigns
 - content strategy
