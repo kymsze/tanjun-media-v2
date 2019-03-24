@@ -1,9 +1,36 @@
-{% assign services = site.services %}
-
 <div class="col-wrapper">
 
-	{% for service in services %}
-		<div class="col col-4">
+	{% assign pre = site.services |  where: 'phase', 'pre' %}
+	{% assign prod = site.services |  where: 'phase', 'prod' %}
+	{% assign post = site.services |  where: 'phase', 'post' %}
+
+	<div class="col-wrapper">
+		<h4 class="color">Pre Production</h4>
+
+		{% for service in pre %}
+			<div class="col col-4">
+				{% if service.title == page.title %}
+					<a class = "tag " href="{{ service.url | relative_url }}"">
+						<p>{{service.title}}</p>
+					</a>
+				{% else %}
+					<a class = "tag tag_inverted" href="{{ service.url | relative_url }}"">
+						<p>{{service.title}}</p>
+					</a>
+				{% endif %}
+			</div>
+		{% endfor%}
+
+	</div>
+
+	<div class="col-wrapper">
+
+		<br/>
+		<h4 class="color">Production</h4>
+		<br/>
+
+		{% for service in prod %}
+			<div class="col col-4">
 			{% if service.title == page.title %}
 				<a class = "tag " href="{{ service.url | relative_url }}"">
 					<p>{{service.title}}</p>
@@ -14,6 +41,29 @@
 				</a>
 			{% endif %}
 		</div>
-	{% endfor%}
+		{% endfor%}
 
+	</div>
+
+	<div class="col-wrapper">
+
+		<br/>
+		<h4 class="color">Post Production</h4>
+		<br/>
+
+		{% for service in post %}
+			<div class="col col-4">
+			{% if service.title == page.title %}
+				<a class = "tag " href="{{ service.url | relative_url }}"">
+					<p>{{service.title}}</p>
+				</a>
+			{% else %}
+				<a class = "tag tag_inverted" href="{{ service.url | relative_url }}"">
+					<p>{{service.title}}</p>
+				</a>
+			{% endif %}
+		</div>
+		{% endfor%}
+
+	</div>
 </div>

@@ -19,25 +19,6 @@
 			<div class="tab-content">{% include filters-client.html %}</div>
 		</div>
 	{% endif %}
-	
-
-
-	{% if include.open == "content" %}
-		<div class="tab">
-		  	<input id="tab-two" type="checkbox" name="tabs" checked>
-		  	<label for="tab-two">content type</label>
-			<div class="tab-content">{% include filters-content.html %}</div>
-		</div>
-	{% else %}
-		<div class="tab">
-		  	<input id="tab-two" type="checkbox" name="tabs">
-		  	<label for="tab-two">content type</label>
-			<div class="tab-content">{% include filters-content.html %}</div>
-		</div>
-	{% endif %}
-	
-
-
 
 	{% if include.open == "service" %}
 		<div class="tab">

@@ -1,12 +1,14 @@
 <div class=" navigation">
 
+	{% assign pre = site.services |  where: 'phase', 'pre' %}
+	{% assign prod = site.services |  where: 'phase', 'prod' %}
+	{% assign post = site.services |  where: 'phase', 'post' %}
+
 	<div class="col-wrapper">
 
 		<div class="col col-1">
 
 			<a class="nav-item nav-main nav-subs" id="show_clients" href="#"><p> clients </p></a>
-
-			<a class="nav-item nav-main nav-subs" id="show_contents" href="#"><p> content type </p></a>
 
 			<a class="nav-item nav-main nav-subs" id="show_services" href="#"><p> services </p></a>
 
@@ -20,16 +22,22 @@
 				{% endfor %}
 			</div>
 
-			<div id="contents_nav">
-				{% for contents in site.contents %}
-					<a class="nav-item nav" href="{{ contents.url | relative_url }}"><p>{{contents.title}}</p></a>
-				{% endfor %}
-			</div>
-
 			<div id="services_nav">
-				{% for service in site.services %}
-					<a class="nav-item nav" href="{{ service.url | relative_url }}"><p>{{service.title}}</p></a>
-				{% endfor %}
+					<h4>Pre Production</h4>
+						{% for service in pre %}
+							<a class="nav-item nav" href="{{ service.url | relative_url }}"><p>{{service.title}}</p></a>
+						{% endfor%}
+
+					<h4>Production</h4>
+						{% for service in prod %}
+							<a class="nav-item nav" href="{{ service.url | relative_url }}"><p>{{service.title}}</p></a>
+						{% endfor%}
+
+					<h4>Post production</h4>
+						{% for service in post %}
+							<a class="nav-item nav" href="{{ service.url | relative_url }}"><p>{{service.title}}</p></a>
+						{% endfor%}
+
 			</div>
 		</div>
 	</div>

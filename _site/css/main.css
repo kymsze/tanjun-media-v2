@@ -560,6 +560,7 @@ input[type=radio]:checked + label::after { transform: rotateX(180deg); }
 .navigation .col-1 { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); }
 .navigation p { color: white; text-align: left; padding: 0 2em; }
 .navigation a { color: white; text-decoration: none; }
+.navigation h4 { color: #FFF; }
 .navigation .nav-main { font-size: 1.3em; margin: 0.5em 0; }
 .navigation .nav-main p { text-align: right; }
 .navigation .nav-subs p:after { content: '▶'; position: absolute; padding-left: 1em; font-size: 0.5em; line-height: 3em; }
