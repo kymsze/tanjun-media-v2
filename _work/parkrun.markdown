@@ -23,7 +23,7 @@ client: parkrun
 featured: true
 contents:
 - digital campaigns
-- influencer
+- 
 service:
 - CONCEPTS & CREATIVES
 - PRODUCTION
