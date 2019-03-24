@@ -1,6 +1,7 @@
 ---
 title: Every youtube challenge ever
 date: 2018-07-21 06:52:00 Z
+position: 1
 video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/every-youtube-challenge-ever/reel
 video-link: "//vimeo.com/191177712"
 description: 

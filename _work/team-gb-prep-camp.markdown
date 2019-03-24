@@ -1,6 +1,7 @@
 ---
 title: Team GB Prep Camp
 date: 2018-07-21 06:52:00 Z
+position: 0
 video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/team-gb-prep-camp/reel
 video-link: "//vimeo.com/177714177"
 description: 
@@ -22,7 +23,7 @@ results:
   Short form views: 60k
   BBC Rating Views: 2m
 client: team gb
-featured: true
+featured: false
 contents:
 - digital campaigns
 service:
