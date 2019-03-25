@@ -1,7 +1,7 @@
 ---
 title: COLOUR GRADE
 date: 2018-07-21 07:07:00 Z
-position: 10
+position: 2
 phase: post
 ---
 
