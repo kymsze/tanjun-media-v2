@@ -15,9 +15,6 @@ collections:
   clients:
     title: clients
     output: true
-  contents:
-    title: contents
-    output: true
   services:
     title: services
     output: true
@@ -37,12 +34,6 @@ defaults:
   values:
     permalink: "/work/tag/:title/"
     layout: services
-- scope:
-    path: ''
-    type: contents
-  values:
-    permalink: "/work/tag/:title/"
-    layout: contents
 email: hello@tanjunmedia.com
 description: |-
   <b>Tanjun Media</b> are digital film content creators.
@@ -51,7 +42,7 @@ about: We can do the lot! From the creative to the execution. We don't have fanc
   offices or account managers. This allows us to put all of your money on what people
   see on the screen. Where it counts.
 baseurl: "/"
-url: http://www.tanjunmedia.com
+url: https://www.tanjunmedia.com
 markdown: kramdown
 plugins:
 - github-pages

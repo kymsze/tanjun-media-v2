@@ -327,7 +327,6 @@ strong em { font-style: normal; font-size: 0.6em; }
 .blue .btn_white .inner { border: solid 2px #256EFF; color: #256EFF; }
 .blue .btn_invert .inner { background-color: #256EFF; }
 .blue .hamburger-box-colour .hamburger-inner, .blue .hamburger-box-colour .hamburger-inner:after, .blue .hamburger-box-colour .hamburger-inner:before { background-color: #256EFF; }
-.blue .logo--invert .logo-img { background-image: url("/assets/img/LogoBlueFull.png"); }
 .blue .site-footer { background: #256EFF; }
 .blue .site-footer .col-wrapper, .blue .site-footer .section-inner { background: #256EFF; }
 .blue .section { background-color: #256EFF; }
@@ -347,9 +346,7 @@ strong em { font-style: normal; font-size: 0.6em; }
 @media screen and (max-width: 800px) { :root { --percent: 85%; --mobile-var: -1.1; } }
 @media screen and (max-width: 500px) { :root { --percent: 65%; --mobile-var: -1.2; } }
 .logo { display: inline-block; width: 2em; padding: 0.4em 0 0 0em; font-size: 2em; }
-.logo .logo-img { width: 55px; height: 55px; background-size: cover; background-image: url("/assets/img/LogoWhiteFull.png"); }
-
-.logo--invert .logo-img { background-image: url("/assets/img/LogoPinkFull.png"); }
+.logo .logo-img { width: 55px; height: 55px; background-size: cover; }
 
 .hamburger-box { display: grid; }
 
@@ -568,3 +565,9 @@ input[type=radio]:checked + label::after { transform: rotateX(180deg); }
 #clients_nav, #contents_nav, #services_nav { display: none; }
 
 .result-block.white { background: url("/uploads/heart-blue.png") no-repeat bottom center; background-size: contain; }
+
+.logo .logo-img { background-image: url("/uploads/LogoWhiteFull.png"); }
+
+.logo--invert .logo-img { background-image: url("/uploads/LogoPinkFull.png"); }
+
+.blue .logo--invert .logo-img { background-image: url("/uploads/LogoBlueFull.png"); }

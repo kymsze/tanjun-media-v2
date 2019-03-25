@@ -119,3 +119,27 @@ $on-laptop:        1440px;
   background: url({{ relative_url}}"/uploads/heart-blue.png") no-repeat bottom center;
   background-size: contain;
 }
+
+.logo {
+  .logo-img {
+    background-image: url({{ relative_url}}"/uploads/LogoWhiteFull.png");
+  }
+}
+
+.logo--invert {
+  .logo-img {
+    background-image: url({{ relative_url}}"/uploads/LogoPinkFull.png");
+  }
+}
+
+.blue {
+  .logo--invert {
+  
+    .logo-img {
+      background-image: url({{ relative_url}}"/uploads/LogoBlueFull.png");
+    }
+  }
+}
+
+
+
