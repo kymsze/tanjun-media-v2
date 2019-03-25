@@ -6,8 +6,10 @@ video-link: "//vimeo.com/294320597"
 featured: true
 client: uk sport
 service:
-- EQUIPMENT HIRE
-- SELF SHOOTER & DIRECTOR
+- CONCEPTS & CREATIVES
+- COMMERCIALS
+- EDITING
+- COLOUR GRADE
 layout: work
 ---
 
