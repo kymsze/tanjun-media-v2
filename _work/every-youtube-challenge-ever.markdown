@@ -32,11 +32,11 @@ contents:
 - influencers
 service:
 - CONCEPTS & CREATIVES
-- PRODUCTION
+- CAMPAIGNS
 - EDITING
 - VFX
 - COLOUR GRADE
-- SHOOTER
+- 
 layout: work
 ---
 
