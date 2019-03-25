@@ -33,10 +33,10 @@ contents:
 service:
 - CONCEPTS & CREATIVES
 - CAMPAIGNS
+- INFLUENCERS
 - EDITING
 - VFX
 - COLOUR GRADE
-- 
 layout: work
 ---
 
