@@ -28,10 +28,11 @@ contents:
 service:
 - CONCEPTS & CREATIVES
 - CAMPAIGNS
-- EDITING
+- CONTENT SERIES
+- 360/VR
 - VFX
+- EDITING
 - COLOUR GRADE
-- 360 / VR
 layout: work
 ---
 
