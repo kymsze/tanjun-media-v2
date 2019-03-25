@@ -26,7 +26,7 @@ results:
   Comments: 4k
   Likes: 146k
   Behind the  Scenes: 10k
-client: national lottery good causes
+client: lottery good causes
 featured: false
 contents:
 - influencers
