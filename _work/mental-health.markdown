@@ -10,6 +10,7 @@ service:
 - COMMERCIALS
 - EDITING
 - COLOUR GRADE
+- SOUND DESIGN
 layout: work
 ---
 
