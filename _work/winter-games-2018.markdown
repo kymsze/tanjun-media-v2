@@ -27,7 +27,7 @@ contents:
 - content strategy
 service:
 - CONCEPTS & CREATIVES
-- PRODUCTION
+- CAMPAIGNS
 - EDITING
 - VFX
 - COLOUR GRADE
