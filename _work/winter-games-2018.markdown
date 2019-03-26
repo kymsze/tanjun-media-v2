@@ -75,8 +75,8 @@ These generated over 100k views each.
 ---
 
 <div class='video two-one'>
-<div data-vimeo-id='265170168/8de97dd4a3' class='iframe'></div>
-<a href='//vimeo.com/265170168/8de97dd4a3' data-lity class='video-filter'></a>
+<div data-vimeo-id='265170168' class='iframe'></div>
+<a href='//vimeo.com/265170168' data-lity class='video-filter'></a>
 </div>
 
 **Athlete Stat Cards** During the games, Team GB needed to announce which individual athletes we’re competing and when. To do this we created individual stat cards for over 70 athletes that featured key stats and showcased their personality.
