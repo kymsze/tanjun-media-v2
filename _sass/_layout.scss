@@ -17,7 +17,7 @@
 .site-nav {
     float: right;
     padding: 0.4em 4em 0 0;
-    max-width: 3em;
+    max-width: 4.8em;
 
     .menu-icon {
         display: none;
@@ -250,7 +250,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 115%;
   height: 100%;
   pointer-events: none;
 }
@@ -265,7 +265,14 @@
 @media (max-aspect-ratio: 16/9) {
     .video-foreground { 
         width: 320%; 
-        left: -110%; 
+        left: -135%; 
+    }
+}
+
+@media (max-aspect-ratio: 40/71) {
+    .video-foreground { 
+        width: 370%;
+        left: -163%;
     }
 }
 
