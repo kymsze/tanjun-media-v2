@@ -4,7 +4,7 @@
 	{% assign prod = site.services |  where: 'phase', 'prod' %}
 	{% assign post = site.services |  where: 'phase', 'post' %}
 
-	<div class="col-wrapper">
+	<div class="col col-full">
 		<h4 class="color">Pre Production</h4>
 
 		{% for service in pre %}
@@ -23,7 +23,7 @@
 
 	</div>
 
-	<div class="col-wrapper">
+	<div class="col col-full">
 
 		<br/>
 		<h4 class="color">Production</h4>
@@ -45,7 +45,7 @@
 
 	</div>
 
-	<div class="col-wrapper">
+	<div class="col col-full">
 
 		<br/>
 		<h4 class="color">Post Production</h4>

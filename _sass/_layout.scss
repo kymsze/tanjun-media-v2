@@ -116,6 +116,10 @@
     width:         calc(25% - (#{$spacing-unit} / 2));
 }
 
+.col-full{
+    width: 100%;
+}
+
 @include media-query($on-palm) {
     .col-1,
     .col-2 {

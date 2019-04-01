@@ -120,6 +120,12 @@ $on-laptop:        1440px;
   background-size: contain;
 }
 
+@include media-query($on-mobile) {
+  .result-block.white {
+    background-size: 60% 100%;
+  }
+}
+
 .logo {
   .logo-img {
     background-image: url({{ relative_url}}"/uploads/LogoWhiteFull.png");

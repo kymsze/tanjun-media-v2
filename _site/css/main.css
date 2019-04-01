@@ -88,6 +88,8 @@ input[type="button" i]:active, input[type="button" i]:hover, input[type="button"
 
 .col-4 { width: -webkit-calc(25% - (30px / 2)); width: calc(25% - (30px / 2)); }
 
+.col-full { width: 100%; }
+
 @media screen and (max-width: 800px) { .col-1, .col-2 { width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); }
   .col-3, .col-4 { width: 50%; width: 50%; } }
 /** ---------------------------------------   Border  --------------------------------------* */
@@ -232,7 +234,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .filters .tags { text-align: left; }
 .filters .tag p { text-align: center; }
 
-.tag { background-color: #F851A5; display: inline-block; padding: 0.5em 0.5em; text-transform: uppercase; letter-spacing: 0.1em; text-decoration: none; border: 2px solid white; min-width: 120px; max-width: 250px; width: 100%; min-height: 3em; line-height: 0.5em; display: table; }
+.tag { background-color: #F851A5; display: inline-block; padding: 0 0.5em; text-transform: uppercase; letter-spacing: 0.1em; text-decoration: none; border: 2px solid white; min-width: 120px; max-width: 250px; width: 100%; min-height: 3em; line-height: 0.5em; display: table; }
 .tag p { display: table-cell; vertical-align: middle; }
 
 .tag_inverted { color: #F851A5; background-color: white; border: 2px solid #F851A5; }
@@ -301,7 +303,7 @@ strong em { font-style: normal; font-size: 0.6em; }
 .nav-item.nav-main p { font-family: BodyMedium; }
 
 .work { position: relative; }
-.work .video-wrapper { height: 27em; overflow: hidden; margin: 3em 0; position: relative; }
+.work .video-wrapper { height: 365px; overflow: hidden; margin: 3em 0; position: relative; }
 .work video { width: 100%; height: 100%; object-fit: cover; transform: translateY(-25%); }
 .work .video-filter { height: 150%; }
 .work .video-filter video { -webkit-filter: saturate(30%) brightness(90%); filter: saturate(30%) brightness(90%); }
@@ -502,7 +504,6 @@ input[type=radio]:checked + label::after { transform: rotateX(180deg); }
 .solution-section .video { position: relative; overflow: hidden; }
 .solution-section .video iframe { width: 100%; height: 100%; border: none; position: absolute; left: 0; top: 0; -webkit-filter: saturate(50%) grayscale(15%) brightness(100%); filter: saturate(50%) grayscale(15%) brightness(100%); }
 .solution-section .video-filter { width: 100%; height: 100%; position: absolute; left: 0; top: 0; }
-.solution-section .video-filter:after { content: ''; background-image: url(/assets/img/play-btn.png); position: absolute; background-size: 4em; width: 100%; background-repeat: no-repeat; background-position: center; height: 100%; bottom: 0; left: 0; text-align: center; }
 .solution-section .one-one { width: 49%; padding-bottom: 49%; overflow: hidden; }
 .solution-section .one-two { width: 50%; padding-bottom: 29%; overflow: hidden; }
 .solution-section .one-three { width: 50%; padding-bottom: 25%; overflow: hidden; }
@@ -549,9 +550,9 @@ input[type=radio]:checked + label::after { transform: rotateX(180deg); }
 @media screen and (max-width: 800px) { .result-block { width: 40%; padding-top: 36%; margin-left: 7%; }
   .result-block h5 { margin-top: 40%; } }
 @media screen and (max-width: 500px) { .result-block { padding: 0; height: 20vh; width: 100%; margin-left: 0; margin-bottom: 1vh; }
-  .result-block h5 { margin-top: 15%; margin-bottom: 3%; }
-  .result-block p { max-width: 24%; margin: 0 auto; }
-  .result-block.white { background: url("/assets/img/heart-blue-wide.png") no-repeat bottom center; background-size: contain; }
+  .result-block h5 { margin-top: 16%; margin-bottom: 3%; }
+  .result-block.white { background-size: 60% 100%; }
+  .result-block.white p { max-width: 35%; margin: 0 auto; }
   .result-additional { display: none; } }
 .navigation { padding-top: 10em; }
 .navigation .col-1 { width: -webkit-calc(50%); width: calc(50%); }
@@ -567,6 +568,7 @@ input[type=radio]:checked + label::after { transform: rotateX(180deg); }
 
 .result-block.white { background: url("/uploads/heart-blue.png") no-repeat bottom center; background-size: contain; }
 
+@media screen and (max-width: 500px) { .result-block.white { background-size: 60% 100%; } }
 .logo .logo-img { background-image: url("/uploads/LogoWhiteFull.png"); }
 
 .logo--invert .logo-img { background-image: url("/uploads/LogoPinkFull.png"); }

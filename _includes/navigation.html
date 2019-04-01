@@ -33,22 +33,22 @@
 			</div>
 
 			<div id="services_nav">
-					<h4>Pre Production</h4>
-						{% for service in pre %}
-							<a class="nav-item nav" href="{{ service.url | relative_url }}"><p>{{service.title}}</p></a>
-						{% endfor%}
+				<h4>Pre Production</h4>
+				{% for service in pre %}
+					<a class="nav-item nav" href="{{ service.url | relative_url }}"><p>{{service.title}}</p></a>
+				{% endfor%}
 
-					<h4>Production</h4>
-						{% for service in prod %}
-							<a class="nav-item nav" href="{{ service.url | relative_url }}"><p>{{service.title}}</p></a>
-						{% endfor%}
+				<h4>Production</h4>
+				{% for service in prod %}
+					<a class="nav-item nav" href="{{ service.url | relative_url }}"><p>{{service.title}}</p></a>
+				{% endfor%}
 
-					<h4>Post production</h4>
-						{% for service in post %}
-							<a class="nav-item nav" href="{{ service.url | relative_url }}"><p>{{service.title}}</p></a>
-						{% endfor%}
-
+				<h4>Post production</h4>
+				{% for service in post %}
+					<a class="nav-item nav" href="{{ service.url | relative_url }}"><p>{{service.title}}</p></a>
+				{% endfor%}
 			</div>
 		</div>
+
 	</div>
 </div>
