@@ -132,8 +132,7 @@ input[type="button" i]:active, input[type="button" i]:hover, input[type="button"
 
 .video-foreground, .full-media #vid { position: absolute; top: 0; left: 0; width: 115%; height: 100%; pointer-events: none; }
 
-@media (min-aspect-ratio: 16 / 9) { .video-foreground { height: 300%; top: -100%; } }
-@media (max-aspect-ratio: 16 / 9) { .video-foreground { width: 320%; left: -135%; } }
+@media (max-aspect-ratio: 16 / 9) { .video-foreground { width: 362%; left: -160%; } }
 @media (max-aspect-ratio: 40 / 71) { .video-foreground { width: 370%; left: -163%; } }
 .hero-filter { -webkit-filter: saturate(29%) hue-rotate(261deg); filter: saturate(29%) hue-rotate(261deg); }
 
