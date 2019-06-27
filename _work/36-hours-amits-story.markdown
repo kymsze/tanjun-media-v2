@@ -5,7 +5,7 @@ video: https://s3.eu-west-2.amazonaws.com/tanjun/case-studies/new_site/36-hours-
 video-link: https://vimeo.com/339286324
 featured: true
 client: 
-services:
+service:
 - COMMERCIALS
 - DOCUMENTARY
 - COLOUR GRADE
