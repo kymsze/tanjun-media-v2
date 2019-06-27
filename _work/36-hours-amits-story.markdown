@@ -12,5 +12,6 @@ service:
 - SOUND DESIGN
 - EDITING
 - CONCEPTS & CREATIVES
+layout: work
 ---
 
