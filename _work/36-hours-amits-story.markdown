@@ -14,9 +14,3 @@ services:
 - CONCEPTS & CREATIVES
 ---
 
-<div class='video one-one'>
-<div data-vimeo-url="//vimeo.com/214290937/572220356b" class='iframe'></div>
-<a href='//vimeo.com/214290937' data-lity class='video-filter'></a>
-</div>
-
-What would it feel like to lose your sight within 36 hours? This is the story of Amit, who one day woke up blind.
