@@ -31,12 +31,10 @@ featured: false
 contents:
 - influencers
 service:
+- COMEDY
 - CONCEPTS & CREATIVES
-- CAMPAIGNS
-- INFLUENCERS
-- EDITING
 - VFX
-- COLOUR GRADE
+- INFLUENCERS
 layout: work
 ---
 
