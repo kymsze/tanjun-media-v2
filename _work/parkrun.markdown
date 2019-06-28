@@ -10,13 +10,10 @@ contents:
 - digital campaigns
 - 
 service:
+- COMEDY
 - CONCEPTS & CREATIVES
-- CAMPAIGNS
 - COMMERCIALS
-- EDITING
 - VFX
-- COLOUR GRADE
-- SOUND DESIGN
 Field name: 
 layout: work
 ---
