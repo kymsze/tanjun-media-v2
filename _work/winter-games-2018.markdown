@@ -26,13 +26,12 @@ contents:
 - digital campaigns
 - content strategy
 service:
+- COMEDY
 - CONCEPTS & CREATIVES
 - CAMPAIGNS
 - CONTENT SERIES
 - 360/VR
 - VFX
-- EDITING
-- COLOUR GRADE
 layout: work
 ---
 
