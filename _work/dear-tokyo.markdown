@@ -7,7 +7,6 @@ featured: true
 client: team gb
 service:
 - EDITING
-- 
 layout: work
 ---
 
